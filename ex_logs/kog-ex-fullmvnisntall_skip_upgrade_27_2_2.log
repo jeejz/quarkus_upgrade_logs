@@ -1,0 +1,189 @@
+nohup: ignoring input
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.kie.kogito.examples:pmml-event-driven-quarkus:jar:999-SNAPSHOT
+[WARNING] The expression ${build.directory} is deprecated. Please use ${project.build.directory} instead.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.version: 5.15
+[INFO] os.detected.version.major: 5
+[INFO] os.detected.version.minor: 15
+[INFO] os.detected.release: ubuntu
+[INFO] os.detected.release.version: 22.04
+[INFO] os.detected.release.like.ubuntu: true
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Kogito Example :: Serverless Workflow Camel :: Quarkus             [jar]
+[INFO] Kogito Example :: Serverless Workflow Compensation :: Quarkus      [jar]
+[INFO] Kogito Example :: Serverless Workflow Consuming Events Over HTTP :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Correlation :: Quarkus       [jar]
+[INFO] Kogito Example :: Serverless Workflow Correlation :: Quarkus :: MongoDB [jar]
+[INFO] Kogito Example :: Serverless Workflow Custom Function :: Quarkus   [pom]
+[INFO] Kogito Example :: Serverless Workflow Custom Function Knative :: Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Custom Function Knative :: Workflow [jar]
+[INFO] Kogito Example :: Serverless Workflow Custom type :: Quarkus       [pom]
+[INFO] Kogito Example :: Serverless Workflow Custom RPC Server :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Custom RPC :: Runtime        [jar]
+[INFO] Kogito Example :: Serverless Workflow Custom RPC :: Deployment     [jar]
+[INFO] Kogito Example :: Serverless Workflow Custom RPC Client :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Data Index persistence addon :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Data Index :: Quarkus        [jar]
+[INFO] Kogito Example :: Serverless Workflow :: DMN:: Quarkus             [jar]
+[INFO] Kogito Example :: Serverless Workflow Error :: Quarkus             [jar]
+[INFO] Kogito Example :: Serverless Workflow Events :: Quarkus            [jar]
+[INFO] Kogito Example :: Serverless Workflow Expression :: Quarkus        [jar]
+[INFO] Kogito Example :: Serverless Workflow For Each :: Quarkus          [jar]
+[INFO] Kogito Example :: Serverless Workflow Functions And Events :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Functions :: Quarkus         [jar]
+[INFO] Kogito Example :: Serverless Workflow :: Funqy                     [pom]
+[INFO] Kogito Example :: Serverless Workflow :: Funqy :: Services         [jar]
+[INFO] Kogito Example :: Serverless Workflow :: Funqy :: Workflow         [jar]
+[INFO] Kogito Example :: Serverless Workflow Greeting :: Quarkus          [jar]
+[INFO] Kogito Example :: Serverless Workflow gRPC example                 [pom]
+[INFO] Kogito Example :: Serverless Workflow Greeting :: gRPC Server :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Greeting :: gRPC Client :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Hello World :: Quarkus       [jar]
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase         [pom]
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase :: Aggregator [jar]
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase :: Flow [jar]
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase :: UI   [jar]
+[INFO] Kogito Example :: Serverless Workflow Newsletter Subscription Showcase [pom]
+[INFO] Kogito Example :: Serverless Workflow Newsletter Subscription :: Subscription Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Newsletter Subscription :: Subscription Flow [jar]
+[INFO] Kogito Example :: Serverless Workflow Oauth2 Orchestration Example [pom]
+[INFO] Kogito Example :: Serverless Workflow Oauth2 Orchestration Example :: ACME Financial Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Oauth2 Orchestration Example :: Currency Exchange [jar]
+[INFO] Kogito Example :: Serverless Workflow Order Processing             [jar]
+[INFO] Kogito Example :: Serverless Workflow Parallel Execution :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Query and Answer Showcase    [pom]
+[INFO] Kogito Example :: Serverless Workflow Query and Answer :: Workflow Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Query and Answer :: Query Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Order Saga :: Quarkus        [jar]
+[INFO] Kogito Example :: Serverless Workflow Service Calls :: Quarkus     [jar]
+[INFO] Kogito Example :: Serverless Workflow Stock Profit                 [pom]
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Quarkus      [jar]
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Portfolio Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Stock Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Mock Stock Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion       [pom]
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Subtraction Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Multiplication Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Full Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Function Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Spec Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Testing with REST Assured :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Timeouts Showcase Embedded   [jar]
+[INFO] Kogito Example :: Serverless Workflow Timeouts Showcase Extended   [jar]
+[INFO] Kogito Example :: Serverless Workflow Timeouts Showcase Operator Dev Profile [jar]
+[INFO] Kogito Example :: Serverless Workflow Python :: Quarkus            [jar]
+[INFO] Kogito Example :: Serverless Workflow                              [pom]
+[INFO] Kogito Example :: SonataFlow :: Java Embedded examples             [jar]
+[INFO] Kogito Example :: Serverless Workflow Fault Tolerance :: Quarkus   [jar]
+[INFO] 
+[INFO] -------------< org.acme:serverless-workflow-camel-routes >--------------
+[INFO] Building Kogito Example :: Serverless Workflow Camel :: Quarkus 1.0-SNAPSHOT [1/67]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] The POM for org.apache.camel.quarkus:camel-quarkus-cxf-soap:jar:4.14.4 is missing, no dependency information available
+[WARNING] The POM for org.apache.camel.quarkus:camel-quarkus-bean:jar:4.14.4 is missing, no dependency information available
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Kogito Example :: Serverless Workflow Camel :: Quarkus 1.0-SNAPSHOT FAILURE [  1.044 s]
+[INFO] Kogito Example :: Serverless Workflow Compensation :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Consuming Events Over HTTP :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Correlation :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Correlation :: Quarkus :: MongoDB 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Custom Function :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Custom Function Knative :: Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Custom Function Knative :: Workflow 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Custom type :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Custom RPC Server :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Custom RPC :: Runtime 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Custom RPC :: Deployment 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Custom RPC Client :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Data Index persistence addon :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Data Index :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow :: DMN:: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Error :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Events :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Expression :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow For Each :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Functions And Events :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Functions :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow :: Funqy 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow :: Funqy :: Services 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow :: Funqy :: Workflow 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Greeting :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow gRPC example 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Greeting :: gRPC Server :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Greeting :: gRPC Client :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Hello World :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase :: Aggregator 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase :: Flow 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase :: UI 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Newsletter Subscription Showcase 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Newsletter Subscription :: Subscription Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Newsletter Subscription :: Subscription Flow 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Oauth2 Orchestration Example 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Oauth2 Orchestration Example :: ACME Financial Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Oauth2 Orchestration Example :: Currency Exchange 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Order Processing 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Parallel Execution :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Query and Answer Showcase 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Query and Answer :: Workflow Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Query and Answer :: Query Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Order Saga :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Service Calls :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Stock Profit 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Portfolio Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Stock Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Mock Stock Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Subtraction Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Multiplication Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Full Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Function Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Spec Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Testing with REST Assured :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Timeouts Showcase Embedded 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Timeouts Showcase Extended 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Timeouts Showcase Operator Dev Profile 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Python :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow 999-SNAPSHOT . SKIPPED
+[INFO] Kogito Example :: SonataFlow :: Java Embedded examples 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Fault Tolerance :: Quarkus 1.0.0-SNAPSHOT SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.908 s
+[INFO] Finished at: 2026-01-22T09:18:44-08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project serverless-workflow-camel-routes: Could not resolve dependencies for project org.acme:serverless-workflow-camel-routes:jar:1.0-SNAPSHOT
+[ERROR] dependency: org.apache.camel.quarkus:camel-quarkus-cxf-soap:jar:4.14.4 (compile)
+[ERROR] 	org.apache.camel.quarkus:camel-quarkus-cxf-soap:jar:4.14.4 was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+[ERROR] dependency: org.apache.camel.quarkus:camel-quarkus-bean:jar:4.14.4 (compile)
+[ERROR] 	org.apache.camel.quarkus:camel-quarkus-bean:jar:4.14.4 was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException

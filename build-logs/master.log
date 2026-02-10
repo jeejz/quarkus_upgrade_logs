@@ -1,0 +1,75 @@
+=========================================
+Build started at: Mon Feb  9 06:27:38 AM PST 2026
+=========================================
+[0;32m==========================================[0m
+[2026-02-09 06:27:38] ==========================================
+[0;32mKogito Projects Build Script[0m
+[2026-02-09 06:27:38] Kogito Projects Build Script
+[0;32mStarted at: Mon Feb  9 06:27:38 AM PST 2026[0m
+[2026-02-09 06:27:38] Started at: Mon Feb  9 06:27:38 AM PST 2026
+[0;32mLog directory: /home/jijo/apache_src/build-logs/20260209_062738[0m
+[2026-02-09 06:27:38] Log directory: /home/jijo/apache_src/build-logs/20260209_062738
+[0;32mMaster log: /home/jijo/apache_src/build-logs/master.log[0m
+[2026-02-09 06:27:38] Master log: /home/jijo/apache_src/build-logs/master.log
+[0;32m==========================================[0m
+[2026-02-09 06:27:38] ==========================================
+
+[1;33m==========================================[0m
+[2026-02-09 06:27:38] ==========================================
+[1;33mCleaning M2 repository: /home/jijo/.m2/repository[0m
+[2026-02-09 06:27:38] Cleaning M2 repository: /home/jijo/.m2/repository
+[1;33m==========================================[0m
+[2026-02-09 06:27:38] ==========================================
+[0;32m✓ M2 repository cleaned successfully[0m
+[2026-02-09 06:27:40] ✓ M2 repository cleaned successfully
+
+[1;33m==========================================[0m
+[2026-02-09 06:27:40] ==========================================
+[1;33mBuilding project 1/5: drools[0m
+[2026-02-09 06:27:40] Building project 1/5: drools
+[1;33mPath: /home/jijo/apache_src/incubator-kie-drools[0m
+[2026-02-09 06:27:40] Path: /home/jijo/apache_src/incubator-kie-drools
+[1;33mLog: /home/jijo/apache_src/build-logs/20260209_062738/drools_1.log[0m
+[2026-02-09 06:27:40] Log: /home/jijo/apache_src/build-logs/20260209_062738/drools_1.log
+[1;33m==========================================[0m
+[2026-02-09 06:27:40] ==========================================
+[1;33mUpdating Git repository for drools...[0m
+[2026-02-09 06:27:40] Updating Git repository for drools...
+[0;32m  Fetching from origin...[0m
+[2026-02-09 06:27:40]   Fetching from origin...
+[0;32m  ✓ Fetch successful[0m
+[2026-02-09 06:27:41]   ✓ Fetch successful
+[0;32m  Current branch: quarkus_upgrade_3.27[0m
+[2026-02-09 06:27:41]   Current branch: quarkus_upgrade_3.27
+[0;32m  Pulling latest changes...[0m
+[2026-02-09 06:27:41]   Pulling latest changes...
+From github.com:jeejz/incubator-kie-drools
+ * branch                  quarkus_upgrade_3.27 -> FETCH_HEAD
+Already up to date.
+[0;32m  ✓ Pull successful[0m
+[2026-02-09 06:27:42]   ✓ Pull successful
+
+[0;32mRunning: mvn clean install -DskipTests[0m
+[2026-02-09 06:27:42] Running: mvn clean install -DskipTests
+[2026-02-09 06:27:42] Starting Maven build for drools (background process)
+[2026-02-09 06:27:42] Maven PID for drools: 3085045
+[0;32m✓ Build completed successfully in 6m 40s[0m
+[2026-02-09 06:34:22] ✓ Build completed successfully in 6m 40s
+[0;32m  Log saved to: /home/jijo/apache_src/build-logs/20260209_062738/drools_1.log[0m
+[2026-02-09 06:34:22]   Log saved to: /home/jijo/apache_src/build-logs/20260209_062738/drools_1.log
+
+[1;33m==========================================[0m
+[2026-02-09 06:34:22] ==========================================
+[1;33mBuilding project 2/5: optaplanner[0m
+[2026-02-09 06:34:22] Building project 2/5: optaplanner
+[1;33mPath: /home/jijo/apache_src/ioptaplanner[0m
+[2026-02-09 06:34:22] Path: /home/jijo/apache_src/ioptaplanner
+[1;33mLog: /home/jijo/apache_src/build-logs/20260209_062738/optaplanner_2.log[0m
+[2026-02-09 06:34:22] Log: /home/jijo/apache_src/build-logs/20260209_062738/optaplanner_2.log
+[1;33m==========================================[0m
+[2026-02-09 06:34:22] ==========================================
+[0;31m✗ Error: Project directory not found: /home/jijo/apache_src/ioptaplanner[0m
+[2026-02-09 06:34:22] ✗ Error: Project directory not found: /home/jijo/apache_src/ioptaplanner
+[0;31mBuild failed for project 2, exiting...[0m
+[2026-02-09 06:34:22] Build failed for project 2, exiting...
+[2026-02-09 06:34:22] Build process terminated due to failure in project 2

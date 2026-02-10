@@ -1,0 +1,1000 @@
+nohup: ignoring input
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.kie.kogito.examples:pmml-event-driven-quarkus:jar:999-SNAPSHOT
+[WARNING] The expression ${build.directory} is deprecated. Please use ${project.build.directory} instead.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.version: 5.15
+[INFO] os.detected.version.major: 5
+[INFO] os.detected.version.minor: 15
+[INFO] os.detected.release: ubuntu
+[INFO] os.detected.release.version: 22.04
+[INFO] os.detected.release.like.ubuntu: true
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Kogito Example :: Serverless Workflow Compensation :: Quarkus      [jar]
+[INFO] Kogito Example :: Serverless Workflow Consuming Events Over HTTP :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Correlation :: Quarkus       [jar]
+[INFO] Kogito Example :: Serverless Workflow Correlation :: Quarkus :: MongoDB [jar]
+[INFO] Kogito Example :: Serverless Workflow Custom Function :: Quarkus   [pom]
+[INFO] Kogito Example :: Serverless Workflow Custom Function Knative :: Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Custom Function Knative :: Workflow [jar]
+[INFO] Kogito Example :: Serverless Workflow Custom type :: Quarkus       [pom]
+[INFO] Kogito Example :: Serverless Workflow Custom RPC Server :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Custom RPC :: Runtime        [jar]
+[INFO] Kogito Example :: Serverless Workflow Custom RPC :: Deployment     [jar]
+[INFO] Kogito Example :: Serverless Workflow Custom RPC Client :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Data Index persistence addon :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Data Index :: Quarkus        [jar]
+[INFO] Kogito Example :: Serverless Workflow :: DMN:: Quarkus             [jar]
+[INFO] Kogito Example :: Serverless Workflow Error :: Quarkus             [jar]
+[INFO] Kogito Example :: Serverless Workflow Events :: Quarkus            [jar]
+[INFO] Kogito Example :: Serverless Workflow Expression :: Quarkus        [jar]
+[INFO] Kogito Example :: Serverless Workflow For Each :: Quarkus          [jar]
+[INFO] Kogito Example :: Serverless Workflow Functions And Events :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Functions :: Quarkus         [jar]
+[INFO] Kogito Example :: Serverless Workflow :: Funqy                     [pom]
+[INFO] Kogito Example :: Serverless Workflow :: Funqy :: Services         [jar]
+[INFO] Kogito Example :: Serverless Workflow :: Funqy :: Workflow         [jar]
+[INFO] Kogito Example :: Serverless Workflow Greeting :: Quarkus          [jar]
+[INFO] Kogito Example :: Serverless Workflow gRPC example                 [pom]
+[INFO] Kogito Example :: Serverless Workflow Greeting :: gRPC Server :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Greeting :: gRPC Client :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Hello World :: Quarkus       [jar]
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase         [pom]
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase :: Aggregator [jar]
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase :: Flow [jar]
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase :: UI   [jar]
+[INFO] Kogito Example :: Serverless Workflow Newsletter Subscription Showcase [pom]
+[INFO] Kogito Example :: Serverless Workflow Newsletter Subscription :: Subscription Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Newsletter Subscription :: Subscription Flow [jar]
+[INFO] Kogito Example :: Serverless Workflow Oauth2 Orchestration Example [pom]
+[INFO] Kogito Example :: Serverless Workflow Oauth2 Orchestration Example :: ACME Financial Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Oauth2 Orchestration Example :: Currency Exchange [jar]
+[INFO] Kogito Example :: Serverless Workflow Order Processing             [jar]
+[INFO] Kogito Example :: Serverless Workflow Parallel Execution :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Query and Answer Showcase    [pom]
+[INFO] Kogito Example :: Serverless Workflow Query and Answer :: Workflow Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Query and Answer :: Query Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Order Saga :: Quarkus        [jar]
+[INFO] Kogito Example :: Serverless Workflow Service Calls :: Quarkus     [jar]
+[INFO] Kogito Example :: Serverless Workflow Stock Profit                 [pom]
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Quarkus      [jar]
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Portfolio Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Stock Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Mock Stock Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion       [pom]
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Subtraction Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Multiplication Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Full Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Function Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Spec Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Testing with REST Assured :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Timeouts Showcase Embedded   [jar]
+[INFO] Kogito Example :: Serverless Workflow Timeouts Showcase Extended   [jar]
+[INFO] Kogito Example :: Serverless Workflow Timeouts Showcase Operator Dev Profile [jar]
+[INFO] Kogito Example :: Serverless Workflow Python :: Quarkus            [jar]
+[INFO] Kogito Example :: Serverless Workflow                              [pom]
+[INFO] Kogito Example :: SonataFlow :: Java Embedded examples             [jar]
+[INFO] Kogito Example :: Serverless Workflow Fault Tolerance :: Quarkus   [jar]
+[INFO] 
+[INFO] --< org.kie.kogito.examples:serverless-workflow-compensation-quarkus >--
+[INFO] Building Kogito Example :: Serverless Workflow Compensation :: Quarkus 1.0-SNAPSHOT [1/66]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ serverless-workflow-compensation-quarkus ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ serverless-workflow-compensation-quarkus ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ serverless-workflow-compensation-quarkus ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ serverless-workflow-compensation-quarkus ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-compensation-quarkus/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ serverless-workflow-compensation-quarkus ---
+[INFO] Recompiling the module because of changed source code.
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file with javac [debug release 17] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ serverless-workflow-compensation-quarkus ---
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ serverless-workflow-compensation-quarkus ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-compensation-quarkus/target/serverless-workflow-compensation-quarkus.jar
+[INFO] 
+[INFO] --- quarkus:3.27.2:build (default) @ serverless-workflow-compensation-quarkus ---
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.console.json" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.file.json.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.deployment.index] Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq/1.0.0-preview.20240207/jackson-jq-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+[WARNING] [io.quarkus.deployment.index] Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq-extra/1.0.0-preview.20240207/jackson-jq-extra-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+[INFO] Performed addonsConfig discovery, found: AddonsConfig{usePersistence=false, useTracing=false, useMonitoring=false, usePrometheusMonitoring=false, useCloudEvents=true, useExplainability=false, useProcessSVG=false, useEventDrivenDecisions=false, useEventDrivenRules=false, useProcessSources=true}
+[INFO] [org.kie.kogito.quarkus.common.deployment.KogitoAssetsProcessor] Disabling Kogito Fault Tolerance because SmallRye Fault Tolerance extension is not available
+[INFO] Generator discovery performed, found [processes, messaging, usertasks]
+[INFO] Skipping generator 'messaging' because disabled
+[INFO] Skipping generator 'usertasks' because disabled
+[WARNING] [io.quarkus.deployment.steps.ReflectiveHierarchyStep] Unable to properly register the hierarchy of the following classes for reflection as they are not in the Jandex index:
+	- org.kie.kogito.serverless.workflow.models.JsonNodeModelOutput (source: SmallRyeOpenApiProcessor > null > org.kie.kogito.serverless.workflow.models.JsonNodeModelOutput)
+Consider adding them to the index either by creating a Jandex index for your dependency via the Maven plugin, an empty META-INF/beans.xml or quarkus.index-dependency properties.
+[INFO] [io.quarkus.deployment.QuarkusAugmentor] Quarkus augmentation completed in 4026ms
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (default) @ serverless-workflow-compensation-quarkus ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.kie.kogito.examples.CompensationRestIT
+2026-01-22 09:35:02,844 WARN  [io.qua.dep.index] (build-5) Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq/1.0.0-preview.20240207/jackson-jq-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+2026-01-22 09:35:02,931 WARN  [io.qua.dep.index] (build-5) Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq-extra/1.0.0-preview.20240207/jackson-jq-extra-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+2026-01-22 09:35:03.194|INFO||org.testcontainers.DockerClientFactory|Testcontainers version: 1.21.4
+2026-01-22 09:35:03.388|INFO||org.testcontainers.dockerclient.DockerClientProviderStrategy|Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2026-01-22 09:35:03.628|INFO||org.testcontainers.dockerclient.DockerClientProviderStrategy|Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2026-01-22 09:35:03.631|INFO||org.testcontainers.DockerClientFactory|Docker host IP address is localhost
+2026-01-22 09:35:03.661|INFO||org.testcontainers.DockerClientFactory|Connected to docker: 
+  Server Version: 29.1.4
+  API Version: 1.52
+  Operating System: Ubuntu 22.04.5 LTS
+  Total Memory: 62785 MB
+2026-01-22 09:35:03.681|INFO||org.testcontainers.images.PullPolicy|Image pull policy will be performed by: DefaultPullPolicy()
+2026-01-22 09:35:03.683|INFO||org.testcontainers.utility.ImageNameSubstitutor|Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2026-01-22 09:35:03.690|INFO||org.testcontainers.DockerClientFactory|Checking the system...
+2026-01-22 09:35:03.691|INFO||org.testcontainers.DockerClientFactory|✔︎ Docker server version should be at least 1.6.0
+2026-01-22 09:35:03.707|INFO||io.quarkus.devservices.keycloak.KeycloakDevServicesProcessor|Using Quarkus powered Keycloak distribution
+2026-01-22 09:35:05.331|INFO||tc.quay.io/keycloak/keycloak:26.3.4|Creating container for image: quay.io/keycloak/keycloak:26.3.4
+2026-01-22 09:35:05.353|INFO||tc.testcontainers/ryuk:0.12.0|Creating container for image: testcontainers/ryuk:0.12.0
+2026-01-22 09:35:05.497|INFO||tc.testcontainers/ryuk:0.12.0|Container testcontainers/ryuk:0.12.0 is starting: 4aebe9f273f4bcbd665658781aaca93dfca5d88e930f86580ae5c23e9836f89f
+2026-01-22 09:35:06.062|INFO||tc.testcontainers/ryuk:0.12.0|Container testcontainers/ryuk:0.12.0 started in PT0.708193631S
+2026-01-22 09:35:06.200|INFO||tc.quay.io/keycloak/keycloak:26.3.4|Container quay.io/keycloak/keycloak:26.3.4 is starting: 4777a26443b5fa909a6ddb00e774046f0666704de42719290dca258974f9922e
+2026-01-22 09:35:23.139|INFO||tc.quay.io/keycloak/keycloak:26.3.4|Container quay.io/keycloak/keycloak:26.3.4 started in PT17.807649569S
+2026-01-22 09:35:25.761|INFO||io.quarkus.devservices.keycloak.KeycloakDevServicesProcessor|Dev Services for Keycloak started.
+Executing "/home/jijo/.sdkman/candidates/java/17.0.17-tem/bin/java -Dquarkus.http.port=8081 -Dquarkus.http.ssl-port=8444 -Dtest.url=http://localhost:8081 -Dquarkus.log.file.path=/home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-compensation-quarkus/target/quarkus.log -Dquarkus.log.file.enabled=true -Dquarkus.log.category."io.quarkus".level=INFO -Dquarkus.profile=prod -Dquarkus.oidc-client.client-id=quarkus-app -Dclient.quarkus.oidc.auth-server-url=http://localhost:33235/realms/quarkus -Dkeycloak.url=http://localhost:33235 -Dquarkus.oidc-client.auth-server-url=http://localhost:33235/realms/quarkus -Dkeycloak.realms=quarkus -Dquarkus.oidc-client.token-path=/protocol/openid-connect/tokens -Dquarkus.oidc-client.credentials.secret=secret -Doidc.users=alice=alice,bob=bob -jar /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-compensation-quarkus/target/quarkus-app/quarkus-run.jar"
+__  ____  __  _____   ___  __ ____  ______ 
+ --/ __ \/ / / / _ | / _ \/ //_/ / / / __/ 
+ -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \   
+--\___\_\____/_/ |_/_/|_/_/|_|\____/___/   
+2026-01-22 09:35:29.008|INFO||org.kie.kogito.addon.quarkus.messaging.common.QuarkusKogitoExtensionInitializer|Registered Kogito CloudEvent extension
+2026-01-22 09:35:29.052|INFO||io.quarkus|serverless-workflow-compensation-quarkus 1.0-SNAPSHOT on JVM (powered by Quarkus 3.27.2) started in 2.083s. Listening on: http://0.0.0.0:8081
+2026-01-22 09:35:29.053|INFO||io.quarkus|Profile prod activated. 
+2026-01-22 09:35:29.053|INFO||io.quarkus|Installed features: [cache, cdi, jackson-jq, kie-addon-messaging-extension, kie-addon-source-files-extension, kogito-serverless-workflow, messaging, narayana-jta, oidc-client, openapi-generator, qute, reactive-routes, resteasy, resteasy-client, resteasy-client-jackson, resteasy-client-oidc-filter, resteasy-jackson, security, security-properties-file, smallrye-context-propagation, smallrye-health, smallrye-openapi, smallrye-reactive-messaging-http, vertx]
+2026-01-22 09:35:30.351|INFO|64c03d86-6351-4a9d-965a-f3214b2c6c44|org.kie.kogito.expr.jq.JqExpressionHandler|Using default scope
+2026-01-22 09:35:30.391|INFO|64c03d86-6351-4a9d-965a-f3214b2c6c44|org.jbpm.process.instance.context.exception.CompensationScopeInstance|Compensating 2 exception 4
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.55 s -- in org.kie.kogito.examples.CompensationRestIT
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (default) @ serverless-workflow-compensation-quarkus ---
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ serverless-workflow-compensation-quarkus ---
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-compensation-quarkus/pom.xml to /home/jijo/.m2/repository/org/kie/kogito/examples/serverless-workflow-compensation-quarkus/1.0-SNAPSHOT/serverless-workflow-compensation-quarkus-1.0-SNAPSHOT.pom
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-compensation-quarkus/target/serverless-workflow-compensation-quarkus.jar to /home/jijo/.m2/repository/org/kie/kogito/examples/serverless-workflow-compensation-quarkus/1.0-SNAPSHOT/serverless-workflow-compensation-quarkus-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --< org.kie.kogito.examples:serverless-workflow-consuming-events-over-http-quarkus >--
+[INFO] Building Kogito Example :: Serverless Workflow Consuming Events Over HTTP :: Quarkus 1.0-SNAPSHOT [2/66]
+[INFO]   from /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-consuming-events-over-http-quarkus/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ serverless-workflow-consuming-events-over-http-quarkus ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ serverless-workflow-consuming-events-over-http-quarkus ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ serverless-workflow-consuming-events-over-http-quarkus ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ serverless-workflow-consuming-events-over-http-quarkus ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-consuming-events-over-http-quarkus/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ serverless-workflow-consuming-events-over-http-quarkus ---
+[INFO] Recompiling the module because of changed source code.
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file with javac [debug release 17] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ serverless-workflow-consuming-events-over-http-quarkus ---
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ serverless-workflow-consuming-events-over-http-quarkus ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-consuming-events-over-http-quarkus/target/serverless-workflow-consuming-events-over-http-quarkus.jar
+[INFO] 
+[INFO] --- quarkus:3.27.2:build (default) @ serverless-workflow-consuming-events-over-http-quarkus ---
+[WARNING] [io.quarkus.config] Unrecognized configuration key "kogito.faultToleranceEnabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.console.json" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.file.json.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.deployment.index] Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq/1.0.0-preview.20240207/jackson-jq-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+[WARNING] [io.quarkus.deployment.index] Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq-extra/1.0.0-preview.20240207/jackson-jq-extra-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+[INFO] Performed addonsConfig discovery, found: AddonsConfig{usePersistence=false, useTracing=false, useMonitoring=false, usePrometheusMonitoring=false, useCloudEvents=true, useExplainability=false, useProcessSVG=false, useEventDrivenDecisions=false, useEventDrivenRules=false, useProcessSources=true}
+[INFO] [org.kie.kogito.quarkus.common.deployment.KogitoAssetsProcessor] Disabling Kogito Fault Tolerance because SmallRye Fault Tolerance extension is not available
+[INFO] Generator discovery performed, found [processes, messaging, usertasks]
+[INFO] Skipping generator 'usertasks' because disabled
+[INFO] Generate channel endpoint ChannelInfo [channelName=move, className=Object, triggers=[move], isInput=true, isDefault=false, cloudEventMode=Optional[BINARY], marshaller=Optional.empty]
+[INFO] Generate channel endpoint ChannelInfo [channelName=start, className=Object, triggers=[start], isInput=true, isDefault=false, cloudEventMode=Optional[BINARY], marshaller=Optional.empty]
+[WARNING] [io.quarkus.deployment.steps.ReflectiveHierarchyStep] Unable to properly register the hierarchy of the following classes for reflection as they are not in the Jandex index:
+	- org.kie.kogito.serverless.workflow.models.JsonNodeModelOutput (source: SmallRyeOpenApiProcessor > null > org.kie.kogito.serverless.workflow.models.JsonNodeModelOutput)
+Consider adding them to the index either by creating a Jandex index for your dependency via the Maven plugin, an empty META-INF/beans.xml or quarkus.index-dependency properties.
+[INFO] [io.quarkus.deployment.QuarkusAugmentor] Quarkus augmentation completed in 3876ms
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (default) @ serverless-workflow-consuming-events-over-http-quarkus ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.kie.kogito.examples.ConsumingEventsOverHttpIT
+2026-01-22 09:35:42,431 WARN  [io.qua.dep.index] (build-14) Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq/1.0.0-preview.20240207/jackson-jq-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+2026-01-22 09:35:42,562 WARN  [io.qua.dep.index] (build-14) Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq-extra/1.0.0-preview.20240207/jackson-jq-extra-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+2026-01-22 09:35:42.802|INFO||org.testcontainers.DockerClientFactory|Testcontainers version: 1.21.4
+2026-01-22 09:35:43.068|INFO||org.testcontainers.dockerclient.DockerClientProviderStrategy|Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2026-01-22 09:35:43.404|INFO||org.testcontainers.dockerclient.DockerClientProviderStrategy|Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2026-01-22 09:35:43.408|INFO||org.testcontainers.DockerClientFactory|Docker host IP address is localhost
+2026-01-22 09:35:43.441|INFO||org.testcontainers.DockerClientFactory|Connected to docker: 
+  Server Version: 29.1.4
+  API Version: 1.52
+  Operating System: Ubuntu 22.04.5 LTS
+  Total Memory: 62785 MB
+2026-01-22 09:35:43.462|INFO||org.testcontainers.images.PullPolicy|Image pull policy will be performed by: DefaultPullPolicy()
+2026-01-22 09:35:43.465|INFO||org.testcontainers.utility.ImageNameSubstitutor|Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2026-01-22 09:35:43.471|INFO||org.testcontainers.DockerClientFactory|Checking the system...
+2026-01-22 09:35:43.472|INFO||org.testcontainers.DockerClientFactory|✔︎ Docker server version should be at least 1.6.0
+2026-01-22 09:35:43.488|INFO||io.quarkus.devservices.keycloak.KeycloakDevServicesProcessor|Using Quarkus powered Keycloak distribution
+2026-01-22 09:35:45.295|INFO||tc.quay.io/keycloak/keycloak:26.3.4|Creating container for image: quay.io/keycloak/keycloak:26.3.4
+2026-01-22 09:35:45.324|INFO||tc.testcontainers/ryuk:0.12.0|Creating container for image: testcontainers/ryuk:0.12.0
+2026-01-22 09:35:45.471|INFO||tc.testcontainers/ryuk:0.12.0|Container testcontainers/ryuk:0.12.0 is starting: cb3df7f8aed0390713cffa0cac9866ee9ebc45ae2812f8270bed7c1775c43930
+2026-01-22 09:35:45.999|INFO||tc.testcontainers/ryuk:0.12.0|Container testcontainers/ryuk:0.12.0 started in PT0.674279848S
+2026-01-22 09:35:46.134|INFO||tc.quay.io/keycloak/keycloak:26.3.4|Container quay.io/keycloak/keycloak:26.3.4 is starting: 98acbc83c58f72854633330973ff6cd03840f6672c16617602fee8e9845680f0
+2026-01-22 09:36:03.471|INFO||tc.quay.io/keycloak/keycloak:26.3.4|Container quay.io/keycloak/keycloak:26.3.4 started in PT18.175189487S
+2026-01-22 09:36:06.081|INFO||io.quarkus.devservices.keycloak.KeycloakDevServicesProcessor|Dev Services for Keycloak started.
+Executing "/home/jijo/.sdkman/candidates/java/17.0.17-tem/bin/java -Dquarkus.http.port=8081 -Dquarkus.http.ssl-port=8444 -Dtest.url=http://localhost:8081 -Dquarkus.log.file.path=/home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-consuming-events-over-http-quarkus/target/quarkus.log -Dquarkus.log.file.enabled=true -Dquarkus.log.category."io.quarkus".level=INFO -Dquarkus.profile=prod -Dquarkus.oidc-client.client-id=quarkus-app -Dclient.quarkus.oidc.auth-server-url=http://localhost:33237/realms/quarkus -Dkeycloak.url=http://localhost:33237 -Dquarkus.oidc-client.auth-server-url=http://localhost:33237/realms/quarkus -Dkeycloak.realms=quarkus -Dquarkus.oidc-client.token-path=/protocol/openid-connect/tokens -Dquarkus.oidc-client.credentials.secret=secret -Doidc.users=alice=alice,bob=bob -jar /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-consuming-events-over-http-quarkus/target/quarkus-app/quarkus-run.jar"
+__  ____  __  _____   ___  __ ____  ______ 
+ --/ __ \/ / / / _ | / _ \/ //_/ / / / __/ 
+ -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \   
+--\___\_\____/_/ |_/_/|_/_/|_|\____/___/   
+2026-01-22 09:36:09.425|INFO||org.kie.kogito.addon.quarkus.messaging.common.QuarkusKogitoExtensionInitializer|Registered Kogito CloudEvent extension
+2026-01-22 09:36:09.429|INFO||org.kie.kogito.event.impl.AbstractMessageConsumer|Consumer for move started
+2026-01-22 09:36:09.430|INFO||org.kie.kogito.event.impl.AbstractMessageConsumer|Consumer for start started
+2026-01-22 09:36:09.464|INFO||io.quarkus|serverless-workflow-consuming-events-over-http-quarkus 1.0-SNAPSHOT on JVM (powered by Quarkus 3.27.2) started in 2.065s. Listening on: http://0.0.0.0:8081
+2026-01-22 09:36:09.465|INFO||io.quarkus|Profile prod activated. 
+2026-01-22 09:36:09.465|INFO||io.quarkus|Installed features: [cache, cdi, jackson-jq, kie-addon-messaging-extension, kie-addon-process-management-extension, kie-addon-source-files-extension, kogito-serverless-workflow, messaging, narayana-jta, oidc-client, openapi-generator, qute, reactive-routes, resteasy, resteasy-client, resteasy-client-jackson, resteasy-client-oidc-filter, resteasy-jackson, security, security-properties-file, smallrye-context-propagation, smallrye-health, smallrye-openapi, smallrye-reactive-messaging-http, vertx]
+2026-01-22 09:36:10.624|INFO||org.kie.kogito.event.impl.ProcessEventDispatcher|Starting new process instance with signal 'start'
+2026-01-22 09:36:10.685|INFO|38a7edd3-4ad3-461a-8e31-c9a18776d466|org.kie.kogito.serverless.workflow.actions.SysoutAction|[ "Hello!" ]
+HTTP/1.1 202 Accepted
+content-length: 0
+2026-01-22 09:36:11.324|INFO|38a7edd3-4ad3-461a-8e31-c9a18776d466|org.kie.kogito.serverless.workflow.actions.SysoutAction|[ "Hello!", "This has been injected by the event" ]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.16 s -- in org.kie.kogito.examples.ConsumingEventsOverHttpIT
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (default) @ serverless-workflow-consuming-events-over-http-quarkus ---
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ serverless-workflow-consuming-events-over-http-quarkus ---
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-consuming-events-over-http-quarkus/pom.xml to /home/jijo/.m2/repository/org/kie/kogito/examples/serverless-workflow-consuming-events-over-http-quarkus/1.0-SNAPSHOT/serverless-workflow-consuming-events-over-http-quarkus-1.0-SNAPSHOT.pom
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-consuming-events-over-http-quarkus/target/serverless-workflow-consuming-events-over-http-quarkus.jar to /home/jijo/.m2/repository/org/kie/kogito/examples/serverless-workflow-consuming-events-over-http-quarkus/1.0-SNAPSHOT/serverless-workflow-consuming-events-over-http-quarkus-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --< org.kie.kogito.examples:serverless-workflow-correlation-quarkus >---
+[INFO] Building Kogito Example :: Serverless Workflow Correlation :: Quarkus 1.0-SNAPSHOT [3/66]
+[INFO]   from /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-correlation-quarkus/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ serverless-workflow-correlation-quarkus ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ serverless-workflow-correlation-quarkus ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- quarkus:3.27.2:generate-code (default) @ serverless-workflow-correlation-quarkus ---
+Downloading from apache.snapshots: https://repository.apache.org/snapshots/org/kie/kogito/examples/serverless-workflow-correlation-quarkus/1.0-SNAPSHOT/maven-metadata.xml
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ serverless-workflow-correlation-quarkus ---
+[INFO] Recompiling the module because of changed source code.
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 3 source files with javac [debug release 17] to target/classes
+[INFO] 
+[INFO] --- quarkus:3.27.2:generate-code-tests (default) @ serverless-workflow-correlation-quarkus ---
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ serverless-workflow-correlation-quarkus ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ serverless-workflow-correlation-quarkus ---
+[INFO] Recompiling the module because of changed dependency.
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file with javac [debug release 17] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ serverless-workflow-correlation-quarkus ---
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ serverless-workflow-correlation-quarkus ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-correlation-quarkus/target/serverless-workflow-correlation-quarkus.jar
+[INFO] 
+[INFO] --- quarkus:3.27.2:build (default) @ serverless-workflow-correlation-quarkus ---
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.datasource.password" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "kogito.persistence.type" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "kogito.faultToleranceEnabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.datasource.db-kind" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.console.json" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.datasource.jdbc.url" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "kogito.persistence.proto.marshaller" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.datasource.username" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.file.json.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.deployment.index] Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq/1.0.0-preview.20240207/jackson-jq-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+[WARNING] [io.quarkus.deployment.index] Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq-extra/1.0.0-preview.20240207/jackson-jq-extra-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+[INFO] Performed addonsConfig discovery, found: AddonsConfig{usePersistence=false, useTracing=false, useMonitoring=false, usePrometheusMonitoring=false, useCloudEvents=true, useExplainability=false, useProcessSVG=false, useEventDrivenDecisions=false, useEventDrivenRules=false, useProcessSources=true}
+[INFO] [org.kie.kogito.quarkus.common.deployment.KogitoAssetsProcessor] Disabling Kogito Fault Tolerance because SmallRye Fault Tolerance extension is not available
+[INFO] Generator discovery performed, found [processes, messaging, usertasks]
+[INFO] Skipping generator 'usertasks' because disabled
+[INFO] Exact method complete match not found with parameters [class com.fasterxml.jackson.databind.JsonNode], searching for a suitable candidate
+[INFO] Generate channel endpoint ChannelInfo [channelName=validateAccountEmail, className=String, triggers=[validateAccountEmail], isInput=false, isDefault=false, cloudEventMode=Optional[STRUCTURED], marshaller=Optional.empty]
+[INFO] Generate channel endpoint ChannelInfo [channelName=newAccountEventType, className=String, triggers=[newAccountEventType], isInput=true, isDefault=false, cloudEventMode=Optional[STRUCTURED], marshaller=Optional.empty]
+[INFO] Generate channel endpoint ChannelInfo [channelName=activatedAccount, className=String, triggers=[activatedAccount], isInput=true, isDefault=false, cloudEventMode=Optional[STRUCTURED], marshaller=Optional.empty]
+[INFO] Generate channel endpoint ChannelInfo [channelName=activateAccount, className=String, triggers=[activateAccount], isInput=false, isDefault=false, cloudEventMode=Optional[STRUCTURED], marshaller=Optional.empty]
+[INFO] Generate channel endpoint ChannelInfo [channelName=validatedAccountEmail, className=String, triggers=[validatedAccountEmail], isInput=true, isDefault=false, cloudEventMode=Optional[STRUCTURED], marshaller=Optional.empty]
+[WARNING] [io.quarkus.deployment.steps.ReflectiveHierarchyStep] Unable to properly register the hierarchy of the following classes for reflection as they are not in the Jandex index:
+	- org.kie.kogito.serverless.workflow.models.JsonNodeModelOutput (source: SmallRyeOpenApiProcessor > null > org.kie.kogito.serverless.workflow.models.JsonNodeModelOutput)
+Consider adding them to the index either by creating a Jandex index for your dependency via the Maven plugin, an empty META-INF/beans.xml or quarkus.index-dependency properties.
+[INFO] [io.quarkus.deployment.QuarkusAugmentor] Quarkus augmentation completed in 4059ms
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (default) @ serverless-workflow-correlation-quarkus ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.kie.kogito.examples.CorrelationIT
+2026-01-22 09:36:26,979 WARN  [io.qua.dep.index] (build-10) Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq/1.0.0-preview.20240207/jackson-jq-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+2026-01-22 09:36:27,097 WARN  [io.qua.dep.index] (build-10) Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq-extra/1.0.0-preview.20240207/jackson-jq-extra-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+2026-01-22 09:36:28.022|INFO||org.testcontainers.DockerClientFactory|Testcontainers version: 1.21.4
+2026-01-22 09:36:28.317|INFO||org.testcontainers.dockerclient.DockerClientProviderStrategy|Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2026-01-22 09:36:28.531|INFO||org.testcontainers.dockerclient.DockerClientProviderStrategy|Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2026-01-22 09:36:28.533|INFO||org.testcontainers.DockerClientFactory|Docker host IP address is localhost
+2026-01-22 09:36:28.558|INFO||org.testcontainers.DockerClientFactory|Connected to docker: 
+  Server Version: 29.1.4
+  API Version: 1.52
+  Operating System: Ubuntu 22.04.5 LTS
+  Total Memory: 62785 MB
+2026-01-22 09:36:28.570|INFO||org.testcontainers.images.PullPolicy|Image pull policy will be performed by: DefaultPullPolicy()
+2026-01-22 09:36:28.572|INFO||org.testcontainers.utility.ImageNameSubstitutor|Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2026-01-22 09:36:28.576|INFO||org.testcontainers.DockerClientFactory|Checking the system...
+2026-01-22 09:36:28.576|INFO||org.testcontainers.DockerClientFactory|✔︎ Docker server version should be at least 1.6.0
+2026-01-22 09:36:28.588|INFO||io.quarkus.devservices.keycloak.KeycloakDevServicesProcessor|Using Quarkus powered Keycloak distribution
+2026-01-22 09:36:30.172|INFO||tc.quay.io/keycloak/keycloak:26.3.4|Creating container for image: quay.io/keycloak/keycloak:26.3.4
+2026-01-22 09:36:30.196|INFO||tc.testcontainers/ryuk:0.12.0|Creating container for image: testcontainers/ryuk:0.12.0
+2026-01-22 09:36:30.359|INFO||tc.testcontainers/ryuk:0.12.0|Container testcontainers/ryuk:0.12.0 is starting: 19e0d0ef1c29c6efca7aecacec149fb22c8caa5066a9c4320281a062b483aa9e
+2026-01-22 09:36:30.926|INFO||tc.testcontainers/ryuk:0.12.0|Container testcontainers/ryuk:0.12.0 started in PT0.729738837S
+2026-01-22 09:36:31.065|INFO||tc.quay.io/keycloak/keycloak:26.3.4|Container quay.io/keycloak/keycloak:26.3.4 is starting: 2736b51a4bde109a94c2165ed8e01222bb56e466d80e06993d11c2b2fcfd7d1f
+2026-01-22 09:36:48.415|INFO||tc.quay.io/keycloak/keycloak:26.3.4|Container quay.io/keycloak/keycloak:26.3.4 started in PT18.242703701S
+2026-01-22 09:36:50.465|INFO||io.quarkus.devservices.keycloak.KeycloakDevServicesProcessor|Dev Services for Keycloak started.
+2026-01-22 09:36:50.499|INFO||tc.redpandadata/redpanda:v24.3.1|Creating container for image: redpandadata/redpanda:v24.3.1
+2026-01-22 09:36:50.593|INFO||tc.redpandadata/redpanda:v24.3.1|Container redpandadata/redpanda:v24.3.1 is starting: 2f696206bafaf39ce58fb523a92e6a73cbdf8acc2eb960590a76233c9a2119da
+2026-01-22 09:36:51.956|INFO||tc.redpandadata/redpanda:v24.3.1|Container redpandadata/redpanda:v24.3.1 started in PT1.457190411S
+2026-01-22 09:36:51.960|INFO||io.quarkus.kafka.client.deployment.DevServicesKafkaProcessor|Dev Services for Kafka started. Other Quarkus applications in dev mode will find the broker automatically. For Quarkus applications in production mode, you can connect to this by starting your application with -Dkafka.bootstrap.servers=OUTSIDE://localhost:33241
+Executing "/home/jijo/.sdkman/candidates/java/17.0.17-tem/bin/java -Dquarkus.http.port=0 -Dquarkus.http.ssl-port=8444 -Dtest.url=http://localhost:0 -Dquarkus.log.file.path=/home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-correlation-quarkus/target/quarkus.log -Dquarkus.log.file.enabled=true -Dquarkus.log.category."io.quarkus".level=INFO -Dquarkus.profile=prod -Dquarkus.oidc-client.client-id=quarkus-app -Dclient.quarkus.oidc.auth-server-url=http://localhost:33239/realms/quarkus -Dkafka.bootstrap.servers=OUTSIDE://localhost:33241 -Dkeycloak.url=http://localhost:33239 -Dquarkus.oidc-client.auth-server-url=http://localhost:33239/realms/quarkus -Dkeycloak.realms=quarkus -Dquarkus.oidc-client.token-path=/protocol/openid-connect/tokens -Dquarkus.oidc-client.credentials.secret=secret -Doidc.users=alice=alice,bob=bob -jar /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-correlation-quarkus/target/quarkus-app/quarkus-run.jar"
+__  ____  __  _____   ___  __ ____  ______ 
+ --/ __ \/ / / / _ | / _ \/ //_/ / / / __/ 
+ -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \   
+--\___\_\____/_/ |_/_/|_/_/|_|\____/___/   
+2026-01-22 09:36:54.537|WARN||io.quarkus.config|Unrecognized configuration key "quarkus.datasource.password" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2026-01-22 09:36:54.537|WARN||io.quarkus.config|Unrecognized configuration key "kogito.persistence.type" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2026-01-22 09:36:54.537|WARN||io.quarkus.config|Unrecognized configuration key "quarkus.datasource.db-kind" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2026-01-22 09:36:54.537|WARN||io.quarkus.config|Unrecognized configuration key "quarkus.datasource.jdbc.url" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2026-01-22 09:36:54.537|WARN||io.quarkus.config|Unrecognized configuration key "kogito.persistence.proto.marshaller" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2026-01-22 09:36:54.537|WARN||io.quarkus.config|Unrecognized configuration key "quarkus.datasource.username" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2026-01-22 09:36:55.404|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18229: Configured topics for channel 'validatedAccountEmail': [validatedAccountEmail]
+2026-01-22 09:36:55.417|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18214: Key deserializer omitted, using String as default
+2026-01-22 09:36:55.674|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18229: Configured topics for channel 'activatedAccount': [activatedAccount]
+2026-01-22 09:36:55.678|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18214: Key deserializer omitted, using String as default
+2026-01-22 09:36:55.700|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18229: Configured topics for channel 'newAccountEventType': [newAccountEventType]
+2026-01-22 09:36:55.703|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18214: Key deserializer omitted, using String as default
+2026-01-22 09:36:55.721|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18229: Configured topics for channel 'activate': [activateAccount]
+2026-01-22 09:36:55.725|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18214: Key deserializer omitted, using String as default
+2026-01-22 09:36:55.740|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18229: Configured topics for channel 'validate': [validateAccountEmail]
+2026-01-22 09:36:55.743|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18214: Key deserializer omitted, using String as default
+2026-01-22 09:36:55.807|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18258: Kafka producer kafka-producer-validateAccountEmail, connected to Kafka brokers 'OUTSIDE://localhost:33241', is configured to write records to 'validateAccountEmail'
+2026-01-22 09:36:55.824|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18258: Kafka producer kafka-producer-validated, connected to Kafka brokers 'OUTSIDE://localhost:33241', is configured to write records to 'validatedAccountEmail'
+2026-01-22 09:36:55.836|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18258: Kafka producer kafka-producer-start, connected to Kafka brokers 'OUTSIDE://localhost:33241', is configured to write records to 'newAccountEventType'
+2026-01-22 09:36:55.851|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18258: Kafka producer kafka-producer-activateAccount, connected to Kafka brokers 'OUTSIDE://localhost:33241', is configured to write records to 'activateAccount'
+2026-01-22 09:36:55.862|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18258: Kafka producer kafka-producer-activated, connected to Kafka brokers 'OUTSIDE://localhost:33241', is configured to write records to 'activatedAccount'
+2026-01-22 09:36:55.929|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18257: Kafka consumer kafka-consumer-activatedAccount, connected to Kafka brokers 'OUTSIDE://localhost:33241', belongs to the 'kogito-sw-callback' consumer group and is configured to poll records from [activatedAccount]
+2026-01-22 09:36:55.930|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18257: Kafka consumer kafka-consumer-newAccountEventType, connected to Kafka brokers 'OUTSIDE://localhost:33241', belongs to the 'kogito-sw-callback' consumer group and is configured to poll records from [newAccountEventType]
+2026-01-22 09:36:55.932|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18257: Kafka consumer kafka-consumer-validatedAccountEmail, connected to Kafka brokers 'OUTSIDE://localhost:33241', belongs to the 'kogito-sw-callback' consumer group and is configured to poll records from [validatedAccountEmail]
+2026-01-22 09:36:55.933|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18257: Kafka consumer kafka-consumer-activate, connected to Kafka brokers 'OUTSIDE://localhost:33241', belongs to the 'kogito-sw-callback' consumer group and is configured to poll records from [activateAccount]
+2026-01-22 09:36:55.933|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18257: Kafka consumer kafka-consumer-validate, connected to Kafka brokers 'OUTSIDE://localhost:33241', belongs to the 'kogito-sw-callback' consumer group and is configured to poll records from [validateAccountEmail]
+2026-01-22 09:36:55.979|INFO||org.kie.kogito.event.impl.AbstractMessageConsumer|Consumer for validatedAccountEmail started
+2026-01-22 09:36:55.986|INFO||org.kie.kogito.event.impl.AbstractMessageConsumer|Consumer for newAccountEventType started
+2026-01-22 09:36:56.038|INFO||org.kie.kogito.event.impl.AbstractMessageConsumer|Consumer for activatedAccount started
+2026-01-22 09:36:56.041|INFO||org.kie.kogito.addon.quarkus.messaging.common.QuarkusKogitoExtensionInitializer|Registered Kogito CloudEvent extension
+2026-01-22 09:36:56.085|INFO||io.quarkus|serverless-workflow-correlation-quarkus 1.0-SNAPSHOT on JVM (powered by Quarkus 3.27.2) started in 2.823s. Listening on: http://0.0.0.0:42909
+2026-01-22 09:36:56.085|INFO||io.quarkus|Profile prod activated. 
+2026-01-22 09:36:56.085|INFO||io.quarkus|Installed features: [cache, cdi, jackson-jq, kafka-client, kie-addon-messaging-extension, kie-addon-source-files-extension, kogito-serverless-workflow, messaging, messaging-kafka, narayana-jta, oidc-client, openapi-generator, qute, reactive-routes, resteasy, resteasy-client, resteasy-client-jackson, resteasy-client-oidc-filter, resteasy-jackson, security, security-properties-file, smallrye-context-propagation, smallrye-health, smallrye-openapi, smallrye-reactive-messaging-http, vertx]
+2026-01-22 09:37:00.778|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18256: Initialize record store for topic-partition 'newAccountEventType-0' at position -1.
+2026-01-22 09:37:00.870|INFO||org.kie.kogito.event.impl.ProcessEventDispatcher|Starting new process instance with signal 'newAccountEventType'
+Request method:	GET
+Request URI:	http://localhost:42909/account/12345
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	userId=12345
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+content-length: 26
+
+{
+    "processInstanceId": null
+}
+2026-01-22 09:37:02.012|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18256: Initialize record store for topic-partition 'validateAccountEmail-0' at position -1.
+2026-01-22 09:37:02.024|INFO||org.kie.kogito.examples.EventsService|Validate Account received. Workflow data JsonCloudEventData{node={"email":"test@test.com","userId":"12345"}}
+2026-01-22 09:37:03.048|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18256: Initialize record store for topic-partition 'validatedAccountEmail-0' at position -1.
+Request method:	GET
+Request URI:	http://localhost:42909/correlation/6cc2ca12-2cc2-49ec-b1a4-77bf49c341db
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	processInstanceId=6cc2ca12-2cc2-49ec-b1a4-77bf49c341db
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+content-length: 103
+
+{
+    "id": "6cc2ca12-2cc2-49ec-b1a4-77bf49c341db",
+    "workflowdata": {
+        "email": "test@test.com",
+        "userId": "12345"
+    }
+}
+2026-01-22 09:37:04.093|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18256: Initialize record store for topic-partition 'activateAccount-0' at position -1.
+2026-01-22 09:37:04.096|INFO||org.kie.kogito.examples.EventsService|Activate Account received. Workflow data JsonCloudEventData{node={"email":"test@test.com","userId":"12345"}}
+Request method:	GET
+Request URI:	http://localhost:42909/correlation/6cc2ca12-2cc2-49ec-b1a4-77bf49c341db
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	processInstanceId=6cc2ca12-2cc2-49ec-b1a4-77bf49c341db
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+content-length: 103
+
+{
+    "id": "6cc2ca12-2cc2-49ec-b1a4-77bf49c341db",
+    "workflowdata": {
+        "email": "test@test.com",
+        "userId": "12345"
+    }
+}
+2026-01-22 09:37:05.117|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18256: Initialize record store for topic-partition 'activatedAccount-0' at position -1.
+2026-01-22 09:37:05.134|INFO|6cc2ca12-2cc2-49ec-b1a4-77bf49c341db|org.kie.kogito.examples.EventsService|Complete Account Creation received. Workflow data {"email":"test@test.com","userId":"12345"}, KogitoProcessInstanceId 6cc2ca12-2cc2-49ec-b1a4-77bf49c341db 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 40.52 s -- in org.kie.kogito.examples.CorrelationIT
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (default) @ serverless-workflow-correlation-quarkus ---
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ serverless-workflow-correlation-quarkus ---
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-correlation-quarkus/pom.xml to /home/jijo/.m2/repository/org/kie/kogito/examples/serverless-workflow-correlation-quarkus/1.0-SNAPSHOT/serverless-workflow-correlation-quarkus-1.0-SNAPSHOT.pom
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-correlation-quarkus/target/serverless-workflow-correlation-quarkus.jar to /home/jijo/.m2/repository/org/kie/kogito/examples/serverless-workflow-correlation-quarkus/1.0-SNAPSHOT/serverless-workflow-correlation-quarkus-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --< org.kie.kogito.examples:serverless-workflow-correlation-quarkus-mongodb >--
+[INFO] Building Kogito Example :: Serverless Workflow Correlation :: Quarkus :: MongoDB 1.0-SNAPSHOT [4/66]
+[INFO]   from /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-correlation-quarkus-mongodb/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ serverless-workflow-correlation-quarkus-mongodb ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ serverless-workflow-correlation-quarkus-mongodb ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- quarkus:3.27.2:generate-code (default) @ serverless-workflow-correlation-quarkus-mongodb ---
+Downloading from apache.snapshots: https://repository.apache.org/snapshots/org/kie/kogito/examples/serverless-workflow-correlation-quarkus-mongodb/1.0-SNAPSHOT/maven-metadata.xml
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ serverless-workflow-correlation-quarkus-mongodb ---
+[INFO] Recompiling the module because of changed source code.
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 3 source files with javac [debug release 17] to target/classes
+[INFO] 
+[INFO] --- quarkus:3.27.2:generate-code-tests (default) @ serverless-workflow-correlation-quarkus-mongodb ---
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ serverless-workflow-correlation-quarkus-mongodb ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ serverless-workflow-correlation-quarkus-mongodb ---
+[INFO] Recompiling the module because of changed dependency.
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file with javac [debug release 17] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ serverless-workflow-correlation-quarkus-mongodb ---
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ serverless-workflow-correlation-quarkus-mongodb ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-correlation-quarkus-mongodb/target/serverless-workflow-correlation-quarkus-mongodb.jar
+[INFO] 
+[INFO] --- quarkus:3.27.2:build (default) @ serverless-workflow-correlation-quarkus-mongodb ---
+[WARNING] [io.quarkus.config] Unrecognized configuration key "kogito.persistence.type" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.mongodb.database" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "kogito.faultToleranceEnabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.console.json" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "kogito.persistence.proto.marshaller" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.file.json.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.deployment.index] Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq/1.0.0-preview.20240207/jackson-jq-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+[WARNING] [io.quarkus.deployment.index] Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq-extra/1.0.0-preview.20240207/jackson-jq-extra-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+[INFO] Performed addonsConfig discovery, found: AddonsConfig{usePersistence=false, useTracing=false, useMonitoring=false, usePrometheusMonitoring=false, useCloudEvents=true, useExplainability=false, useProcessSVG=false, useEventDrivenDecisions=false, useEventDrivenRules=false, useProcessSources=true}
+[INFO] [org.kie.kogito.quarkus.common.deployment.KogitoAssetsProcessor] Disabling Kogito Fault Tolerance because SmallRye Fault Tolerance extension is not available
+[INFO] Generator discovery performed, found [processes, messaging, usertasks]
+[INFO] Skipping generator 'usertasks' because disabled
+[INFO] Exact method complete match not found with parameters [class com.fasterxml.jackson.databind.JsonNode], searching for a suitable candidate
+[INFO] Generate channel endpoint ChannelInfo [channelName=validateAccountEmail, className=String, triggers=[validateAccountEmail], isInput=false, isDefault=false, cloudEventMode=Optional[STRUCTURED], marshaller=Optional.empty]
+[INFO] Generate channel endpoint ChannelInfo [channelName=newAccountEventType, className=String, triggers=[newAccountEventType], isInput=true, isDefault=false, cloudEventMode=Optional[STRUCTURED], marshaller=Optional.empty]
+[INFO] Generate channel endpoint ChannelInfo [channelName=activatedAccount, className=String, triggers=[activatedAccount], isInput=true, isDefault=false, cloudEventMode=Optional[STRUCTURED], marshaller=Optional.empty]
+[INFO] Generate channel endpoint ChannelInfo [channelName=activateAccount, className=String, triggers=[activateAccount], isInput=false, isDefault=false, cloudEventMode=Optional[STRUCTURED], marshaller=Optional.empty]
+[INFO] Generate channel endpoint ChannelInfo [channelName=validatedAccountEmail, className=String, triggers=[validatedAccountEmail], isInput=true, isDefault=false, cloudEventMode=Optional[STRUCTURED], marshaller=Optional.empty]
+[WARNING] [io.quarkus.deployment.steps.ReflectiveHierarchyStep] Unable to properly register the hierarchy of the following classes for reflection as they are not in the Jandex index:
+	- org.kie.kogito.serverless.workflow.models.JsonNodeModelOutput (source: SmallRyeOpenApiProcessor > null > org.kie.kogito.serverless.workflow.models.JsonNodeModelOutput)
+Consider adding them to the index either by creating a Jandex index for your dependency via the Maven plugin, an empty META-INF/beans.xml or quarkus.index-dependency properties.
+[INFO] [io.quarkus.deployment.QuarkusAugmentor] Quarkus augmentation completed in 3447ms
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (default) @ serverless-workflow-correlation-quarkus-mongodb ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.kie.kogito.examples.CorrelationIT
+2026-01-22 09:37:18,795 WARN  [io.qua.dep.index] (build-15) Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq/1.0.0-preview.20240207/jackson-jq-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+2026-01-22 09:37:18,920 WARN  [io.qua.dep.index] (build-15) Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq-extra/1.0.0-preview.20240207/jackson-jq-extra-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+2026-01-22 09:37:19.914|INFO||org.testcontainers.DockerClientFactory|Testcontainers version: 1.21.4
+2026-01-22 09:37:20.156|INFO||org.testcontainers.dockerclient.DockerClientProviderStrategy|Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2026-01-22 09:37:20.344|INFO||org.testcontainers.dockerclient.DockerClientProviderStrategy|Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2026-01-22 09:37:20.347|INFO||org.testcontainers.DockerClientFactory|Docker host IP address is localhost
+2026-01-22 09:37:20.368|INFO||org.testcontainers.DockerClientFactory|Connected to docker: 
+  Server Version: 29.1.4
+  API Version: 1.52
+  Operating System: Ubuntu 22.04.5 LTS
+  Total Memory: 62785 MB
+2026-01-22 09:37:20.382|INFO||org.testcontainers.images.PullPolicy|Image pull policy will be performed by: DefaultPullPolicy()
+2026-01-22 09:37:20.384|INFO||org.testcontainers.utility.ImageNameSubstitutor|Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2026-01-22 09:37:20.388|INFO||org.testcontainers.DockerClientFactory|Checking the system...
+2026-01-22 09:37:20.389|INFO||org.testcontainers.DockerClientFactory|✔︎ Docker server version should be at least 1.6.0
+2026-01-22 09:37:20.410|INFO||io.quarkus.devservices.keycloak.KeycloakDevServicesProcessor|Using Quarkus powered Keycloak distribution
+2026-01-22 09:37:22.093|INFO||tc.quay.io/keycloak/keycloak:26.3.4|Creating container for image: quay.io/keycloak/keycloak:26.3.4
+2026-01-22 09:37:22.125|INFO||tc.testcontainers/ryuk:0.12.0|Creating container for image: testcontainers/ryuk:0.12.0
+2026-01-22 09:37:22.280|INFO||tc.testcontainers/ryuk:0.12.0|Container testcontainers/ryuk:0.12.0 is starting: b8219c3dc60b1c6bb59917410ed62a624c8fee0151e57c4f2729dab50afaa94d
+2026-01-22 09:37:22.867|INFO||tc.testcontainers/ryuk:0.12.0|Container testcontainers/ryuk:0.12.0 started in PT0.742358313S
+2026-01-22 09:37:23.001|INFO||tc.quay.io/keycloak/keycloak:26.3.4|Container quay.io/keycloak/keycloak:26.3.4 is starting: a7b34aaf5888259302f0aa6b351bc99b05769cf5282e71d0150a1075e0f3f8f9
+2026-01-22 09:37:40.009|INFO||tc.quay.io/keycloak/keycloak:26.3.4|Container quay.io/keycloak/keycloak:26.3.4 started in PT17.916557112S
+2026-01-22 09:37:42.407|INFO||io.quarkus.devservices.keycloak.KeycloakDevServicesProcessor|Dev Services for Keycloak started.
+2026-01-22 09:37:42.443|INFO||tc.redpandadata/redpanda:v24.3.1|Creating container for image: redpandadata/redpanda:v24.3.1
+2026-01-22 09:37:42.527|INFO||tc.redpandadata/redpanda:v24.3.1|Container redpandadata/redpanda:v24.3.1 is starting: 09a585737c174fa6c31dfee6d5fcdca7446827f3c83df2bd28252f0d72173ba8
+2026-01-22 09:37:43.913|INFO||tc.redpandadata/redpanda:v24.3.1|Container redpandadata/redpanda:v24.3.1 started in PT1.469851715S
+2026-01-22 09:37:43.917|INFO||io.quarkus.kafka.client.deployment.DevServicesKafkaProcessor|Dev Services for Kafka started. Other Quarkus applications in dev mode will find the broker automatically. For Quarkus applications in production mode, you can connect to this by starting your application with -Dkafka.bootstrap.servers=OUTSIDE://localhost:33245
+Executing "/home/jijo/.sdkman/candidates/java/17.0.17-tem/bin/java -Dquarkus.http.port=0 -Dquarkus.http.ssl-port=8444 -Dtest.url=http://localhost:0 -Dquarkus.log.file.path=/home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-correlation-quarkus-mongodb/target/quarkus.log -Dquarkus.log.file.enabled=true -Dquarkus.log.category."io.quarkus".level=INFO -Dquarkus.profile=prod -Dquarkus.oidc-client.client-id=quarkus-app -Dclient.quarkus.oidc.auth-server-url=http://localhost:33243/realms/quarkus -Dkafka.bootstrap.servers=OUTSIDE://localhost:33245 -Dkeycloak.url=http://localhost:33243 -Dquarkus.oidc-client.auth-server-url=http://localhost:33243/realms/quarkus -Dkeycloak.realms=quarkus -Dquarkus.oidc-client.token-path=/protocol/openid-connect/tokens -Dquarkus.oidc-client.credentials.secret=secret -Doidc.users=alice=alice,bob=bob -jar /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-correlation-quarkus-mongodb/target/quarkus-app/quarkus-run.jar"
+__  ____  __  _____   ___  __ ____  ______ 
+ --/ __ \/ / / / _ | / _ \/ //_/ / / / __/ 
+ -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \   
+--\___\_\____/_/ |_/_/|_/_/|_|\____/___/   
+2026-01-22 09:37:46.461|WARN||io.quarkus.config|Unrecognized configuration key "kogito.persistence.type" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2026-01-22 09:37:46.461|WARN||io.quarkus.config|Unrecognized configuration key "quarkus.mongodb.database" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2026-01-22 09:37:46.461|WARN||io.quarkus.config|Unrecognized configuration key "kogito.persistence.proto.marshaller" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2026-01-22 09:37:47.229|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18229: Configured topics for channel 'validatedAccountEmail': [validatedAccountEmail]
+2026-01-22 09:37:47.246|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18214: Key deserializer omitted, using String as default
+2026-01-22 09:37:47.534|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18229: Configured topics for channel 'activatedAccount': [activatedAccount]
+2026-01-22 09:37:47.538|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18214: Key deserializer omitted, using String as default
+2026-01-22 09:37:47.564|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18229: Configured topics for channel 'newAccountEventType': [newAccountEventType]
+2026-01-22 09:37:47.567|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18214: Key deserializer omitted, using String as default
+2026-01-22 09:37:47.592|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18229: Configured topics for channel 'activate': [activateAccount]
+2026-01-22 09:37:47.597|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18214: Key deserializer omitted, using String as default
+2026-01-22 09:37:47.616|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18229: Configured topics for channel 'validate': [validateAccountEmail]
+2026-01-22 09:37:47.621|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18214: Key deserializer omitted, using String as default
+2026-01-22 09:37:47.688|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18258: Kafka producer kafka-producer-validateAccountEmail, connected to Kafka brokers 'OUTSIDE://localhost:33245', is configured to write records to 'validateAccountEmail'
+2026-01-22 09:37:47.708|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18258: Kafka producer kafka-producer-validated, connected to Kafka brokers 'OUTSIDE://localhost:33245', is configured to write records to 'validatedAccountEmail'
+2026-01-22 09:37:47.722|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18258: Kafka producer kafka-producer-start, connected to Kafka brokers 'OUTSIDE://localhost:33245', is configured to write records to 'newAccountEventType'
+2026-01-22 09:37:47.733|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18258: Kafka producer kafka-producer-activateAccount, connected to Kafka brokers 'OUTSIDE://localhost:33245', is configured to write records to 'activateAccount'
+2026-01-22 09:37:47.746|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18258: Kafka producer kafka-producer-activated, connected to Kafka brokers 'OUTSIDE://localhost:33245', is configured to write records to 'activatedAccount'
+2026-01-22 09:37:47.812|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18257: Kafka consumer kafka-consumer-activatedAccount, connected to Kafka brokers 'OUTSIDE://localhost:33245', belongs to the 'kogito-sw-callback' consumer group and is configured to poll records from [activatedAccount]
+2026-01-22 09:37:47.815|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18257: Kafka consumer kafka-consumer-validatedAccountEmail, connected to Kafka brokers 'OUTSIDE://localhost:33245', belongs to the 'kogito-sw-callback' consumer group and is configured to poll records from [validatedAccountEmail]
+2026-01-22 09:37:47.817|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18257: Kafka consumer kafka-consumer-newAccountEventType, connected to Kafka brokers 'OUTSIDE://localhost:33245', belongs to the 'kogito-sw-callback' consumer group and is configured to poll records from [newAccountEventType]
+2026-01-22 09:37:47.818|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18257: Kafka consumer kafka-consumer-validate, connected to Kafka brokers 'OUTSIDE://localhost:33245', belongs to the 'kogito-sw-callback' consumer group and is configured to poll records from [validateAccountEmail]
+2026-01-22 09:37:47.820|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18257: Kafka consumer kafka-consumer-activate, connected to Kafka brokers 'OUTSIDE://localhost:33245', belongs to the 'kogito-sw-callback' consumer group and is configured to poll records from [activateAccount]
+2026-01-22 09:37:47.871|INFO||org.kie.kogito.event.impl.AbstractMessageConsumer|Consumer for validatedAccountEmail started
+2026-01-22 09:37:47.880|INFO||org.kie.kogito.event.impl.AbstractMessageConsumer|Consumer for newAccountEventType started
+2026-01-22 09:37:48.030|INFO||org.kie.kogito.event.impl.AbstractMessageConsumer|Consumer for activatedAccount started
+2026-01-22 09:37:48.051|INFO||org.kie.kogito.addon.quarkus.messaging.common.QuarkusKogitoExtensionInitializer|Registered Kogito CloudEvent extension
+2026-01-22 09:37:48.124|INFO||io.quarkus|serverless-workflow-correlation-quarkus-mongodb 1.0-SNAPSHOT on JVM (powered by Quarkus 3.27.2) started in 2.842s. Listening on: http://0.0.0.0:45427
+2026-01-22 09:37:48.125|INFO||io.quarkus|Profile prod activated. 
+2026-01-22 09:37:48.125|INFO||io.quarkus|Installed features: [cache, cdi, jackson-jq, kafka-client, kie-addon-messaging-extension, kie-addon-source-files-extension, kogito-serverless-workflow, messaging, messaging-kafka, narayana-jta, oidc-client, openapi-generator, qute, reactive-routes, resteasy, resteasy-client, resteasy-client-jackson, resteasy-client-oidc-filter, resteasy-jackson, security, security-properties-file, smallrye-context-propagation, smallrye-health, smallrye-openapi, smallrye-reactive-messaging-http, vertx]
+2026-01-22 09:37:52.555|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18256: Initialize record store for topic-partition 'newAccountEventType-0' at position -1.
+2026-01-22 09:37:52.622|INFO||org.kie.kogito.event.impl.ProcessEventDispatcher|Starting new process instance with signal 'newAccountEventType'
+Request method:	GET
+Request URI:	http://localhost:45427/account/12345
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	userId=12345
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+content-length: 26
+
+{
+    "processInstanceId": null
+}
+2026-01-22 09:37:53.800|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18256: Initialize record store for topic-partition 'validateAccountEmail-0' at position -1.
+2026-01-22 09:37:53.814|INFO||org.kie.kogito.examples.EventsService|Validate Account received. Workflow data JsonCloudEventData{node={"email":"test@test.com","userId":"12345"}}
+2026-01-22 09:37:54.840|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18256: Initialize record store for topic-partition 'validatedAccountEmail-0' at position -1.
+2026-01-22 09:37:54.891|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18256: Initialize record store for topic-partition 'activateAccount-0' at position -1.
+2026-01-22 09:37:54.893|INFO||org.kie.kogito.examples.EventsService|Activate Account received. Workflow data JsonCloudEventData{node={"email":"test@test.com","userId":"12345"}}
+Request method:	GET
+Request URI:	http://localhost:45427/correlation/02b08040-097c-462f-8b03-266dba367f6d
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	processInstanceId=02b08040-097c-462f-8b03-266dba367f6d
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+content-length: 103
+
+{
+    "id": "02b08040-097c-462f-8b03-266dba367f6d",
+    "workflowdata": {
+        "email": "test@test.com",
+        "userId": "12345"
+    }
+}
+2026-01-22 09:37:55.912|INFO||io.smallrye.reactive.messaging.kafka|SRMSG18256: Initialize record store for topic-partition 'activatedAccount-0' at position -1.
+2026-01-22 09:37:55.930|INFO|02b08040-097c-462f-8b03-266dba367f6d|org.kie.kogito.examples.EventsService|Complete Account Creation received. Workflow data {"email":"test@test.com","userId":"12345"}, KogitoProcessInstanceId 02b08040-097c-462f-8b03-266dba367f6d 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 39.74 s -- in org.kie.kogito.examples.CorrelationIT
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (default) @ serverless-workflow-correlation-quarkus-mongodb ---
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ serverless-workflow-correlation-quarkus-mongodb ---
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-correlation-quarkus-mongodb/pom.xml to /home/jijo/.m2/repository/org/kie/kogito/examples/serverless-workflow-correlation-quarkus-mongodb/1.0-SNAPSHOT/serverless-workflow-correlation-quarkus-mongodb-1.0-SNAPSHOT.pom
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-correlation-quarkus-mongodb/target/serverless-workflow-correlation-quarkus-mongodb.jar to /home/jijo/.m2/repository/org/kie/kogito/examples/serverless-workflow-correlation-quarkus-mongodb/1.0-SNAPSHOT/serverless-workflow-correlation-quarkus-mongodb-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --< org.kie.kogito.examples:serverless-workflow-custom-function-knative >--
+[INFO] Building Kogito Example :: Serverless Workflow Custom Function :: Quarkus 1.0-SNAPSHOT [5/66]
+[INFO]   from /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-custom-function-knative/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ serverless-workflow-custom-function-knative ---
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ serverless-workflow-custom-function-knative ---
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-custom-function-knative/pom.xml to /home/jijo/.m2/repository/org/kie/kogito/examples/serverless-workflow-custom-function-knative/1.0-SNAPSHOT/serverless-workflow-custom-function-knative-1.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ------< org.kie.kogito.examples:custom-function-knative-service >-------
+[INFO] Building Kogito Example :: Serverless Workflow Custom Function Knative :: Service 1.0-SNAPSHOT [6/66]
+[INFO]   from /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-custom-function-knative/custom-function-knative-service/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-knative-events/3.27.2/quarkus-funqy-knative-events-3.27.2.pom
+Progress (1): 1.8 kBProgress (1): 2.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-knative-events/3.27.2/quarkus-funqy-knative-events-3.27.2.pom (2.2 kB at 9.1 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-knative-events-parent/3.27.2/quarkus-funqy-knative-events-parent-3.27.2.pom
+Progress (1): 765 B                   Downloaded from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-knative-events-parent/3.27.2/quarkus-funqy-knative-events-parent-3.27.2.pom (765 B at 14 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-parent/3.27.2/quarkus-funqy-parent-3.27.2.pom
+Progress (1): 889 B                   Downloaded from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-parent/3.27.2/quarkus-funqy-parent-3.27.2.pom (889 B at 16 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-server-common/3.27.2/quarkus-funqy-server-common-3.27.2.pom
+Progress (1): 1.8 kBProgress (1): 2.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-server-common/3.27.2/quarkus-funqy-server-common-3.27.2.pom (2.3 kB at 43 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-server-common-parent/3.27.2/quarkus-funqy-server-common-parent-3.27.2.pom
+Progress (1): 762 B                   Downloaded from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-server-common-parent/3.27.2/quarkus-funqy-server-common-parent-3.27.2.pom (762 B at 14 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-knative-events/3.27.2/quarkus-funqy-knative-events-3.27.2.jar
+Progress (1): 0.9/47 kBProgress (1): 2.3/47 kBProgress (1): 3.6/47 kBProgress (1): 5.0/47 kBProgress (1): 6.4/47 kBProgress (1): 7.7/47 kBProgress (1): 9.1/47 kBProgress (1): 10/47 kB Progress (1): 12/47 kBProgress (1): 13/47 kBProgress (1): 15/47 kBProgress (1): 16/47 kBProgress (1): 17/47 kBProgress (1): 19/47 kBProgress (1): 20/47 kBProgress (1): 21/47 kBProgress (1): 23/47 kBProgress (1): 24/47 kBProgress (1): 26/47 kBProgress (1): 27/47 kBProgress (1): 28/47 kBProgress (1): 30/47 kBProgress (1): 31/47 kBProgress (1): 32/47 kBProgress (1): 34/47 kBProgress (1): 35/47 kBProgress (1): 36/47 kBProgress (1): 38/47 kBProgress (1): 39/47 kBProgress (1): 41/47 kBProgress (1): 42/47 kBProgress (1): 43/47 kBProgress (1): 45/47 kBProgress (1): 47 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-knative-events/3.27.2/quarkus-funqy-knative-events-3.27.2.jar (47 kB at 909 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-server-common/3.27.2/quarkus-funqy-server-common-3.27.2.jar
+Progress (1): 3.8/38 kBProgress (1): 8.0/38 kBProgress (1): 12/38 kB Progress (1): 16/38 kBProgress (1): 21/38 kBProgress (1): 25/38 kBProgress (1): 29/38 kBProgress (1): 33/38 kBProgress (1): 38 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-server-common/3.27.2/quarkus-funqy-server-common-3.27.2.jar (38 kB at 596 kB/s)
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ custom-function-knative-service ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ custom-function-knative-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ custom-function-knative-service ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 4 source files with javac [debug release 17] to target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ custom-function-knative-service ---
+[INFO] skip non existing resourceDirectory /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-custom-function-knative/custom-function-knative-service/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ custom-function-knative-service ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ custom-function-knative-service ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ custom-function-knative-service ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-custom-function-knative/custom-function-knative-service/target/custom-function-knative-service.jar
+[INFO] 
+[INFO] --- quarkus:3.27.2:build (default) @ custom-function-knative-service ---
+Downloading from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-knative-events-deployment/3.27.2/quarkus-funqy-knative-events-deployment-3.27.2.pom
+Progress (1): 2.2 kBProgress (1): 2.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-knative-events-deployment/3.27.2/quarkus-funqy-knative-events-deployment-3.27.2.pom (2.6 kB at 41 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-server-common-deployment/3.27.2/quarkus-funqy-server-common-deployment-3.27.2.pom
+Progress (1): 2.0 kBProgress (1): 2.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-server-common-deployment/3.27.2/quarkus-funqy-server-common-deployment-3.27.2.pom (2.1 kB at 33 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-server-common-deployment/3.27.2/quarkus-funqy-server-common-deployment-3.27.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-knative-events-deployment/3.27.2/quarkus-funqy-knative-events-deployment-3.27.2.jar
+Progress (1): 3.8/21 kBProgress (1): 8.0/21 kBProgress (1): 12/21 kB Progress (1): 16/21 kBProgress (1): 21/21 kBProgress (1): 21 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-server-common-deployment/3.27.2/quarkus-funqy-server-common-deployment-3.27.2.jar (21 kB at 123 kB/s)
+Progress (1): 0.9/11 kBProgress (1): 2.3/11 kBProgress (1): 3.6/11 kBProgress (1): 5.0/11 kBProgress (1): 6.4/11 kBProgress (1): 7.8/11 kBProgress (1): 9.1/11 kBProgress (1): 10/11 kB Progress (1): 11 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-funqy-knative-events-deployment/3.27.2/quarkus-funqy-knative-events-deployment-3.27.2.jar (11 kB at 59 kB/s)
+[INFO] [io.quarkus.deployment.QuarkusAugmentor] Quarkus augmentation completed in 2104ms
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (default) @ custom-function-knative-service ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (default) @ custom-function-knative-service ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ custom-function-knative-service ---
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-custom-function-knative/custom-function-knative-service/pom.xml to /home/jijo/.m2/repository/org/kie/kogito/examples/custom-function-knative-service/1.0-SNAPSHOT/custom-function-knative-service-1.0-SNAPSHOT.pom
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-custom-function-knative/custom-function-knative-service/target/custom-function-knative-service.jar to /home/jijo/.m2/repository/org/kie/kogito/examples/custom-function-knative-service/1.0-SNAPSHOT/custom-function-knative-service-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] ------------------< org.kie.kogito.examples:workflow >------------------
+[INFO] Building Kogito Example :: Serverless Workflow Custom Function Knative :: Workflow 1.0-SNAPSHOT [7/66]
+[INFO]   from /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-custom-function-knative/workflow/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ workflow ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ workflow ---
+[INFO] Copying 4 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- quarkus:3.27.2:generate-code (default) @ workflow ---
+Downloading from apache.snapshots: https://repository.apache.org/snapshots/org/kie/kogito/examples/workflow/1.0-SNAPSHOT/maven-metadata.xml
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ workflow ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- quarkus:3.27.2:generate-code-tests (default) @ workflow ---
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ workflow ---
+[INFO] skip non existing resourceDirectory /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-custom-function-knative/workflow/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ workflow ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ workflow ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ workflow ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-custom-function-knative/workflow/target/workflow.jar
+[INFO] 
+[INFO] --- quarkus:3.27.2:build (default) @ workflow ---
+[WARNING] [io.quarkus.config] Unrecognized configuration key "kogito.faultToleranceEnabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "kogito.devservices.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.console.json" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.file.json.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.deployment.index] Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq/1.0.0-preview.20240207/jackson-jq-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+[WARNING] [io.quarkus.deployment.index] Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq-extra/1.0.0-preview.20240207/jackson-jq-extra-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+[INFO] Performed addonsConfig discovery, found: AddonsConfig{usePersistence=false, useTracing=false, useMonitoring=false, usePrometheusMonitoring=false, useCloudEvents=true, useExplainability=false, useProcessSVG=false, useEventDrivenDecisions=false, useEventDrivenRules=false, useProcessSources=true}
+[INFO] [org.kie.kogito.quarkus.common.deployment.KogitoAssetsProcessor] Disabling Kogito Fault Tolerance because SmallRye Fault Tolerance extension is not available
+[INFO] Generator discovery performed, found [processes, messaging, usertasks]
+[INFO] Skipping generator 'messaging' because disabled
+[INFO] Skipping generator 'usertasks' because disabled
+Invalid AnsiLogger Stream -> Swapping to default sdt out logger.
+[[34;1mINFO[m] Adding existing Role with name: service-discovery-role.
+[[34;1mINFO[m] Adding existing RoleBinding with name: service-discovery-rolebinding.
+[WARNING] [io.quarkus.deployment.steps.ReflectiveHierarchyStep] Unable to properly register the hierarchy of the following classes for reflection as they are not in the Jandex index:
+	- org.kie.kogito.serverless.workflow.models.JsonNodeModelOutput (source: SmallRyeOpenApiProcessor > null > org.kie.kogito.serverless.workflow.models.JsonNodeModelOutput)
+Consider adding them to the index either by creating a Jandex index for your dependency via the Maven plugin, an empty META-INF/beans.xml or quarkus.index-dependency properties.
+[INFO] [io.quarkus.deployment.QuarkusAugmentor] Quarkus augmentation completed in 4922ms
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (default) @ workflow ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (default) @ workflow ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ workflow ---
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-custom-function-knative/workflow/pom.xml to /home/jijo/.m2/repository/org/kie/kogito/examples/workflow/1.0-SNAPSHOT/workflow-1.0-SNAPSHOT.pom
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-custom-function-knative/workflow/target/workflow.jar to /home/jijo/.m2/repository/org/kie/kogito/examples/workflow/1.0-SNAPSHOT/workflow-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] ------< org.kie.kogito.examples:serverless-workflow-custom-type >-------
+[INFO] Building Kogito Example :: Serverless Workflow Custom type :: Quarkus 1.0-SNAPSHOT [8/66]
+[INFO]   from /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-custom-type/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ serverless-workflow-custom-type ---
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ serverless-workflow-custom-type ---
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-custom-type/pom.xml to /home/jijo/.m2/repository/org/kie/kogito/examples/serverless-workflow-custom-type/1.0-SNAPSHOT/serverless-workflow-custom-type-1.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ---< org.kie.kogito.examples:serverless-workflow-custom-rpc-server >----
+[INFO] Building Kogito Example :: Serverless Workflow Custom RPC Server :: Quarkus 1.0-SNAPSHOT [9/66]
+[INFO]   from /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-custom-type/serverless-workflow-custom-rpc-server/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ serverless-workflow-custom-rpc-server ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ serverless-workflow-custom-rpc-server ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-custom-type/serverless-workflow-custom-rpc-server/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ serverless-workflow-custom-rpc-server ---
+[INFO] Recompiling the module because of changed source code.
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 2 source files with javac [debug release 17] to target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ serverless-workflow-custom-rpc-server ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-custom-type/serverless-workflow-custom-rpc-server/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ serverless-workflow-custom-rpc-server ---
+[INFO] Recompiling the module because of changed dependency.
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file with javac [debug release 17] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ serverless-workflow-custom-rpc-server ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.kie.kogito.examples.sw.custom.CalculatorClientTest
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s -- in org.kie.kogito.examples.sw.custom.CalculatorClientTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ serverless-workflow-custom-rpc-server ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-custom-type/serverless-workflow-custom-rpc-server/target/serverless-workflow-custom-rpc-server-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ serverless-workflow-custom-rpc-server ---
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-custom-type/serverless-workflow-custom-rpc-server/pom.xml to /home/jijo/.m2/repository/org/kie/kogito/examples/serverless-workflow-custom-rpc-server/1.0-SNAPSHOT/serverless-workflow-custom-rpc-server-1.0-SNAPSHOT.pom
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-custom-type/serverless-workflow-custom-rpc-server/target/serverless-workflow-custom-rpc-server-1.0-SNAPSHOT.jar to /home/jijo/.m2/repository/org/kie/kogito/examples/serverless-workflow-custom-rpc-server/1.0-SNAPSHOT/serverless-workflow-custom-rpc-server-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] -------< org.kie.kogito.examples:serverless-workflow-custom-rpc >-------
+[INFO] Building Kogito Example :: Serverless Workflow Custom RPC :: Runtime 1.0-SNAPSHOT [10/66]
+[INFO]   from /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-custom-type/serverless-workflow-custom-rpc/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ serverless-workflow-custom-rpc ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ serverless-workflow-custom-rpc ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ serverless-workflow-custom-rpc ---
+[INFO] Recompiling the module because of changed dependency.
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 2 source files with javac [debug release 17] to target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Kogito Example :: Serverless Workflow Compensation :: Quarkus 1.0-SNAPSHOT SUCCESS [ 43.174 s]
+[INFO] Kogito Example :: Serverless Workflow Consuming Events Over HTTP :: Quarkus 1.0-SNAPSHOT SUCCESS [ 41.389 s]
+[INFO] Kogito Example :: Serverless Workflow Correlation :: Quarkus 1.0-SNAPSHOT SUCCESS [ 53.956 s]
+[INFO] Kogito Example :: Serverless Workflow Correlation :: Quarkus :: MongoDB 1.0-SNAPSHOT SUCCESS [ 50.771 s]
+[INFO] Kogito Example :: Serverless Workflow Custom Function :: Quarkus 1.0-SNAPSHOT SUCCESS [  0.013 s]
+[INFO] Kogito Example :: Serverless Workflow Custom Function Knative :: Service 1.0-SNAPSHOT SUCCESS [  3.595 s]
+[INFO] Kogito Example :: Serverless Workflow Custom Function Knative :: Workflow 1.0-SNAPSHOT SUCCESS [  8.894 s]
+[INFO] Kogito Example :: Serverless Workflow Custom type :: Quarkus 1.0-SNAPSHOT SUCCESS [  0.047 s]
+[INFO] Kogito Example :: Serverless Workflow Custom RPC Server :: Quarkus 1.0-SNAPSHOT SUCCESS [  0.753 s]
+[INFO] Kogito Example :: Serverless Workflow Custom RPC :: Runtime 1.0-SNAPSHOT FAILURE [  0.247 s]
+[INFO] Kogito Example :: Serverless Workflow Custom RPC :: Deployment 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Custom RPC Client :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Data Index persistence addon :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Data Index :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow :: DMN:: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Error :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Events :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Expression :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow For Each :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Functions And Events :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Functions :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow :: Funqy 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow :: Funqy :: Services 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow :: Funqy :: Workflow 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Greeting :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow gRPC example 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Greeting :: gRPC Server :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Greeting :: gRPC Client :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Hello World :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase :: Aggregator 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase :: Flow 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase :: UI 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Newsletter Subscription Showcase 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Newsletter Subscription :: Subscription Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Newsletter Subscription :: Subscription Flow 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Oauth2 Orchestration Example 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Oauth2 Orchestration Example :: ACME Financial Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Oauth2 Orchestration Example :: Currency Exchange 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Order Processing 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Parallel Execution :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Query and Answer Showcase 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Query and Answer :: Workflow Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Query and Answer :: Query Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Order Saga :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Service Calls :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Stock Profit 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Portfolio Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Stock Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Mock Stock Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Subtraction Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Multiplication Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Full Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Function Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Spec Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Testing with REST Assured :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Timeouts Showcase Embedded 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Timeouts Showcase Extended 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Timeouts Showcase Operator Dev Profile 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Python :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow 999-SNAPSHOT . SKIPPED
+[INFO] Kogito Example :: SonataFlow :: Java Embedded examples 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Fault Tolerance :: Quarkus 1.0.0-SNAPSHOT SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:25 min
+[INFO] Finished at: 2026-01-22T09:38:11-08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project serverless-workflow-custom-rpc: Fatal error compiling: java.lang.IllegalArgumentException: Starting with Quarkus 3.25, legacy config classes (deprecated since Quarkus 3.19) are not supported anymore. Please migrate the configuration of your extension to interfaces annotated with @ConfigMapping. See https://quarkus.io/guides/config-mappings#config-mappings for more information. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :serverless-workflow-custom-rpc

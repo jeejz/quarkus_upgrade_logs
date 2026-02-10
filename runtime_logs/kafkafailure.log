@@ -1,0 +1,310 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.version: 5.15
+[INFO] os.detected.version.major: 5
+[INFO] os.detected.version.minor: 15
+[INFO] os.detected.release: ubuntu
+[INFO] os.detected.release.version: 22.04
+[INFO] os.detected.release.like.ubuntu: true
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO] 
+[INFO] -----< org.kie.kogito.examples:process-kafka-persistence-quarkus >------
+[INFO] Building Kogito Example :: Process Kafka Persistence Quarkus 999-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ process-kafka-persistence-quarkus ---
+[INFO] Deleting /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/process-kafka-persistence-quarkus/target
+[INFO] 
+[INFO] --- directory:1.0:highest-basedir (directories) @ process-kafka-persistence-quarkus ---
+[INFO] Highest basedir set to: /home/jijo/apache_src/kogito-examples
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ process-kafka-persistence-quarkus ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-maven-version) @ process-kafka-persistence-quarkus ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-java-version) @ process-kafka-persistence-quarkus ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- checkstyle:3.3.0:check (default) @ process-kafka-persistence-quarkus ---
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.13.0:format (default) @ process-kafka-persistence-quarkus ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 4
+[INFO] Successfully formatted:          0 file(s)
+[INFO] Fail to format:                  0 file(s)
+[INFO] Skipped:                         4 file(s)
+[INFO] Read only skipped:               0 file(s)
+[INFO] Approximate time taken:          0s
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (default) @ process-kafka-persistence-quarkus ---
+[INFO] Processed 4 files in 00:00.228 (Already Sorted: 4, Needed Sorting: 0)
+[INFO] 
+[INFO] --- remote-resources:3.2.0:process (process-resource-bundles) @ process-kafka-persistence-quarkus ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.5
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:2.5:resources (default-resources) @ process-kafka-persistence-quarkus ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ process-kafka-persistence-quarkus ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 3 source files with javac [debug deprecation release 17] to target/classes
+[INFO] 
+[INFO] --- resources:2.5:testResources (default-testResources) @ process-kafka-persistence-quarkus ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ process-kafka-persistence-quarkus ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug deprecation release 17] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.3.1:test (default-test) @ process-kafka-persistence-quarkus ---
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ process-kafka-persistence-quarkus ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/process-kafka-persistence-quarkus/target/process-kafka-persistence-quarkus.jar
+[INFO] 
+[INFO] --- jar:3.2.0:test-jar (test-jar) @ process-kafka-persistence-quarkus ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/process-kafka-persistence-quarkus/target/process-kafka-persistence-quarkus-tests.jar
+[INFO] 
+[INFO] --- source:3.2.1:jar-no-fork (attach-sources) @ process-kafka-persistence-quarkus ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/process-kafka-persistence-quarkus/target/process-kafka-persistence-quarkus-sources.jar
+[INFO] 
+[INFO] --- source:3.2.1:test-jar-no-fork (attach-test-sources) @ process-kafka-persistence-quarkus ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/process-kafka-persistence-quarkus/target/process-kafka-persistence-quarkus-test-sources.jar
+[INFO] 
+[INFO] --- quarkus:3.27.1:build (default) @ process-kafka-persistence-quarkus ---
+[WARNING] [io.quarkus.config] Unrecognized configuration key "kogito.persistence.type" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.console.json" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.file.json.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.arc.deployment.SplitPackageProcessor] Detected a split package usage which is considered a bad practice and should be avoided. Following packages were detected in multiple archives: 
+- "org.kie.kogito.decision" found in [org.kie.kogito:kogito-api:999-20260121.015419-514, org.kie.kogito:kogito-dmn:999-20260121.015419-514]
+[INFO] Performed addonsConfig discovery, found: AddonsConfig{usePersistence=true, useTracing=false, useMonitoring=false, usePrometheusMonitoring=false, useCloudEvents=false, useExplainability=false, useProcessSVG=false, useEventDrivenDecisions=false, useEventDrivenRules=false, useProcessSources=false}
+[INFO] Generator discovery performed, found [processes, rules, decisions, predictions, usertasks, messaging]
+[INFO] Skipping generator 'decisions' because disabled
+[INFO] Skipping generator 'predictions' because disabled
+[INFO] Skipping generator 'messaging' because disabled
+[INFO] No rule unit is present: generate KieRuntimeBuilder implementation.
+[WARNING] [io.quarkus.deployment.steps.ReflectiveHierarchyStep] Unable to properly register the hierarchy of the following classes for reflection as they are not in the Jandex index:
+	- org.acme.deals.DealreviewsModelOutput (source: SmallRyeOpenApiProcessor > null > org.acme.deals.DealreviewsModelOutput)
+	- org.acme.deals.DealsModelOutput (source: SmallRyeOpenApiProcessor > null > org.acme.deals.DealsModelOutput)
+Consider adding them to the index either by creating a Jandex index for your dependency via the Maven plugin, an empty META-INF/beans.xml or quarkus.index-dependency properties.
+[INFO] [io.quarkus.deployment.QuarkusAugmentor] Quarkus augmentation completed in 6669ms
+[INFO] 
+[INFO] --- resources:2.5:copy-resources (add-it-resources) @ process-kafka-persistence-quarkus ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 12 resources
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (integration-test) @ process-kafka-persistence-quarkus ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.acme.deals.DealsRestIT
+2026-01-21 05:33:51,600 WARN  [io.qua.boo.BootstrapAppModelFactory] (main) Expected project directory /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/process-kafka-persistence-quarkus/target/test-run does not match current project directory /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/process-kafka-persistence-quarkus
+2026-01-21 05:33:58.421|INFO||org.testcontainers.DockerClientFactory|Testcontainers version: 2.0.3
+2026-01-21 05:33:58.632|INFO||org.testcontainers.dockerclient.DockerClientProviderStrategy|Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2026-01-21 05:33:58.946|INFO||org.testcontainers.dockerclient.DockerClientProviderStrategy|Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2026-01-21 05:33:58.948|INFO||org.testcontainers.DockerClientFactory|Docker host IP address is localhost
+2026-01-21 05:33:58.972|INFO||org.testcontainers.DockerClientFactory|Connected to docker: 
+  Server Version: 29.1.4
+  API Version: 1.52
+  Operating System: Ubuntu 22.04.5 LTS
+  Total Memory: 62785 MB
+2026-01-21 05:33:58.979|INFO||org.testcontainers.images.PullPolicy|Image pull policy will be performed by: DefaultPullPolicy()
+2026-01-21 05:33:58.980|INFO||org.testcontainers.utility.ImageNameSubstitutor|Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2026-01-21 05:33:58.983|INFO||org.testcontainers.DockerClientFactory|Checking the system...
+2026-01-21 05:33:58.983|INFO||org.testcontainers.DockerClientFactory|✔︎ Docker server version should be at least 1.6.0
+2026-01-21 05:33:59.040|INFO||org.testcontainers.utility.ImageNameSubstitutor|Using mirror.gcr.io/redpandadata/redpanda:v24.3.1 as a substitute image for redpandadata/redpanda:v24.3.1 (using image substitutor: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor'))
+2026-01-21 05:34:00.175|INFO||tc.mirror.gcr.io/redpandadata/redpanda:v24.3.1|Creating container for image: mirror.gcr.io/redpandadata/redpanda:v24.3.1
+2026-01-21 05:34:00.184|INFO||org.testcontainers.utility.ImageNameSubstitutor|Using mirror.gcr.io/testcontainers/ryuk:0.13.0 as a substitute image for testcontainers/ryuk:0.13.0 (using image substitutor: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor'))
+2026-01-21 05:34:00.185|INFO||tc.mirror.gcr.io/testcontainers/ryuk:0.13.0|Creating container for image: mirror.gcr.io/testcontainers/ryuk:0.13.0
+2026-01-21 05:34:00.310|INFO||tc.mirror.gcr.io/testcontainers/ryuk:0.13.0|Container mirror.gcr.io/testcontainers/ryuk:0.13.0 is starting: 5175f25e2b3b8e7badd777e0770878430f5cbe19d90062993e254269ae62b321
+2026-01-21 05:34:00.941|INFO||tc.mirror.gcr.io/testcontainers/ryuk:0.13.0|Container mirror.gcr.io/testcontainers/ryuk:0.13.0 started in PT0.755642444S
+2026-01-21 05:34:01.007|INFO||tc.mirror.gcr.io/redpandadata/redpanda:v24.3.1|Container mirror.gcr.io/redpandadata/redpanda:v24.3.1 is starting: 8303004587d9fbd81c583634b079bb419bfba7ec21ce1b36a48b0f3c7bc50668
+2026-01-21 05:34:02.333|INFO||tc.mirror.gcr.io/redpandadata/redpanda:v24.3.1|Container mirror.gcr.io/redpandadata/redpanda:v24.3.1 started in PT2.157969472S
+2026-01-21 05:34:02.337|INFO||io.quarkus.kafka.client.deployment.DevServicesKafkaProcessor|Dev Services for Kafka started. Other Quarkus applications in dev mode will find the broker automatically. For Quarkus applications in production mode, you can connect to this by starting your application with -Dkafka.bootstrap.servers=OUTSIDE://localhost:32908
+2026-01-21 05:34:02.412|WARN||io.quarkus.bootstrap.BootstrapAppModelFactory|Expected project directory /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/process-kafka-persistence-quarkus/target/test-run does not match current project directory /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/process-kafka-persistence-quarkus
+Executing "/home/jijo/.sdkman/candidates/java/17.0.17-tem/bin/java -Dquarkus.http.port=0 -Dquarkus.http.ssl-port=8444 -Dtest.url=http://localhost:0 -Dquarkus.log.file.path=/home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/process-kafka-persistence-quarkus/target/test-run/target/quarkus.log -Dquarkus.log.file.enabled=true -Dquarkus.log.category."io.quarkus".level=INFO -Dquarkus.profile=prod -Dkafka.bootstrap.servers=OUTSIDE://localhost:32908 -Dquarkus.http.test-port=0 -jar /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/process-kafka-persistence-quarkus/target/quarkus-app/quarkus-run.jar"
+__  ____  __  _____   ___  __ ____  ______ 
+ --/ __ \/ / / / _ | / _ \/ //_/ / / / __/ 
+ -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \   
+--\___\_\____/_/ |_/_/|_/_/|_|\____/___/   
+2026-01-21 05:34:05.165|WARN||io.quarkus.config|Unrecognized configuration key "kogito.persistence.type" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2026-01-21 05:34:05.567|INFO||org.apache.kafka.streams.StreamsConfig|StreamsConfig values: 
+	acceptable.recovery.lag = 10000
+	application.id = kogito-persistence-example
+	application.server = 
+	bootstrap.servers = [OUTSIDE://localhost:32908]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 10485760
+	client.id = 
+	commit.interval.ms = 30000
+	connections.max.idle.ms = 540000
+	default.client.supplier = class org.apache.kafka.streams.processor.internals.DefaultKafkaClientSupplier
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.dsl.store = rocksDB
+	default.key.serde = null
+	default.list.key.serde.inner = null
+	default.list.key.serde.type = null
+	default.list.value.serde.inner = null
+	default.list.value.serde.type = null
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = null
+	deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	dsl.store.suppliers.class = class org.apache.kafka.streams.state.BuiltInDslStoreSuppliers$RocksDBDslStoreSuppliers
+	enable.metrics.push = true
+	log.summary.interval.ms = 120000
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.exception.handler = class org.apache.kafka.streams.errors.LogAndFailProcessingExceptionHandler
+	processing.guarantee = at_least_once
+	processor.wrapper.class = class org.apache.kafka.streams.processor.internals.NoOpProcessorWrapper
+	production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	rack.aware.assignment.non_overlap_cost = null
+	rack.aware.assignment.strategy = none
+	rack.aware.assignment.tags = []
+	rack.aware.assignment.traffic_cost = null
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	repartition.purge.interval.ms = 30000
+	replication.factor = -1
+	request.timeout.ms = 40000
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /tmp/kafka-streams
+	statestore.cache.max.bytes = 10485760
+	task.assignor.class = null
+	task.timeout.ms = 300000
+	topology.optimization = none
+	upgrade.from = null
+	window.size.ms = null
+	windowed.inner.class.serde = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2026-01-21 05:34:05.578|INFO||org.kie.kogito.persistence.kafka.KafkaPersistenceUtils|Created Kafka Stream GlobalTable
+2026-01-21 05:34:05.613|WARN||org.apache.kafka.streams.processor.internals.StateDirectory|Using an OS temp directory in the state.dir property can cause failures with writing the checkpoint file due to the fact that this directory can be cleared by the OS. Resolved state.dir: [/tmp/kafka-streams]
+2026-01-21 05:34:05.649|INFO||org.apache.kafka.streams.processor.internals.StateDirectory|Reading UUID from process file: 2de3ff10-178c-4556-9bde-788cf6de9fa6
+2026-01-21 05:34:05.661|INFO||org.apache.kafka.streams.KafkaStreams|stream-client [kogito-persistence-example-2de3ff10-178c-4556-9bde-788cf6de9fa6] Kafka Streams version: 4.0.0
+2026-01-21 05:34:05.661|INFO||org.apache.kafka.streams.KafkaStreams|stream-client [kogito-persistence-example-2de3ff10-178c-4556-9bde-788cf6de9fa6] Kafka Streams commit ID: 985bc99521dd22bb
+2026-01-21 05:34:05.719|ERROR||io.quarkus.runtime.Application|Failed to start application: java.lang.RuntimeException: Failed to start quarkus
+	at io.quarkus.runner.ApplicationImpl.doStart(Unknown Source)
+	at io.quarkus.runtime.Application.start(Application.java:101)
+	at io.quarkus.runtime.ApplicationLifecycleManager.run(ApplicationLifecycleManager.java:119)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:80)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:51)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:144)
+	at io.quarkus.runner.GeneratedMain.main(Unknown Source)
+	at io.quarkus.bootstrap.runner.QuarkusEntryPoint.doRun(QuarkusEntryPoint.java:69)
+	at io.quarkus.bootstrap.runner.QuarkusEntryPoint.main(QuarkusEntryPoint.java:37)
+Caused by: org.apache.kafka.common.config.ConfigException: Unknown configuration 'auto.include.jmx.reporter'
+	at org.apache.kafka.common.config.AbstractConfig.get(AbstractConfig.java:163)
+	at org.apache.kafka.common.config.AbstractConfig.getBoolean(AbstractConfig.java:194)
+	at org.apache.kafka.clients.CommonClientConfigs.metricsReporters(CommonClientConfigs.java:305)
+	at org.apache.kafka.clients.CommonClientConfigs.metricsReporters(CommonClientConfigs.java:299)
+	at org.apache.kafka.streams.KafkaStreams.createMetrics(KafkaStreams.java:1071)
+	at org.apache.kafka.streams.KafkaStreams.<init>(KafkaStreams.java:971)
+	at org.apache.kafka.streams.KafkaStreams.<init>(KafkaStreams.java:928)
+	at org.apache.kafka.streams.KafkaStreams.<init>(KafkaStreams.java:898)
+	at org.apache.kafka.streams.KafkaStreams.<init>(KafkaStreams.java:880)
+	at io.quarkus.kafka.streams.runtime.KafkaStreamsProducer.initializeKafkaStreams(KafkaStreamsProducer.java:162)
+	at io.quarkus.kafka.streams.runtime.KafkaStreamsProducer.<init>(KafkaStreamsProducer.java:99)
+	at io.quarkus.kafka.streams.runtime.KafkaStreamsProducer_Bean.doCreate(Unknown Source)
+	at io.quarkus.kafka.streams.runtime.KafkaStreamsProducer_Bean.create(Unknown Source)
+	at io.quarkus.kafka.streams.runtime.KafkaStreamsProducer_Bean.create(Unknown Source)
+	at io.quarkus.arc.impl.AbstractSharedContext.createInstanceHandle(AbstractSharedContext.java:119)
+	at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:38)
+	at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:35)
+	at io.quarkus.arc.impl.LazyValue.get(LazyValue.java:32)
+	at io.quarkus.arc.impl.ComputingCache.computeIfAbsent(ComputingCache.java:69)
+	at io.quarkus.arc.impl.ComputingCacheContextInstances.computeIfAbsent(ComputingCacheContextInstances.java:19)
+	at io.quarkus.arc.impl.AbstractSharedContext.get(AbstractSharedContext.java:35)
+	at io.quarkus.kafka.streams.runtime.KafkaStreamsProducer_Observer_onStartup_EckEyAY3y5CQaNLt4yIiB7Y30kE.notify(Unknown Source)
+	at io.quarkus.arc.impl.EventImpl$Notifier.notifyObservers(EventImpl.java:365)
+	at io.quarkus.arc.impl.EventImpl$Notifier.notify(EventImpl.java:347)
+	at io.quarkus.arc.impl.EventImpl.fire(EventImpl.java:81)
+	at io.quarkus.arc.runtime.ArcRecorder.fireLifecycleEvent(ArcRecorder.java:163)
+	at io.quarkus.arc.runtime.ArcRecorder.handleLifecycleEvents(ArcRecorder.java:114)
+	at io.quarkus.runner.recorded.LifecycleEventsBuildStep$startupEvent1144526294.deploy_0(Unknown Source)
+	at io.quarkus.runner.recorded.LifecycleEventsBuildStep$startupEvent1144526294.deploy(Unknown Source)
+	... 9 more
+
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 74.46 s <<< FAILURE! -- in org.acme.deals.DealsRestIT
+[ERROR] org.acme.deals.DealsRestIT.testDealsRest -- Time elapsed: 0.012 s <<< ERROR!
+java.lang.RuntimeException: java.lang.IllegalStateException: Unable to determine the status of the running process. See the above logs for details
+	at io.quarkus.test.junit.QuarkusIntegrationTestExtension.throwBootFailureException(QuarkusIntegrationTestExtension.java:346)
+	at io.quarkus.test.junit.QuarkusIntegrationTestExtension.beforeEach(QuarkusIntegrationTestExtension.java:114)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.IllegalStateException: Unable to determine the status of the running process. See the above logs for details
+	at io.quarkus.test.common.LauncherUtil.waitForCapturedListeningData(LauncherUtil.java:98)
+	at io.quarkus.test.common.DefaultJarLauncher.start(DefaultJarLauncher.java:72)
+	at io.quarkus.test.junit.IntegrationTestUtil.startLauncher(IntegrationTestUtil.java:163)
+	at io.quarkus.test.junit.QuarkusIntegrationTestExtension.doProcessStart(QuarkusIntegrationTestExtension.java:309)
+	at io.quarkus.test.junit.QuarkusIntegrationTestExtension.ensureStarted(QuarkusIntegrationTestExtension.java:167)
+	at io.quarkus.test.junit.QuarkusIntegrationTestExtension.beforeAll(QuarkusIntegrationTestExtension.java:127)
+	... 1 more
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   DealsRestIT.testDealsRest » Runtime java.lang.IllegalStateException: Unable to determine the status of the running process. See the above logs for details
+[INFO] 
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (default) @ process-kafka-persistence-quarkus ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (integration-test) @ process-kafka-persistence-quarkus ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:33 min
+[INFO] Finished at: 2026-01-21T05:35:05-08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-failsafe-plugin:3.3.1:verify (integration-test) on project process-kafka-persistence-quarkus: 
+[ERROR] 
+[ERROR] Please refer to /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/process-kafka-persistence-quarkus/target/failsafe-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

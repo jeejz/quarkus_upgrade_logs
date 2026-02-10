@@ -1,0 +1,1190 @@
+nohup: ignoring input
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.kie.kogito.examples:pmml-event-driven-quarkus:jar:999-SNAPSHOT
+[WARNING] The expression ${build.directory} is deprecated. Please use ${project.build.directory} instead.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.version: 5.15
+[INFO] os.detected.version.major: 5
+[INFO] os.detected.version.minor: 15
+[INFO] os.detected.release: ubuntu
+[INFO] os.detected.release.version: 22.04
+[INFO] os.detected.release.like.ubuntu: true
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Kogito Example :: DMN Embedded Mode                               [kjar]
+[INFO] Kogito Example :: Rule Embedded Mode                              [kjar]
+[INFO] Kogito Example                                                     [pom]
+[INFO] Kogito Example :: Java                                             [pom]
+[INFO] Kogito Example :: Quarkus                                          [pom]
+[INFO] Kogito Example :: Decision Table - Quarkus                         [jar]
+[INFO] Kogito Example :: DMN :: 1.5 Features                              [jar]
+[INFO] Kogito Example :: DMN Metrics Quarkus                              [jar]
+[INFO] Kogito Example :: DMN Event-Driven :: Quarkus                      [jar]
+[INFO] Kogito Example :: DMN Incubation API With Quarkus                  [jar]
+[INFO] Kogito Example :: DMN with Knative Eventing and Quarkus            [jar]
+[INFO] Kogito Example :: DMN with listeners - Quarkus                     [jar]
+[INFO] Kogito Example :: DMN Decision Table listener - Quarkus            [jar]
+[INFO] Kogito Example :: DMN :: PMML - QUARKUS                            [jar]
+[INFO] Kogito Example :: DMN                                              [jar]
+[INFO] Kogito Example :: DMN :: Resource jar providing model              [pom]
+[INFO] dmn-quarkus-resource-jar                                           [jar]
+[INFO] dmn-quarkus-consumer-example                                       [jar]
+[INFO] Kogito Example :: DMN :: Multiple Models                           [jar]
+[INFO] Kogito Example :: Flexible Process - Quarkus                       [jar]
+[INFO] Kogito Example :: Travel Agency                                    [pom]
+[INFO] Kogito Example :: Travel Agency :: Basic                           [jar]
+[INFO] Kogito Example :: Travel Agency :: Extended                        [pom]
+[INFO] Kogito Example :: Travel Agency :: Travels                         [jar]
+[INFO] Kogito Example :: Travel Agency :: Visas                           [jar]
+[INFO] Kogito Example :: Onboarding Example                               [pom]
+[INFO] Kogito Example :: Onboarding Example :: HR with Drools             [jar]
+[INFO] Kogito Example :: Onboarding Example :: Payroll with DMN           [jar]
+[INFO] Kogito Example :: Onboarding Example :: Onboarding with Business Process Quarkus [jar]
+[INFO] Kogito Example :: PMML Event-Driven - Quarkus                      [jar]
+[INFO] Kogito Example :: PMML Incubation API With Quarkus                 [jar]
+[INFO] Kogito Example :: PMML - Quarkus                                   [jar]
+[INFO] Kogito Example :: Process Business Calendar                        [jar]
+[INFO] Kogito Example :: Process Business Rules Quarkus                   [jar]
+[INFO] Kogito Example :: Process :: Decisions :: Quarkus                  [jar]
+[INFO] Kogito Example :: Process :: Decisions :: REST Quarkus             [jar]
+[INFO] Kogito Example :: Process :: Decisions :: Rules :: Quarkus         [jar]
+[INFO] Kogito Example :: Process Scripts With Quarkus                     [jar]
+[INFO] Kogito Example :: Process Incubation API With Quarkus              [jar]
+[INFO] Kogito Example :: Process Infinispan Persistence Quarkus           [jar]
+[INFO] Kogito Example :: Process Instance Migration Quarkus               [jar]
+[INFO] Kogito Example :: Process with Kafka and Quarkus, multiple channels, avro serialization [jar]
+[INFO] Kogito Example :: Process with Kafka and Quarkus, multiple channels [jar]
+[INFO] Kogito Example :: Process Kafka Persistence Quarkus                [jar]
+[INFO] Kogito Example :: Process with Kafka and Quarkus                   [jar]
+[INFO] Kogito Example :: Process with Knative Eventing and Quarkus        [jar]
+[INFO] Kogito Example :: Process MongoDB Persistence Quarkus              [jar]
+[INFO] Kogito Example :: Process Monitoring :: Quarkus                    [jar]
+[INFO] Kogito Example :: Process Transactional Outbox :: MongoDB and Quarkus [jar]
+[INFO] Kogito Example :: Client Performance test                          [jar]
+[INFO] Kogito Example :: Quarkus Performance test                         [jar]
+[INFO] Kogito Example :: Process PostgreSQL Persistence Quarkus           [jar]
+[INFO] Kogito Example :: Process and Quarkus                              [jar]
+[INFO] Kogito Example :: Process Service Rest Cal with Quarkus            [jar]
+[INFO] Kogito Example :: Process Rest :: Quarkus                          [jar]
+[INFO] Kogito Example :: Process Service Rest WorkItem call with Quarkus  [jar]
+[INFO] Kogito Example :: Process Scripts With Quarkus                     [jar]
+[INFO] Kogito Example :: Process Saga with Quarkus                        [jar]
+[INFO] Kogito Example :: Process Service Calls with Quarkus               [jar]
+[INFO] Kogito Example :: Process Timer with Quarkus                       [jar]
+[INFO] Kogito Example :: Process Usertasks With Custom Lifecycle          [jar]
+[INFO] Kogito Example :: Process with Usertasks Quarkus                   [jar]
+[INFO] Kogito Example :: Process UserTasks with Timer Quarkus             [jar]
+[INFO] Kogito Example :: Process Usertasks With Security OIDC Keycloak Quarkus [jar]
+[INFO] Kogito Example :: Process Usertasks With Security Quarkus          [jar]
+[INFO] Kogito Example :: Process Usertasks With Web Service HumanTask Lifecycle [jar]
+[INFO] Kogito Example :: Rules Incubation API With Quarkus                [jar]
+[INFO] Kogito Example :: Rules Legacy API - Quarkus                       [jar]
+[INFO] Kogito Example :: Rules Legacy API HELLO - Quarkus :: Test Scenario [jar]
+[INFO] Kogito Example :: Rules HelloWorld                                 [jar]
+[INFO] Kogito Example :: Rule Unit Event-Driven :: Quarkus                [jar]
+[INFO] Kogito Example :: RuleUnit - Quarkus                               [jar]
+[INFO] Kogito Example :: Spring Boot                                      [pom]
+[INFO] Kogito Example :: Decision Table - Spring Boot                     [jar]
+[INFO] Kogito Example :: DMN :: 1.5 Features                              [jar]
+[INFO] Kogito Example :: DMN Metrics SpringBoot                           [jar]
+[INFO] Kogito Example :: DMN Event-Driven :: Spring Boot                  [jar]
+[INFO] Kogito Example :: DMN with listeners - Spring Boot                 [jar]
+[INFO] Kogito Example :: DMN :: PMML - Spring Boot                        [jar]
+[INFO] Kogito Example :: DMN :: Resource jar providing model              [pom]
+[INFO] dmn-springboot-resource-jar                                        [jar]
+[INFO] dmn-springboot-consumer-example                                    [jar]
+[INFO] Kogito Example :: DMN - Spring Boot                                [jar]
+[INFO] Kogito Example :: DMN Tracing - Spring Boot                        [jar]
+[INFO] Kogito Example :: Flexible process with Spring Boot                [jar]
+[INFO] Kogito Example :: Onboarding Example :: Onboarding with Business Process Spring Boot [jar]
+[INFO] Kogito Example :: PMML Event-Driven - Spring Boot                  [jar]
+[INFO] Kogito Example :: PMML - Spring Boot                               [jar]
+[INFO] Kogito Example :: Process Business Calendar Spring Boot            [jar]
+[INFO] Kogito Example :: Process Business Rules Spring Boot               [jar]
+[INFO] Kogito Example :: Process :: Decisions :: REST :: Spring Boot      [jar]
+[INFO] Kogito Example :: Process :: Decisions :: Rules :: Spring Boot     [jar]
+[INFO] Kogito Example :: Process :: Decisions :: Spring Boot              [jar]
+[INFO] Kogito Example :: Process Infinispan Persistence Spring Boot       [jar]
+[INFO] Kogito Example :: Process with Kafka and Spring Boot, multiple channels [jar]
+[INFO] Kogito Example :: Process with Kafka and Spring Boot               [jar]
+[INFO] Kogito Example :: Process MongoDB Persistence Spring Boot          [jar]
+[INFO] Kogito Example :: Process Monitoring :: Spring Boot                [jar]
+[INFO] Kogito Example :: Process Transactional Outbox :: MongoDB and Spring Boot [jar]
+[INFO] Kogito Example :: Springboot Performance test                      [jar]
+[INFO] Kogito Example :: Process PostgreSQL Persistence Spring Boot       [jar]
+[INFO] Kogito Example :: Process Service Rest Call Spring Boot            [jar]
+[INFO] Kogito Example :: Process Scripts With Spring Boot                 [jar]
+[INFO] Kogito Example :: Process Service Calls with Spring Boot           [jar]
+[INFO] Kogito Example :: Process and Spring Boot                          [jar]
+[INFO] Kogito Example :: Process Timer With Spring Boot                   [jar]
+[INFO] Kogito Example :: Process Usertasks With Custom Lifecycle Spring Boot [jar]
+[INFO] Kogito Example :: Process with Usertasks Spring Boot               [jar]
+[INFO] Kogito Example :: Process Usertasks With Security OIDC Spring Boot [jar]
+[INFO] Kogito Example :: Process Usertasks With Security Spring Boot      [jar]
+[INFO] Kogito Example :: Rules Legacy API - Spring Boot                   [jar]
+[INFO] Kogito Example :: Rules Legacy API HELLO - Spring Boot :: Test Scenario [jar]
+[INFO] Kogito Example :: RuleUnit Event Driven :: Spring Boot             [jar]
+[INFO] Kogito Example :: RuleUnit - Spring Boot                           [jar]
+[INFO] Kogito Example :: Serverless Workflow Examples :: Parent           [pom]
+[INFO] Kogito Example :: Serverless Workflow Annotations and Description:: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow CallBack Over HTTP :: Quarkus [pom]
+[INFO] Kogito Example :: Serverless Workflow CallBack Over HTTP Quarkus :: Callback Event Service [jar]
+[INFO] Kogito Example :: Serverless Workflow CallBack Over HTTP Quarkus :: Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Callback :: Quarkus          [jar]
+[INFO] Kogito Example :: Serverless Workflow Camel :: Quarkus             [jar]
+[INFO] Kogito Example :: Serverless Workflow Compensation :: Quarkus      [jar]
+[INFO] Kogito Example :: Serverless Workflow Consuming Events Over HTTP :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Correlation :: Quarkus       [jar]
+[INFO] Kogito Example :: Serverless Workflow Correlation :: Quarkus :: MongoDB [jar]
+[INFO] Kogito Example :: Serverless Workflow Custom Function :: Quarkus   [pom]
+[INFO] Kogito Example :: Serverless Workflow Custom Function Knative :: Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Custom Function Knative :: Workflow [jar]
+[INFO] Kogito Example :: Serverless Workflow Custom type :: Quarkus       [pom]
+[INFO] Kogito Example :: Serverless Workflow Custom RPC Server :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Custom RPC :: Runtime        [jar]
+[INFO] Kogito Example :: Serverless Workflow Custom RPC :: Deployment     [jar]
+[INFO] Kogito Example :: Serverless Workflow Custom RPC Client :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Data Index persistence addon :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Data Index :: Quarkus        [jar]
+[INFO] Kogito Example :: Serverless Workflow :: DMN:: Quarkus             [jar]
+[INFO] Kogito Example :: Serverless Workflow Error :: Quarkus             [jar]
+[INFO] Kogito Example :: Serverless Workflow Events :: Quarkus            [jar]
+[INFO] Kogito Example :: Serverless Workflow Expression :: Quarkus        [jar]
+[INFO] Kogito Example :: Serverless Workflow For Each :: Quarkus          [jar]
+[INFO] Kogito Example :: Serverless Workflow Functions And Events :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Functions :: Quarkus         [jar]
+[INFO] Kogito Example :: Serverless Workflow :: Funqy                     [pom]
+[INFO] Kogito Example :: Serverless Workflow :: Funqy :: Services         [jar]
+[INFO] Kogito Example :: Serverless Workflow :: Funqy :: Workflow         [jar]
+[INFO] Kogito Example :: Serverless Workflow Greeting :: Quarkus          [jar]
+[INFO] Kogito Example :: Serverless Workflow gRPC example                 [pom]
+[INFO] Kogito Example :: Serverless Workflow Greeting :: gRPC Server :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Greeting :: gRPC Client :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Hello World :: Quarkus       [jar]
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase         [pom]
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase :: Aggregator [jar]
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase :: Flow [jar]
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase :: UI   [jar]
+[INFO] Kogito Example :: Serverless Workflow Newsletter Subscription Showcase [pom]
+[INFO] Kogito Example :: Serverless Workflow Newsletter Subscription :: Subscription Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Newsletter Subscription :: Subscription Flow [jar]
+[INFO] Kogito Example :: Serverless Workflow Oauth2 Orchestration Example [pom]
+[INFO] Kogito Example :: Serverless Workflow Oauth2 Orchestration Example :: ACME Financial Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Oauth2 Orchestration Example :: Currency Exchange [jar]
+[INFO] Kogito Example :: Serverless Workflow Order Processing             [jar]
+[INFO] Kogito Example :: Serverless Workflow Parallel Execution :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Query and Answer Showcase    [pom]
+[INFO] Kogito Example :: Serverless Workflow Query and Answer :: Workflow Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Query and Answer :: Query Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Order Saga :: Quarkus        [jar]
+[INFO] Kogito Example :: Serverless Workflow Service Calls :: Quarkus     [jar]
+[INFO] Kogito Example :: Serverless Workflow Stock Profit                 [pom]
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Quarkus      [jar]
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Portfolio Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Stock Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Mock Stock Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion       [pom]
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Subtraction Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Multiplication Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Full Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Function Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Spec Service [jar]
+[INFO] Kogito Example :: Serverless Workflow Testing with REST Assured :: Quarkus [jar]
+[INFO] Kogito Example :: Serverless Workflow Timeouts Showcase Embedded   [jar]
+[INFO] Kogito Example :: Serverless Workflow Timeouts Showcase Extended   [jar]
+[INFO] Kogito Example :: Serverless Workflow Timeouts Showcase Operator Dev Profile [jar]
+[INFO] Kogito Example :: Serverless Workflow Python :: Quarkus            [jar]
+[INFO] Kogito Example :: Serverless Workflow                              [pom]
+[INFO] Kogito Example :: SonataFlow :: Java Embedded examples             [jar]
+[INFO] Kogito Example :: Serverless Workflow Fault Tolerance :: Quarkus   [jar]
+[INFO] 
+[INFO] ----< org.kie.kogito.decisions.embedded:dmn-embedded-mode-example >-----
+[INFO] Building Kogito Example :: DMN Embedded Mode 999-SNAPSHOT        [1/187]
+[INFO]   from kogito-java-examples/dmn-embedded-mode-example/pom.xml
+[INFO] --------------------------------[ kjar ]--------------------------------
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-1: The plugin org.apache.maven.plugins:maven-resources-plugin:4.0.0-beta-1 requires Maven version 4.0.0-beta-3
+[INFO] Latest version of plugin org.apache.maven.plugins:maven-resources-plugin failed compatibility check
+[INFO] Looking for compatible RELEASE version of plugin org.apache.maven.plugins:maven-resources-plugin
+[INFO] Selected plugin org.apache.maven.plugins:maven-resources-plugin:3.4.0
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-1: The plugin org.apache.maven.plugins:maven-jar-plugin:4.0.0-beta-1 requires Maven version 4.0.0-beta-3
+[INFO] Latest version of plugin org.apache.maven.plugins:maven-jar-plugin failed compatibility check
+[INFO] Looking for compatible RELEASE version of plugin org.apache.maven.plugins:maven-jar-plugin
+[INFO] Selected plugin org.apache.maven.plugins:maven-jar-plugin:3.5.0
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-3: The plugin org.apache.maven.plugins:maven-compiler-plugin:4.0.0-beta-3 requires Maven version 4.0.0-rc-4
+[INFO] Latest version of plugin org.apache.maven.plugins:maven-compiler-plugin failed compatibility check
+[INFO] Looking for compatible RELEASE version of plugin org.apache.maven.plugins:maven-compiler-plugin
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-2: The plugin org.apache.maven.plugins:maven-compiler-plugin:4.0.0-beta-2 requires Maven version 4.0.0-rc-2
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-1: The plugin org.apache.maven.plugins:maven-compiler-plugin:4.0.0-beta-1 requires Maven version 4.0.0-beta-3
+[INFO] Selected plugin org.apache.maven.plugins:maven-compiler-plugin:3.14.1
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-2: The plugin org.apache.maven.plugins:maven-install-plugin:4.0.0-beta-2 requires Maven version 4.0.0-rc-2
+[INFO] Latest version of plugin org.apache.maven.plugins:maven-install-plugin failed compatibility check
+[INFO] Looking for compatible RELEASE version of plugin org.apache.maven.plugins:maven-install-plugin
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-1: The plugin org.apache.maven.plugins:maven-install-plugin:4.0.0-beta-1 requires Maven version 4.0.0-beta-3
+[INFO] Selected plugin org.apache.maven.plugins:maven-install-plugin:3.1.4
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-2: The plugin org.apache.maven.plugins:maven-deploy-plugin:4.0.0-beta-2 requires Maven version 4.0.0-rc-2
+[INFO] Latest version of plugin org.apache.maven.plugins:maven-deploy-plugin failed compatibility check
+[INFO] Looking for compatible RELEASE version of plugin org.apache.maven.plugins:maven-deploy-plugin
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-1: The plugin org.apache.maven.plugins:maven-deploy-plugin:4.0.0-beta-1 requires Maven version 4.0.0-beta-3
+[INFO] Selected plugin org.apache.maven.plugins:maven-deploy-plugin:3.1.4
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ dmn-embedded-mode-example ---
+[INFO] Deleting /home/jijo/apache_src/kogito-examples/kogito-java-examples/dmn-embedded-mode-example/target
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ dmn-embedded-mode-example ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- kie:999-SNAPSHOT:validateDMN (default-validateDMN) @ dmn-embedded-mode-example ---
+[INFO] validateDMN configured with flag: 'disable' determines this Mojo will not be executed (reset all flags).
+[INFO] No VALIDATE_SCHEMA or VALIDATE_MODEL flags set, skipping.
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ dmn-embedded-mode-example ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 3 source files with javac [debug target 17] to target/classes
+[INFO] 
+[INFO] --- kie:999-SNAPSHOT:build (default-build) @ dmn-embedded-mode-example ---
+[INFO] GenerateModel
+[INFO] Artifact not fetched from maven: org.drools:drools-compiler:999-SNAPSHOT. To enable the KieScanner you need kie-ci on the classpath
+[INFO] Artifact not fetched from maven: org.slf4j:slf4j-simple:2.0.13. To enable the KieScanner you need kie-ci on the classpath
+[INFO] Artifact not fetched from maven: org.kie:kie-dmn-core:999-SNAPSHOT. To enable the KieScanner you need kie-ci on the classpath
+[INFO] Artifact not fetched from maven: org.drools:drools-model-compiler:999-SNAPSHOT. To enable the KieScanner you need kie-ci on the classpath
+[INFO] Artifact not fetched from maven: org.slf4j:slf4j-api:2.0.13. To enable the KieScanner you need kie-ci on the classpath
+[INFO] Artifact not fetched from maven: org.drools:drools-xml-support:999-SNAPSHOT. To enable the KieScanner you need kie-ci on the classpath
+[INFO] Found 0 generated files in Canonical Model
+[INFO] validateDMN configured with flag: 'disable' determines this Mojo will not be executed (reset all flags).
+[INFO] DSL successfully generated
+[INFO] GenerateDMNModel
+[INFO] GeneratePMMLModel
+[INFO] Looking for PMML models in /home/jijo/apache_src/kogito-examples/kogito-java-examples/dmn-embedded-mode-example/src/main/resources
+[INFO] No PMML Models found.
+[INFO] PMML model successfully generated
+[INFO] GenerateANC
+[INFO] BuildDRL
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ dmn-embedded-mode-example ---
+[INFO] skip non existing resourceDirectory /home/jijo/apache_src/kogito-examples/kogito-java-examples/dmn-embedded-mode-example/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ dmn-embedded-mode-example ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ dmn-embedded-mode-example ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- kie:999-SNAPSHOT:package-dependencies-kjar (default-package-dependencies-kjar) @ dmn-embedded-mode-example ---
+[INFO] Skipping plugin execution
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ dmn-embedded-mode-example ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/kogito-java-examples/dmn-embedded-mode-example/target/dmn-embedded-mode-example-999-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ dmn-embedded-mode-example ---
+[INFO] Installing /home/jijo/apache_src/kogito-examples/kogito-java-examples/dmn-embedded-mode-example/pom.xml to /home/jijo/.m2/repository/org/kie/kogito/decisions/embedded/dmn-embedded-mode-example/999-SNAPSHOT/dmn-embedded-mode-example-999-SNAPSHOT.pom
+[INFO] Installing /home/jijo/apache_src/kogito-examples/kogito-java-examples/dmn-embedded-mode-example/target/dmn-embedded-mode-example-999-SNAPSHOT.jar to /home/jijo/.m2/repository/org/kie/kogito/decisions/embedded/dmn-embedded-mode-example/999-SNAPSHOT/dmn-embedded-mode-example-999-SNAPSHOT.jar
+[INFO] 
+[INFO] -----< org.kie.kogito.rules.embedded:rules-embedded-mode-example >------
+[INFO] Building Kogito Example :: Rule Embedded Mode 999-SNAPSHOT       [2/187]
+[INFO]   from kogito-java-examples/rules-embedded-mode-example/pom.xml
+[INFO] --------------------------------[ kjar ]--------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ rules-embedded-mode-example ---
+[INFO] Deleting /home/jijo/apache_src/kogito-examples/kogito-java-examples/rules-embedded-mode-example/target
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ rules-embedded-mode-example ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- kie:999-SNAPSHOT:validateDMN (default-validateDMN) @ rules-embedded-mode-example ---
+[INFO] Looking for DMN models in path: /home/jijo/apache_src/kogito-examples/kogito-java-examples/rules-embedded-mode-example/src/main/resources
+[INFO] No DMN Models found.
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ rules-embedded-mode-example ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 3 source files with javac [debug target 17] to target/classes
+[INFO] 
+[INFO] --- kie:999-SNAPSHOT:build (default-build) @ rules-embedded-mode-example ---
+[INFO] GenerateModel
+[INFO] Artifact not fetched from maven: org.drools:drools-compiler:999-SNAPSHOT. To enable the KieScanner you need kie-ci on the classpath
+[INFO] Artifact not fetched from maven: org.slf4j:slf4j-simple:2.0.13. To enable the KieScanner you need kie-ci on the classpath
+[INFO] Artifact not fetched from maven: org.drools:drools-model-compiler:999-SNAPSHOT. To enable the KieScanner you need kie-ci on the classpath
+[INFO] Artifact not fetched from maven: org.drools:drools-mvel:999-SNAPSHOT. To enable the KieScanner you need kie-ci on the classpath
+[INFO] Artifact not fetched from maven: org.drools:drools-core:999-SNAPSHOT. To enable the KieScanner you need kie-ci on the classpath
+[INFO] Artifact not fetched from maven: org.slf4j:slf4j-api:2.0.13. To enable the KieScanner you need kie-ci on the classpath
+[INFO] Artifact not fetched from maven: org.drools:drools-xml-support:999-SNAPSHOT. To enable the KieScanner you need kie-ci on the classpath
+[WARNING] 'agenda-group "applicationGroup"' is found. 'agenda-group' is deprecated and will be dropped in the future version (LanguageLevel.DRL10). Please replace 'agenda-group' with 'ruleflow-group', which works as the same as 'agenda-group'.
+[INFO] Found 6 generated files in Canonical Model
+[INFO] Generating org.kie.kogito.rules.embedded.DomainClassesMetadatac81a1303c2df4e40843b26092ff5b7d4
+[INFO] Generating org.kie.kogito.rules.embedded.PBD.LambdaConsequenceBD7503EFE2278D709ADB897CA81FEFE2
+[INFO] Generating org.kie.kogito.rules.embedded.Rulesc81a1303c2df4e40843b26092ff5b7d4RuleMethods0
+[INFO] Generating org.kie.kogito.rules.embedded.Rulesc81a1303c2df4e40843b26092ff5b7d4
+[INFO] Generating org.kie.kogito.rules.embedded.P7E.LambdaExtractor7E42AF0758C17199071DA7A71C6645A6
+[INFO] Generating org.kie.kogito.rules.embedded.P75.LambdaPredicate75F350A102781BCD8A3892245E4FF120
+[INFO] Initializing DMN DT Validator...
+[INFO] DMN DT Validator initialized.
+[INFO] DSL successfully generated
+[INFO] GenerateDMNModel
+[INFO] GeneratePMMLModel
+[INFO] Looking for PMML models in /home/jijo/apache_src/kogito-examples/kogito-java-examples/rules-embedded-mode-example/src/main/resources
+[INFO] No PMML Models found.
+[INFO] PMML model successfully generated
+[INFO] GenerateANC
+[INFO] BuildDRL
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ rules-embedded-mode-example ---
+[INFO] skip non existing resourceDirectory /home/jijo/apache_src/kogito-examples/kogito-java-examples/rules-embedded-mode-example/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ rules-embedded-mode-example ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ rules-embedded-mode-example ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- kie:999-SNAPSHOT:package-dependencies-kjar (default-package-dependencies-kjar) @ rules-embedded-mode-example ---
+[INFO] Skipping plugin execution
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ rules-embedded-mode-example ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/kogito-java-examples/rules-embedded-mode-example/target/rules-embedded-mode-example-999-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ rules-embedded-mode-example ---
+[INFO] Installing /home/jijo/apache_src/kogito-examples/kogito-java-examples/rules-embedded-mode-example/pom.xml to /home/jijo/.m2/repository/org/kie/kogito/rules/embedded/rules-embedded-mode-example/999-SNAPSHOT/rules-embedded-mode-example-999-SNAPSHOT.pom
+[INFO] Installing /home/jijo/apache_src/kogito-examples/kogito-java-examples/rules-embedded-mode-example/target/rules-embedded-mode-example-999-SNAPSHOT.jar to /home/jijo/.m2/repository/org/kie/kogito/rules/embedded/rules-embedded-mode-example/999-SNAPSHOT/rules-embedded-mode-example-999-SNAPSHOT.jar
+[INFO] 
+[INFO] --------------< org.kie.kogito.examples:kogito-examples >---------------
+[INFO] Building Kogito Example 999-SNAPSHOT                             [3/187]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ kogito-examples ---
+[INFO] Deleting /home/jijo/apache_src/kogito-examples/target
+[INFO] 
+[INFO] --- directory:1.0:highest-basedir (directories) @ kogito-examples ---
+[INFO] Highest basedir set to: /home/jijo/apache_src/kogito-examples
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ kogito-examples ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-maven-version) @ kogito-examples ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-java-version) @ kogito-examples ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- checkstyle:3.3.0:check (default) @ kogito-examples ---
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.13.0:format (default) @ kogito-examples ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 0
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (default) @ kogito-examples ---
+[INFO] Processed 0 files in 00:00.000 (Already Sorted: 0, Needed Sorting: 0)
+[INFO] 
+[INFO] --- remote-resources:3.2.0:process (process-resource-bundles) @ kogito-examples ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.5
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- jar:3.2.0:test-jar (test-jar) @ kogito-examples ---
+[INFO] Skipping packaging of the test-jar
+[INFO] 
+[INFO] --- source:3.2.1:jar-no-fork (attach-sources) @ kogito-examples ---
+[INFO] 
+[INFO] --- source:3.2.1:test-jar-no-fork (attach-test-sources) @ kogito-examples ---
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (integration-test) @ kogito-examples ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (default) @ kogito-examples ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (integration-test) @ kogito-examples ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (default) @ kogito-examples ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ kogito-examples ---
+[INFO] Installing /home/jijo/apache_src/kogito-examples/pom.xml to /home/jijo/.m2/repository/org/kie/kogito/examples/kogito-examples/999-SNAPSHOT/kogito-examples-999-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------< org.kie.kogito.examples:kogito-java-examples >------------
+[INFO] Building Kogito Example :: Java 999-SNAPSHOT                     [4/187]
+[INFO]   from kogito-java-examples/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ kogito-java-examples ---
+[INFO] Deleting /home/jijo/apache_src/kogito-examples/kogito-java-examples/target
+[INFO] 
+[INFO] --- directory:1.0:highest-basedir (directories) @ kogito-java-examples ---
+[INFO] Highest basedir set to: /home/jijo/apache_src/kogito-examples
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ kogito-java-examples ---
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-maven-version) @ kogito-java-examples ---
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-java-version) @ kogito-java-examples ---
+[INFO] 
+[INFO] --- checkstyle:3.3.0:check (default) @ kogito-java-examples ---
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.13.0:format (default) @ kogito-java-examples ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 0
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (default) @ kogito-java-examples ---
+[INFO] Processed 0 files in 00:00.000 (Already Sorted: 0, Needed Sorting: 0)
+[INFO] 
+[INFO] --- remote-resources:3.2.0:process (process-resource-bundles) @ kogito-java-examples ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.5
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- jar:3.2.0:test-jar (test-jar) @ kogito-java-examples ---
+[INFO] Skipping packaging of the test-jar
+[INFO] 
+[INFO] --- source:3.2.1:jar-no-fork (attach-sources) @ kogito-java-examples ---
+[INFO] 
+[INFO] --- source:3.2.1:test-jar-no-fork (attach-test-sources) @ kogito-java-examples ---
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (integration-test) @ kogito-java-examples ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (default) @ kogito-java-examples ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (integration-test) @ kogito-java-examples ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (default) @ kogito-java-examples ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ kogito-java-examples ---
+[INFO] Installing /home/jijo/apache_src/kogito-examples/kogito-java-examples/pom.xml to /home/jijo/.m2/repository/org/kie/kogito/examples/kogito-java-examples/999-SNAPSHOT/kogito-java-examples-999-SNAPSHOT.pom
+[INFO] 
+[INFO] ----------< org.kie.kogito.examples:kogito-quarkus-examples >-----------
+[INFO] Building Kogito Example :: Quarkus 999-SNAPSHOT                  [5/187]
+[INFO]   from kogito-quarkus-examples/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ kogito-quarkus-examples ---
+[INFO] Deleting /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/target
+[INFO] 
+[INFO] --- directory:1.0:highest-basedir (directories) @ kogito-quarkus-examples ---
+[INFO] Highest basedir set to: /home/jijo/apache_src/kogito-examples
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ kogito-quarkus-examples ---
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-maven-version) @ kogito-quarkus-examples ---
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-java-version) @ kogito-quarkus-examples ---
+[INFO] 
+[INFO] --- checkstyle:3.3.0:check (default) @ kogito-quarkus-examples ---
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.13.0:format (default) @ kogito-quarkus-examples ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 0
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (default) @ kogito-quarkus-examples ---
+[INFO] Processed 0 files in 00:00.000 (Already Sorted: 0, Needed Sorting: 0)
+[INFO] 
+[INFO] --- remote-resources:3.2.0:process (process-resource-bundles) @ kogito-quarkus-examples ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.5
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- jar:3.2.0:test-jar (test-jar) @ kogito-quarkus-examples ---
+[INFO] Skipping packaging of the test-jar
+[INFO] 
+[INFO] --- source:3.2.1:jar-no-fork (attach-sources) @ kogito-quarkus-examples ---
+[INFO] 
+[INFO] --- source:3.2.1:test-jar-no-fork (attach-test-sources) @ kogito-quarkus-examples ---
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (integration-test) @ kogito-quarkus-examples ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (default) @ kogito-quarkus-examples ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (integration-test) @ kogito-quarkus-examples ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (default) @ kogito-quarkus-examples ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ kogito-quarkus-examples ---
+[INFO] Installing /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/pom.xml to /home/jijo/.m2/repository/org/kie/kogito/examples/kogito-quarkus-examples/999-SNAPSHOT/kogito-quarkus-examples-999-SNAPSHOT.pom
+[INFO] 
+[INFO] -------< org.kie.kogito.examples:decisiontable-quarkus-example >--------
+[INFO] Building Kogito Example :: Decision Table - Quarkus 999-SNAPSHOT [6/187]
+[INFO]   from kogito-quarkus-examples/decisiontable-quarkus-example/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ decisiontable-quarkus-example ---
+[INFO] Deleting /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/decisiontable-quarkus-example/target
+[INFO] 
+[INFO] --- directory:1.0:highest-basedir (directories) @ decisiontable-quarkus-example ---
+[INFO] Highest basedir set to: /home/jijo/apache_src/kogito-examples
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ decisiontable-quarkus-example ---
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-maven-version) @ decisiontable-quarkus-example ---
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-java-version) @ decisiontable-quarkus-example ---
+[INFO] 
+[INFO] --- checkstyle:3.3.0:check (default) @ decisiontable-quarkus-example ---
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.13.0:format (default) @ decisiontable-quarkus-example ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 5
+[INFO] Successfully formatted:          0 file(s)
+[INFO] Fail to format:                  0 file(s)
+[INFO] Skipped:                         5 file(s)
+[INFO] Read only skipped:               0 file(s)
+[INFO] Approximate time taken:          0s
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (default) @ decisiontable-quarkus-example ---
+[INFO] Processed 5 files in 00:00.150 (Already Sorted: 5, Needed Sorting: 0)
+[INFO] 
+[INFO] --- remote-resources:3.2.0:process (process-resource-bundles) @ decisiontable-quarkus-example ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.5
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:2.5:resources (default-resources) @ decisiontable-quarkus-example ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ decisiontable-quarkus-example ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 3 source files with javac [debug deprecation release 17] to target/classes
+[INFO] 
+[INFO] --- resources:2.5:testResources (default-testResources) @ decisiontable-quarkus-example ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ decisiontable-quarkus-example ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 2 source files with javac [debug deprecation release 17] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.3.1:test (default-test) @ decisiontable-quarkus-example ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+2026-01-20 04:23:35.361|INFO||org.kie.kogito.codegen.api.utils.AddonsConfigDiscovery|Performed addonsConfig discovery, found: AddonsConfig{usePersistence=false, useTracing=false, useMonitoring=false, usePrometheusMonitoring=false, useCloudEvents=false, useExplainability=false, useProcessSVG=false, useEventDrivenDecisions=false, useEventDrivenRules=false, useProcessSources=false}
+2026-01-20 04:23:35.367|INFO||org.kie.kogito.quarkus.common.deployment.KogitoAssetsProcessor|Disabling Kogito Fault Tolerance because SmallRye Fault Tolerance extension is not available
+2026-01-20 04:23:35.412|INFO||org.kie.kogito.codegen.core.utils.ApplicationGeneratorDiscovery|Generator discovery performed, found [rules, messaging]
+2026-01-20 04:23:35.414|INFO||org.kie.kogito.codegen.core.ApplicationGenerator|Skipping generator 'messaging' because disabled
+2026-01-20T12:23:35.551580509Z build-34 ERROR Log4j API could not find a logging provider.
+[INFO] Running org.kie.kogito.decisiontable.quarkus.RestQueryTest
+2026-01-20 04:23:40,313 WARN  [io.qua.config] (main) Unrecognized configuration key "kogito.faultToleranceEnabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2026-01-20 04:23:40.576|INFO||io.quarkus|decisiontable-quarkus-example 999-SNAPSHOT on JVM (powered by Quarkus 3.27.1) started in 6.894s. Listening on: http://localhost:37213
+2026-01-20 04:23:40.577|INFO||io.quarkus|Profile test activated. 
+2026-01-20 04:23:40.577|INFO||io.quarkus|Installed features: [cdi, kogito-rules, resteasy, resteasy-jackson, smallrye-context-propagation, smallrye-health, smallrye-openapi, swagger-ui, vertx]
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.657 s -- in org.kie.kogito.decisiontable.quarkus.RestQueryTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ decisiontable-quarkus-example ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/decisiontable-quarkus-example/target/decisiontable-quarkus-example.jar
+[INFO] 
+[INFO] --- jar:3.2.0:test-jar (test-jar) @ decisiontable-quarkus-example ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/decisiontable-quarkus-example/target/decisiontable-quarkus-example-tests.jar
+[INFO] 
+[INFO] --- source:3.2.1:jar-no-fork (attach-sources) @ decisiontable-quarkus-example ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/decisiontable-quarkus-example/target/decisiontable-quarkus-example-sources.jar
+[INFO] 
+[INFO] --- source:3.2.1:test-jar-no-fork (attach-test-sources) @ decisiontable-quarkus-example ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/decisiontable-quarkus-example/target/decisiontable-quarkus-example-test-sources.jar
+[INFO] 
+[INFO] --- quarkus:3.27.1:build (default) @ decisiontable-quarkus-example ---
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.console.json" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.file.json.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[INFO] Performed addonsConfig discovery, found: AddonsConfig{usePersistence=false, useTracing=false, useMonitoring=false, usePrometheusMonitoring=false, useCloudEvents=false, useExplainability=false, useProcessSVG=false, useEventDrivenDecisions=false, useEventDrivenRules=false, useProcessSources=false}
+[INFO] [org.kie.kogito.quarkus.common.deployment.KogitoAssetsProcessor] Disabling Kogito Fault Tolerance because SmallRye Fault Tolerance extension is not available
+[INFO] Generator discovery performed, found [rules, messaging]
+[INFO] Skipping generator 'messaging' because disabled
+2026-01-20T12:23:44.705262719Z build-17 ERROR Log4j API could not find a logging provider.
+[INFO] [io.quarkus.deployment.QuarkusAugmentor] Quarkus augmentation completed in 3910ms
+[INFO] 
+[INFO] --- resources:2.5:copy-resources (add-it-resources) @ decisiontable-quarkus-example ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (integration-test) @ decisiontable-quarkus-example ---
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (default) @ decisiontable-quarkus-example ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (integration-test) @ decisiontable-quarkus-example ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (default) @ decisiontable-quarkus-example ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ decisiontable-quarkus-example ---
+[INFO] Installing /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/decisiontable-quarkus-example/pom.xml to /home/jijo/.m2/repository/org/kie/kogito/examples/decisiontable-quarkus-example/999-SNAPSHOT/decisiontable-quarkus-example-999-SNAPSHOT.pom
+[INFO] Installing /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/decisiontable-quarkus-example/target/decisiontable-quarkus-example.jar to /home/jijo/.m2/repository/org/kie/kogito/examples/decisiontable-quarkus-example/999-SNAPSHOT/decisiontable-quarkus-example-999-SNAPSHOT.jar
+[INFO] Installing /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/decisiontable-quarkus-example/target/decisiontable-quarkus-example-tests.jar to /home/jijo/.m2/repository/org/kie/kogito/examples/decisiontable-quarkus-example/999-SNAPSHOT/decisiontable-quarkus-example-999-SNAPSHOT-tests.jar
+[INFO] Installing /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/decisiontable-quarkus-example/target/decisiontable-quarkus-example-sources.jar to /home/jijo/.m2/repository/org/kie/kogito/examples/decisiontable-quarkus-example/999-SNAPSHOT/decisiontable-quarkus-example-999-SNAPSHOT-sources.jar
+[INFO] Installing /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/decisiontable-quarkus-example/target/decisiontable-quarkus-example-test-sources.jar to /home/jijo/.m2/repository/org/kie/kogito/examples/decisiontable-quarkus-example/999-SNAPSHOT/decisiontable-quarkus-example-999-SNAPSHOT-test-sources.jar
+[INFO] 
+[INFO] -----------< org.kie.kogito.examples:dmn-15-quarkus-example >-----------
+[INFO] Building Kogito Example :: DMN :: 1.5 Features 999-SNAPSHOT      [7/187]
+[INFO]   from kogito-quarkus-examples/dmn-15-quarkus-example/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ dmn-15-quarkus-example ---
+[INFO] Deleting /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-15-quarkus-example/target
+[INFO] 
+[INFO] --- directory:1.0:highest-basedir (directories) @ dmn-15-quarkus-example ---
+[INFO] Highest basedir set to: /home/jijo/apache_src/kogito-examples
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ dmn-15-quarkus-example ---
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-maven-version) @ dmn-15-quarkus-example ---
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-java-version) @ dmn-15-quarkus-example ---
+[INFO] 
+[INFO] --- checkstyle:3.3.0:check (default) @ dmn-15-quarkus-example ---
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.13.0:format (default) @ dmn-15-quarkus-example ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 0
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (default) @ dmn-15-quarkus-example ---
+[INFO] Processed 0 files in 00:00.000 (Already Sorted: 0, Needed Sorting: 0)
+[INFO] 
+[INFO] --- remote-resources:3.2.0:process (process-resource-bundles) @ dmn-15-quarkus-example ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.5
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- dependency:3.6.1:unpack (unpack) @ dmn-15-quarkus-example ---
+[INFO] Configured Artifact: org.kie:kie-dmn-test-resources:tests:999-SNAPSHOT:jar
+[INFO] 
+[INFO] --- resources:2.5:resources (default-resources) @ dmn-15-quarkus-example ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ dmn-15-quarkus-example ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:2.5:testResources (default-testResources) @ dmn-15-quarkus-example ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-15-quarkus-example/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ dmn-15-quarkus-example ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.3.1:test (default-test) @ dmn-15-quarkus-example ---
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ dmn-15-quarkus-example ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-15-quarkus-example/target/dmn-15-quarkus-example.jar
+[INFO] 
+[INFO] --- jar:3.2.0:test-jar (test-jar) @ dmn-15-quarkus-example ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-15-quarkus-example/target/dmn-15-quarkus-example-tests.jar
+[INFO] 
+[INFO] --- source:3.2.1:jar-no-fork (attach-sources) @ dmn-15-quarkus-example ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-15-quarkus-example/target/dmn-15-quarkus-example-sources.jar
+[INFO] 
+[INFO] --- source:3.2.1:test-jar-no-fork (attach-test-sources) @ dmn-15-quarkus-example ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-15-quarkus-example/target/dmn-15-quarkus-example-test-sources.jar
+[INFO] 
+[INFO] --- quarkus:3.27.1:build (default) @ dmn-15-quarkus-example ---
+[WARNING] [io.quarkus.config] Unrecognized configuration key "kogito.faultToleranceEnabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.console.json" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.file.json.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.arc.deployment.SplitPackageProcessor] Detected a split package usage which is considered a bad practice and should be avoided. Following packages were detected in multiple archives: 
+- "org.kie.kogito.decision" found in [org.kie.kogito:kogito-api:999-20260120.015143-513, org.kie.kogito:kogito-dmn:999-20260120.015143-513]
+[INFO] Performed addonsConfig discovery, found: AddonsConfig{usePersistence=false, useTracing=false, useMonitoring=false, usePrometheusMonitoring=false, useCloudEvents=false, useExplainability=false, useProcessSVG=false, useEventDrivenDecisions=false, useEventDrivenRules=false, useProcessSources=false}
+[INFO] [org.kie.kogito.quarkus.common.deployment.KogitoAssetsProcessor] Disabling Kogito Fault Tolerance because SmallRye Fault Tolerance extension is not available
+[INFO] Generator discovery performed, found [decisions, messaging]
+[INFO] Skipping generator 'messaging' because disabled
+[WARNING] In an eval expression [!doesDefinitionsContainIdForDMNEdge($importDef, $localPart)] : '$importDef' comes from previous pattern 'Definitions'. '$localPart' comes from previous pattern 'DMNEdge'. Consider placing the constraint in the pattern and removing the eval if possible, as eval is not performance-efficient.
+[WARNING] In an eval expression [!doesDefinitionsContainIdForDMNEdge($importDef, $localPart)] : '$importDef' comes from previous pattern 'Definitions'. '$localPart' comes from previous pattern 'DMNEdge'. Consider placing the constraint in the pattern and removing the eval if possible, as eval is not performance-efficient.
+[INFO] [io.quarkus.deployment.QuarkusAugmentor] Quarkus augmentation completed in 3995ms
+[INFO] 
+[INFO] --- resources:2.5:copy-resources (add-it-resources) @ dmn-15-quarkus-example ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (integration-test) @ dmn-15-quarkus-example ---
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (default) @ dmn-15-quarkus-example ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (integration-test) @ dmn-15-quarkus-example ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (default) @ dmn-15-quarkus-example ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ dmn-15-quarkus-example ---
+[INFO] Installing /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-15-quarkus-example/pom.xml to /home/jijo/.m2/repository/org/kie/kogito/examples/dmn-15-quarkus-example/999-SNAPSHOT/dmn-15-quarkus-example-999-SNAPSHOT.pom
+[INFO] Installing /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-15-quarkus-example/target/dmn-15-quarkus-example.jar to /home/jijo/.m2/repository/org/kie/kogito/examples/dmn-15-quarkus-example/999-SNAPSHOT/dmn-15-quarkus-example-999-SNAPSHOT.jar
+[INFO] Installing /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-15-quarkus-example/target/dmn-15-quarkus-example-tests.jar to /home/jijo/.m2/repository/org/kie/kogito/examples/dmn-15-quarkus-example/999-SNAPSHOT/dmn-15-quarkus-example-999-SNAPSHOT-tests.jar
+[INFO] Installing /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-15-quarkus-example/target/dmn-15-quarkus-example-sources.jar to /home/jijo/.m2/repository/org/kie/kogito/examples/dmn-15-quarkus-example/999-SNAPSHOT/dmn-15-quarkus-example-999-SNAPSHOT-sources.jar
+[INFO] Installing /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-15-quarkus-example/target/dmn-15-quarkus-example-test-sources.jar to /home/jijo/.m2/repository/org/kie/kogito/examples/dmn-15-quarkus-example/999-SNAPSHOT/dmn-15-quarkus-example-999-SNAPSHOT-test-sources.jar
+[INFO] 
+[INFO] ---------< org.kie.kogito.examples:dmn-drools-quarkus-metrics >---------
+[INFO] Building Kogito Example :: DMN Metrics Quarkus 999-SNAPSHOT      [8/187]
+[INFO]   from kogito-quarkus-examples/dmn-drools-quarkus-metrics/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ dmn-drools-quarkus-metrics ---
+[INFO] Deleting /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-drools-quarkus-metrics/target
+[INFO] Deleting /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-drools-quarkus-metrics/docker-compose/grafana/provisioning/dashboards (includes = [], excludes = [dashboard.yml])
+[INFO] 
+[INFO] --- directory:1.0:highest-basedir (directories) @ dmn-drools-quarkus-metrics ---
+[INFO] Highest basedir set to: /home/jijo/apache_src/kogito-examples
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ dmn-drools-quarkus-metrics ---
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-maven-version) @ dmn-drools-quarkus-metrics ---
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-java-version) @ dmn-drools-quarkus-metrics ---
+[INFO] 
+[INFO] --- checkstyle:3.3.0:check (default) @ dmn-drools-quarkus-metrics ---
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.13.0:format (default) @ dmn-drools-quarkus-metrics ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 9
+[INFO] Successfully formatted:          0 file(s)
+[INFO] Fail to format:                  0 file(s)
+[INFO] Skipped:                         9 file(s)
+[INFO] Read only skipped:               0 file(s)
+[INFO] Approximate time taken:          0s
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (default) @ dmn-drools-quarkus-metrics ---
+[INFO] Processed 9 files in 00:00.155 (Already Sorted: 9, Needed Sorting: 0)
+[INFO] 
+[INFO] --- remote-resources:3.2.0:process (process-resource-bundles) @ dmn-drools-quarkus-metrics ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.5
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:2.5:resources (default-resources) @ dmn-drools-quarkus-metrics ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- resources:2.5:copy-resources (copy-filtered-resources) @ dmn-drools-quarkus-metrics ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ dmn-drools-quarkus-metrics ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 4 source files with javac [debug deprecation release 17] to target/classes
+[WARNING] /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-drools-quarkus-metrics/src/main/java/org/kie/kogito/app/CustomDMNRuntimeEventListener.java:[44,19] io.micrometer.prometheus.PrometheusMeterRegistry in io.micrometer.prometheus has been deprecated
+[WARNING] /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-drools-quarkus-metrics/src/main/java/org/kie/kogito/app/CustomDMNRuntimeEventListener.java:[47,42] io.micrometer.prometheus.PrometheusMeterRegistry in io.micrometer.prometheus has been deprecated
+[WARNING] /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-drools-quarkus-metrics/src/main/java/org/kie/kogito/app/RuleEventListenerConfig.java:[33,36] io.micrometer.prometheus.PrometheusMeterRegistry in io.micrometer.prometheus has been deprecated
+[WARNING] /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-drools-quarkus-metrics/src/main/java/org/kie/kogito/examples/CustomRuleEventListener.java:[39,19] io.micrometer.prometheus.PrometheusMeterRegistry in io.micrometer.prometheus has been deprecated
+[WARNING] /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-drools-quarkus-metrics/src/main/java/org/kie/kogito/examples/CustomRuleEventListener.java:[41,36] io.micrometer.prometheus.PrometheusMeterRegistry in io.micrometer.prometheus has been deprecated
+[INFO] 
+[INFO] --- resources:2.5:testResources (default-testResources) @ dmn-drools-quarkus-metrics ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ dmn-drools-quarkus-metrics ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 5 source files with javac [debug deprecation release 17] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.3.1:test (default-test) @ dmn-drools-quarkus-metrics ---
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ dmn-drools-quarkus-metrics ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-drools-quarkus-metrics/target/dmn-drools-quarkus-metrics.jar
+[INFO] 
+[INFO] --- jar:3.2.0:test-jar (test-jar) @ dmn-drools-quarkus-metrics ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-drools-quarkus-metrics/target/dmn-drools-quarkus-metrics-tests.jar
+[INFO] 
+[INFO] --- source:3.2.1:jar-no-fork (attach-sources) @ dmn-drools-quarkus-metrics ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-drools-quarkus-metrics/target/dmn-drools-quarkus-metrics-sources.jar
+[INFO] 
+[INFO] --- source:3.2.1:test-jar-no-fork (attach-test-sources) @ dmn-drools-quarkus-metrics ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-drools-quarkus-metrics/target/dmn-drools-quarkus-metrics-test-sources.jar
+[INFO] 
+[INFO] --- quarkus:3.27.1:build (default) @ dmn-drools-quarkus-metrics ---
+[WARNING] [io.quarkus.config] Unrecognized configuration key "kogito.grafana.disabled.domain.dashboards" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "kogito.grafana.disabled.operational.dashboards" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "kogito.faultToleranceEnabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.console.json" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.file.json.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.arc.deployment.SplitPackageProcessor] Detected a split package usage which is considered a bad practice and should be avoided. Following packages were detected in multiple archives: 
+- "org.kie.kogito.decision" found in [org.kie.kogito:kogito-api:999-20260120.015143-513, org.kie.kogito:kogito-dmn:999-20260120.015143-513]
+[INFO] Performed addonsConfig discovery, found: AddonsConfig{usePersistence=false, useTracing=false, useMonitoring=true, usePrometheusMonitoring=true, useCloudEvents=false, useExplainability=false, useProcessSVG=false, useEventDrivenDecisions=false, useEventDrivenRules=false, useProcessSources=false}
+[INFO] [org.kie.kogito.quarkus.common.deployment.KogitoAssetsProcessor] Disabling Kogito Fault Tolerance because SmallRye Fault Tolerance extension is not available
+[INFO] Generator discovery performed, found [rules, decisions, messaging]
+[INFO] Skipping generator 'messaging' because disabled
+[WARNING] In an eval expression [!doesDefinitionsContainIdForDMNEdge($importDef, $localPart)] : '$importDef' comes from previous pattern 'Definitions'. '$localPart' comes from previous pattern 'DMNEdge'. Consider placing the constraint in the pattern and removing the eval if possible, as eval is not performance-efficient.
+[WARNING] In an eval expression [!doesDefinitionsContainIdForDMNEdge($importDef, $localPart)] : '$importDef' comes from previous pattern 'Definitions'. '$localPart' comes from previous pattern 'DMNEdge'. Consider placing the constraint in the pattern and removing the eval if possible, as eval is not performance-efficient.
+[WARNING] LoanEligibility: DMN: Decision table with single output on node 'Eligibility' should not have an output type reference (DMN id: _6919B10D-0B12-4B5E-9DF5-1A90F166CF9A, The referenced element should not have a typeref set) 
+[WARNING] LoanEligibility: DMN: Decision table with single output on node 'Is Enough?' should not have an output type reference (DMN id: _AB79DAA1-1365-4310-9C4A-62568955A63A, The referenced element should not have a typeref set) 
+[WARNING] LoanEligibility: DMN: Decision table with single output on node 'Decide' should not have an output type reference (DMN id: _E4346355-A3C9-4982-AC03-62A9BA707EEF, The referenced element should not have a typeref set) 
+[WARNING] LoanEligibility: DMN: Decision table with single output on node 'Eligibility' should not have an output type reference (DMN id: _6919B10D-0B12-4B5E-9DF5-1A90F166CF9A, The referenced element should not have a typeref set) 
+[WARNING] LoanEligibility: DMN: Decision table with single output on node 'Is Enough?' should not have an output type reference (DMN id: _AB79DAA1-1365-4310-9C4A-62568955A63A, The referenced element should not have a typeref set) 
+[WARNING] LoanEligibility: DMN: Decision table with single output on node 'Decide' should not have an output type reference (DMN id: _E4346355-A3C9-4982-AC03-62A9BA707EEF, The referenced element should not have a typeref set) 
+[INFO] [io.quarkus.container.image.jib.deployment.JibProcessor] Starting (local) container image build for jar using jib.
+[INFO] [io.quarkus.container.image.jib.deployment.JibProcessor] Using docker to run the native image builder
+[WARNING] [io.quarkus.container.image.jib.deployment.JibProcessor] Base image 'registry.access.redhat.com/ubi9/openjdk-17-runtime:1.23' does not use a specific image digest - build may not be reproducible
+[INFO] [io.quarkus.container.image.jib.deployment.JibProcessor] Using base image with digest: sha256:fa3c2446421eb01846d5eb6e32af1c6d5e86cfbd9e068e5006de4bcd129d7ac2
+[INFO] [io.quarkus.container.image.jib.deployment.JibProcessor] Container entrypoint set to [/opt/jboss/container/java/run/run-java.sh]
+[INFO] [io.quarkus.container.image.jib.deployment.JibProcessor] Created container image org.kie.kogito.examples/dmn-drools-quarkus-metrics:1.0 (sha256:e09c92f0ea40396e6f3436d11f34413851a07e687413488a2ec9427766964285)
+
+[INFO] [io.quarkus.deployment.QuarkusAugmentor] Quarkus augmentation completed in 10182ms
+[INFO] 
+[INFO] --- resources:2.5:copy-resources (copy-resources) @ dmn-drools-quarkus-metrics ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- resources:2.5:copy-resources (add-it-resources) @ dmn-drools-quarkus-metrics ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] 
+[INFO] --- resources:2.5:copy-resources (copy-docker-compose-for-tests) @ dmn-drools-quarkus-metrics ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (integration-test) @ dmn-drools-quarkus-metrics ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.kie.kogito.examples.quarkus.DashboardsListIT
+2026-01-20 04:24:08,567 WARN  [io.qua.boo.BootstrapAppModelFactory] (main) Expected project directory /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-drools-quarkus-metrics/target/test-run does not match current project directory /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-drools-quarkus-metrics
+2026-01-20 04:24:14,326 WARN  [io.qua.boo.BootstrapAppModelFactory] (main) Expected project directory /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-drools-quarkus-metrics/target/test-run does not match current project directory /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-drools-quarkus-metrics
+2026-01-20 04:24:15,808 INFO  [io.qua.tes.com.DefaultDockerContainerLauncher] (main) Executing "docker run --name quarkus-integration-test-LNzcd -i --rm -p 34681:34681 -p 8444:8444 --net=quarkus-integration-test-dnxLi --env QUARKUS_LOG_CATEGORY__IO_QUARKUS__LEVEL=INFO --env QUARKUS_HTTP_PORT=34681 --env QUARKUS_HTTP_SSL_PORT=8444 --env TEST_URL=http://localhost:0 --env QUARKUS_PROFILE=prod --env QUARKUS_HTTP_TEST_PORT=0 org.kie.kogito.examples/dmn-drools-quarkus-metrics:1.0"
+2026-01-20 04:24:15,820 INFO  [io.qua.tes.com.DefaultDockerContainerLauncher] (main) Wait for server to start by capturing listening data...
+2026-01-20 04:24:18,589 INFO  [io.qua.tes.com.DefaultDockerContainerLauncher] (main) Server started on port 34681
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.92 s -- in org.kie.kogito.examples.quarkus.DashboardsListIT
+[INFO] Running org.kie.kogito.examples.quarkus.DroolsMetricsIT
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.804 s -- in org.kie.kogito.examples.quarkus.DroolsMetricsIT
+[INFO] Running org.kie.kogito.examples.quarkus.LoanEligibilityIT
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.732 s -- in org.kie.kogito.examples.quarkus.LoanEligibilityIT
+[INFO] Running org.kie.kogito.examples.quarkus.GrafanaDockerComposeIT
+2026-01-20 04:24:21,818 INFO  [org.tes.ima.PullPolicy] (main) Image pull policy will be performed by: DefaultPullPolicy()
+2026-01-20 04:24:21,820 INFO  [org.tes.uti.ImageNameSubstitutor] (main) Found configured ImageNameSubstitutor: Kogito Image Name Substitutor
+2026-01-20 04:24:21,820 INFO  [org.tes.uti.ImageNameSubstitutor] (main) Image name substitution will be performed by: Chained substitutor of 'DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')' and then 'Kogito Image Name Substitutor'
+2026-01-20 04:24:21,876 INFO  [org.tes.DockerClientFactory] (main) Testcontainers version: 2.0.3
+2026-01-20 04:24:22,042 INFO  [org.tes.doc.DockerClientProviderStrategy] (main) Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2026-01-20 04:24:22,255 INFO  [org.tes.doc.DockerClientProviderStrategy] (main) Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2026-01-20 04:24:22,257 INFO  [org.tes.DockerClientFactory] (main) Docker host IP address is localhost
+2026-01-20 04:24:22,280 INFO  [org.tes.DockerClientFactory] (main) Connected to docker: 
+  Server Version: 29.1.4
+  API Version: 1.52
+  Operating System: Ubuntu 22.04.5 LTS
+  Total Memory: 62785 MB
+2026-01-20 04:24:22,281 INFO  [org.tes.DockerClientFactory] (main) Checking the system...
+2026-01-20 04:24:22,281 INFO  [org.tes.DockerClientFactory] (main) ✔︎ Docker server version should be at least 1.6.0
+2026-01-20 04:24:22,284 INFO  [org.tes.uti.ImageNameSubstitutor] (main) Using mirror.gcr.io/testcontainers/ryuk:0.13.0 as a substitute image for testcontainers/ryuk:0.13.0 (using image substitutor: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor'))
+2026-01-20 04:24:23,314 INFO  [tc.mir.gcr.io/.13.0] (main) Creating container for image: mirror.gcr.io/testcontainers/ryuk:0.13.0
+2026-01-20 04:24:23,471 INFO  [tc.mir.gcr.io/.13.0] (main) Container mirror.gcr.io/testcontainers/ryuk:0.13.0 is starting: 9ef5586814eff6671e268c4b306bf461c21dcd822e8cb6d05d39bc50085673e5
+2026-01-20 04:24:24,078 INFO  [tc.mir.gcr.io/.13.0] (main) Container mirror.gcr.io/testcontainers/ryuk:0.13.0 started in PT0.763987379S
+2026-01-20 04:24:24,090 INFO  [tc.docker] (main) Local Docker Compose is running command: compose up -d
+2026-01-20 04:24:24,230 INFO  [tc.docker] (Thread-22) time="2026-01-20T04:24:24-08:00" level=warning msg="/home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-drools-quarkus-metrics/target/test-classes/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+2026-01-20 04:24:24,271 INFO  [tc.docker] (Thread-22)  Image grafana/grafana:6.6.1 Pulling 
+2026-01-20 04:24:24,271 INFO  [tc.docker] (Thread-22)  Image prom/prometheus:v2.8.0 Pulling 
+2026-01-20 04:24:25,674 INFO  [tc.docker] (Thread-22)  4167d3e14976 Pulling fs layer 
+2026-01-20 04:24:25,674 INFO  [tc.docker] (Thread-22)  a12d298bad69 Pulling fs layer 
+2026-01-20 04:24:25,675 INFO  [tc.docker] (Thread-22)  7762494368aa Pulling fs layer 
+2026-01-20 04:24:25,675 INFO  [tc.docker] (Thread-22)  583570ba34f8 Pulling fs layer 
+2026-01-20 04:24:25,675 INFO  [tc.docker] (Thread-22)  f4890f280cee Pulling fs layer 
+2026-01-20 04:24:25,675 INFO  [tc.docker] (Thread-22)  284be4a2e74c Pulling fs layer 
+2026-01-20 04:24:25,676 INFO  [tc.docker] (Thread-22)  87938d846863 Pulling fs layer 
+2026-01-20 04:24:25,676 INFO  [tc.docker] (Thread-22)  1b4c090f3520 Pulling fs layer 
+2026-01-20 04:24:25,884 INFO  [tc.docker] (Thread-22)  4167d3e14976 Download complete 
+2026-01-20 04:24:25,886 INFO  [tc.docker] (Thread-22)  a12d298bad69 Download complete 
+2026-01-20 04:24:25,897 INFO  [tc.docker] (Thread-22)  4167d3e14976 Extracting 1 s
+2026-01-20 04:24:25,985 INFO  [tc.docker] (Thread-22)  1b4c090f3520 Download complete 
+2026-01-20 04:24:25,986 INFO  [tc.docker] (Thread-22)  7762494368aa Download complete 
+2026-01-20 04:24:25,994 INFO  [tc.docker] (Thread-22)  4167d3e14976 Extracting 1 s
+2026-01-20 04:24:26,090 INFO  [tc.docker] (Thread-22)  87938d846863 Downloading [====>                                              ]  6.291MB/64.26MB
+2026-01-20 04:24:26,092 INFO  [tc.docker] (Thread-22)  583570ba34f8 Download complete 
+2026-01-20 04:24:26,093 INFO  [tc.docker] (Thread-22)  f4890f280cee Downloading [=============>                                     ]  2.097MB/8.059MB
+2026-01-20 04:24:26,093 INFO  [tc.docker] (Thread-22)  284be4a2e74c Downloading [============>                                      ]  2.097MB/8.698MB
+2026-01-20 04:24:26,115 INFO  [tc.docker] (Thread-22)  4167d3e14976 Pull complete 
+2026-01-20 04:24:26,151 INFO  [tc.docker] (Thread-22)  7762494368aa Pull complete 
+2026-01-20 04:24:26,172 INFO  [tc.docker] (Thread-22)  583570ba34f8 Extracting 1 s
+2026-01-20 04:24:26,181 INFO  [tc.docker] (Thread-22)  f4890f280cee Download complete 
+2026-01-20 04:24:26,181 INFO  [tc.docker] (Thread-22)  284be4a2e74c Download complete 
+2026-01-20 04:24:26,182 INFO  [tc.docker] (Thread-22)  87938d846863 Downloading [===========>                                       ]  14.68MB/64.26MB
+2026-01-20 04:24:26,211 INFO  [tc.docker] (Thread-22)  583570ba34f8 Extracting 1 s
+2026-01-20 04:24:26,283 INFO  [tc.docker] (Thread-22)  87938d846863 Downloading [====================>                              ]  26.21MB/64.26MB
+2026-01-20 04:24:26,317 INFO  [tc.docker] (Thread-22)  583570ba34f8 Extracting 1 s
+2026-01-20 04:24:26,390 INFO  [tc.docker] (Thread-22)  87938d846863 Downloading [===========================>                       ]  35.65MB/64.26MB
+2026-01-20 04:24:26,426 INFO  [tc.docker] (Thread-22)  583570ba34f8 Extracting 1 s
+2026-01-20 04:24:26,474 INFO  [tc.docker] (Thread-22) error from registry: You have reached your unauthenticated pull rate limit. https://www.docker.com/increase-rate-limit
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.698 s <<< FAILURE! -- in org.kie.kogito.examples.quarkus.GrafanaDockerComposeIT
+[ERROR] org.kie.kogito.examples.quarkus.GrafanaDockerComposeIT -- Time elapsed: 4.698 s <<< ERROR!
+org.testcontainers.containers.ContainerLaunchException: Local Docker Compose exited abnormally with code 1 whilst running command: compose up -d
+	at org.testcontainers.containers.LocalDockerCompose.invoke(LocalDockerCompose.java:119)
+	at org.testcontainers.containers.ComposeDelegate.runWithCompose(ComposeDelegate.java:241)
+	at org.testcontainers.containers.ComposeDelegate.createServices(ComposeDelegate.java:163)
+	at org.testcontainers.containers.ComposeContainer.start(ComposeContainer.java:170)
+	at org.testcontainers.junit.jupiter.TestcontainersExtension$StoreAdapter.start(TestcontainersExtension.java:276)
+	at org.testcontainers.junit.jupiter.TestcontainersExtension$StoreAdapter.access$200(TestcontainersExtension.java:263)
+	at org.testcontainers.junit.jupiter.TestcontainersExtension.lambda$startContainers$4(TestcontainersExtension.java:83)
+	at org.testcontainers.junit.jupiter.TestcontainersExtension.lambda$startContainers$5(TestcontainersExtension.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testcontainers.junit.jupiter.TestcontainersExtension.startContainers(TestcontainersExtension.java:83)
+	at org.testcontainers.junit.jupiter.TestcontainersExtension.beforeAll(TestcontainersExtension.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   GrafanaDockerComposeIT » ContainerLaunch Local Docker Compose exited abnormally with code 1 whilst running command: compose up -d
+[INFO] 
+[ERROR] Tests run: 4, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (default) @ dmn-drools-quarkus-metrics ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (integration-test) @ dmn-drools-quarkus-metrics ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Kogito Example :: DMN Embedded Mode 999-SNAPSHOT ... SUCCESS [  3.095 s]
+[INFO] Kogito Example :: Rule Embedded Mode 999-SNAPSHOT .. SUCCESS [  0.734 s]
+[INFO] Kogito Example 999-SNAPSHOT ........................ SUCCESS [  1.465 s]
+[INFO] Kogito Example :: Java 999-SNAPSHOT ................ SUCCESS [  0.125 s]
+[INFO] Kogito Example :: Quarkus 999-SNAPSHOT ............. SUCCESS [  0.126 s]
+[INFO] Kogito Example :: Decision Table - Quarkus 999-SNAPSHOT SUCCESS [ 23.206 s]
+[INFO] Kogito Example :: DMN :: 1.5 Features 999-SNAPSHOT . SUCCESS [  5.661 s]
+[INFO] Kogito Example :: DMN Metrics Quarkus 999-SNAPSHOT . FAILURE [ 34.013 s]
+[INFO] Kogito Example :: DMN Event-Driven :: Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: DMN Incubation API With Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: DMN with Knative Eventing and Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: DMN with listeners - Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: DMN Decision Table listener - Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: DMN :: PMML - QUARKUS 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: DMN 999-SNAPSHOT ................. SKIPPED
+[INFO] Kogito Example :: DMN :: Resource jar providing model 999-SNAPSHOT SKIPPED
+[INFO] dmn-quarkus-resource-jar 999-SNAPSHOT .............. SKIPPED
+[INFO] dmn-quarkus-consumer-example 999-SNAPSHOT .......... SKIPPED
+[INFO] Kogito Example :: DMN :: Multiple Models 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Flexible Process - Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Travel Agency 999-SNAPSHOT ....... SKIPPED
+[INFO] Kogito Example :: Travel Agency :: Basic 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Travel Agency :: Extended 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Travel Agency :: Travels 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Travel Agency :: Visas 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Onboarding Example 999-SNAPSHOT .. SKIPPED
+[INFO] Kogito Example :: Onboarding Example :: HR with Drools 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Onboarding Example :: Payroll with DMN 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Onboarding Example :: Onboarding with Business Process Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: PMML Event-Driven - Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: PMML Incubation API With Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: PMML - Quarkus 999-SNAPSHOT ...... SKIPPED
+[INFO] Kogito Example :: Process Business Calendar 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Business Rules Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process :: Decisions :: Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process :: Decisions :: REST Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process :: Decisions :: Rules :: Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Scripts With Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Incubation API With Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Infinispan Persistence Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Instance Migration Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process with Kafka and Quarkus, multiple channels, avro serialization 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process with Kafka and Quarkus, multiple channels 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Kafka Persistence Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process with Kafka and Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process with Knative Eventing and Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process MongoDB Persistence Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Monitoring :: Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Transactional Outbox :: MongoDB and Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Client Performance test 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Quarkus Performance test 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process PostgreSQL Persistence Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process and Quarkus 999-SNAPSHOT . SKIPPED
+[INFO] Kogito Example :: Process Service Rest Cal with Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Rest :: Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Service Rest WorkItem call with Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Scripts With Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Saga with Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Service Calls with Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Timer with Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Usertasks With Custom Lifecycle 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process with Usertasks Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process UserTasks with Timer Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Usertasks With Security OIDC Keycloak Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Usertasks With Security Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Usertasks With Web Service HumanTask Lifecycle 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Rules Incubation API With Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Rules Legacy API - Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Rules Legacy API HELLO - Quarkus :: Test Scenario 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Rules HelloWorld 999-SNAPSHOT .... SKIPPED
+[INFO] Kogito Example :: Rule Unit Event-Driven :: Quarkus 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: RuleUnit - Quarkus 999-SNAPSHOT .. SKIPPED
+[INFO] Kogito Example :: Spring Boot 999-SNAPSHOT ......... SKIPPED
+[INFO] Kogito Example :: Decision Table - Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: DMN :: 1.5 Features 999-SNAPSHOT . SKIPPED
+[INFO] Kogito Example :: DMN Metrics SpringBoot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: DMN Event-Driven :: Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: DMN with listeners - Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: DMN :: PMML - Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: DMN :: Resource jar providing model 999-SNAPSHOT SKIPPED
+[INFO] dmn-springboot-resource-jar 999-SNAPSHOT ........... SKIPPED
+[INFO] dmn-springboot-consumer-example 999-SNAPSHOT ....... SKIPPED
+[INFO] Kogito Example :: DMN - Spring Boot 999-SNAPSHOT ... SKIPPED
+[INFO] Kogito Example :: DMN Tracing - Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Flexible process with Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Onboarding Example :: Onboarding with Business Process Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: PMML Event-Driven - Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: PMML - Spring Boot 999-SNAPSHOT .. SKIPPED
+[INFO] Kogito Example :: Process Business Calendar Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Business Rules Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process :: Decisions :: REST :: Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process :: Decisions :: Rules :: Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process :: Decisions :: Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Infinispan Persistence Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process with Kafka and Spring Boot, multiple channels 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process with Kafka and Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process MongoDB Persistence Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Monitoring :: Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Transactional Outbox :: MongoDB and Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Springboot Performance test 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process PostgreSQL Persistence Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Service Rest Call Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Scripts With Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Service Calls with Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process and Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Timer With Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Usertasks With Custom Lifecycle Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process with Usertasks Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Usertasks With Security OIDC Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Process Usertasks With Security Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Rules Legacy API - Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Rules Legacy API HELLO - Spring Boot :: Test Scenario 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: RuleUnit Event Driven :: Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: RuleUnit - Spring Boot 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Examples :: Parent 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Annotations and Description:: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow CallBack Over HTTP :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow CallBack Over HTTP Quarkus :: Callback Event Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow CallBack Over HTTP Quarkus :: Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Callback :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Camel :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Compensation :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Consuming Events Over HTTP :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Correlation :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Correlation :: Quarkus :: MongoDB 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Custom Function :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Custom Function Knative :: Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Custom Function Knative :: Workflow 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Custom type :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Custom RPC Server :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Custom RPC :: Runtime 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Custom RPC :: Deployment 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Custom RPC Client :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Data Index persistence addon :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Data Index :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow :: DMN:: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Error :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Events :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Expression :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow For Each :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Functions And Events :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Functions :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow :: Funqy 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow :: Funqy :: Services 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow :: Funqy :: Workflow 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Greeting :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow gRPC example 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Greeting :: gRPC Server :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Greeting :: gRPC Client :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Hello World :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase :: Aggregator 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase :: Flow 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Loan Broker Showcase :: UI 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Newsletter Subscription Showcase 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Newsletter Subscription :: Subscription Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Newsletter Subscription :: Subscription Flow 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Oauth2 Orchestration Example 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Oauth2 Orchestration Example :: ACME Financial Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Oauth2 Orchestration Example :: Currency Exchange 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Order Processing 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Parallel Execution :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Query and Answer Showcase 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Query and Answer :: Workflow Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Query and Answer :: Query Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Order Saga :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Service Calls :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Stock Profit 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Portfolio Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Stock Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Stock Profit :: Mock Stock Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Subtraction Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Multiplication Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Full Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Function Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Spec Service 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Testing with REST Assured :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Timeouts Showcase Embedded 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Timeouts Showcase Extended 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Timeouts Showcase Operator Dev Profile 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Python :: Quarkus 1.0-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow 999-SNAPSHOT . SKIPPED
+[INFO] Kogito Example :: SonataFlow :: Java Embedded examples 999-SNAPSHOT SKIPPED
+[INFO] Kogito Example :: Serverless Workflow Fault Tolerance :: Quarkus 1.0.0-SNAPSHOT SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:11 min
+[INFO] Finished at: 2026-01-20T04:24:27-08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-failsafe-plugin:3.3.1:verify (integration-test) on project dmn-drools-quarkus-metrics: 
+[ERROR] 
+[ERROR] Please refer to /home/jijo/apache_src/kogito-examples/kogito-quarkus-examples/dmn-drools-quarkus-metrics/target/failsafe-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :dmn-drools-quarkus-metrics

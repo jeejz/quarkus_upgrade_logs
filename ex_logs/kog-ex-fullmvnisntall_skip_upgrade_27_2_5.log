@@ -1,0 +1,396 @@
+nohup: ignoring input
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.kie.kogito.examples:pmml-event-driven-quarkus:jar:999-SNAPSHOT
+[WARNING] The expression ${build.directory} is deprecated. Please use ${project.build.directory} instead.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.version: 5.15
+[INFO] os.detected.version.major: 5
+[INFO] os.detected.version.minor: 15
+[INFO] os.detected.release: ubuntu
+[INFO] os.detected.release.version: 22.04
+[INFO] os.detected.release.like.ubuntu: true
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Kogito Example :: Serverless Workflow Python :: Quarkus            [jar]
+[INFO] Kogito Example :: Serverless Workflow                              [pom]
+[INFO] Kogito Example :: SonataFlow :: Java Embedded examples             [jar]
+[INFO] Kogito Example :: Serverless Workflow Fault Tolerance :: Quarkus   [jar]
+[INFO] 
+[INFO] -----< org.kie.kogito.examples:serverless-workflow-python-quarkus >-----
+[INFO] Building Kogito Example :: Serverless Workflow Python :: Quarkus 1.0-SNAPSHOT [1/4]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ serverless-workflow-python-quarkus ---
+[INFO] 
+[INFO] --- exec:1.6.0:exec (jep) @ serverless-workflow-python-quarkus ---
+Defaulting to user installation because normal site-packages is not writeable
+Collecting jep==4.2.0
+  Downloading jep-4.2.0.tar.gz (3.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 11.8 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Building wheels for collected packages: jep
+  Building wheel for jep (setup.py): started
+  Building wheel for jep (setup.py): finished with status 'done'
+  Created wheel for jep: filename=jep-4.2.0-cp310-cp310-linux_x86_64.whl size=1188551 sha256=5ba52fe69542f556e91b9b1d590e08a04f126267812ab22165202eef9014b8b7
+  Stored in directory: /home/jijo/.cache/pip/wheels/b1/1a/29/f786070db4c08a92b1317116ab1af6a230bb4f2e06d5de0913
+Successfully built jep
+Installing collected packages: jep
+Successfully installed jep-4.2.0
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ serverless-workflow-python-quarkus ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ serverless-workflow-python-quarkus ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ serverless-workflow-python-quarkus ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-python-quarkus/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ serverless-workflow-python-quarkus ---
+[INFO] Recompiling the module because of changed source code.
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file with javac [debug release 17] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ serverless-workflow-python-quarkus ---
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ serverless-workflow-python-quarkus ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-python-quarkus/target/serverless-workflow-python-quarkus.jar
+[INFO] 
+[INFO] --- quarkus:3.27.2:build (default) @ serverless-workflow-python-quarkus ---
+Downloading from apache.snapshots: https://repository.apache.org/snapshots/org/apache/kie/sonataflow/sonataflow-addons-quarkus-python-deployment/999-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.5 kB                    Downloaded from apache.snapshots: https://repository.apache.org/snapshots/org/apache/kie/sonataflow/sonataflow-addons-quarkus-python-deployment/999-SNAPSHOT/maven-metadata.xml (1.5 kB at 1.3 kB/s)
+Downloading from apache.snapshots: https://repository.apache.org/snapshots/org/apache/kie/sonataflow/sonataflow-addons-quarkus-python-deployment/999-SNAPSHOT/sonataflow-addons-quarkus-python-deployment-999-20260122.015123-515.pom
+Progress (1): 2.5 kB                    Downloaded from apache.snapshots: https://repository.apache.org/snapshots/org/apache/kie/sonataflow/sonataflow-addons-quarkus-python-deployment/999-SNAPSHOT/sonataflow-addons-quarkus-python-deployment-999-20260122.015123-515.pom (2.5 kB at 14 kB/s)
+Downloading from apache.snapshots: https://repository.apache.org/snapshots/org/apache/kie/sonataflow/sonataflow-addons-quarkus-python-deployment/999-SNAPSHOT/sonataflow-addons-quarkus-python-deployment-999-20260122.015123-515.jar
+Progress (1): 7.5/15 kBProgress (1): 8.2/15 kBProgress (1): 15 kB                       Downloaded from apache.snapshots: https://repository.apache.org/snapshots/org/apache/kie/sonataflow/sonataflow-addons-quarkus-python-deployment/999-SNAPSHOT/sonataflow-addons-quarkus-python-deployment-999-20260122.015123-515.jar (15 kB at 42 kB/s)
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.console.json" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.file.json.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.deployment.index] Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq/1.0.0-preview.20240207/jackson-jq-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+[WARNING] [io.quarkus.deployment.index] Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq-extra/1.0.0-preview.20240207/jackson-jq-extra-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+[INFO] Performed addonsConfig discovery, found: AddonsConfig{usePersistence=false, useTracing=false, useMonitoring=false, usePrometheusMonitoring=false, useCloudEvents=true, useExplainability=false, useProcessSVG=false, useEventDrivenDecisions=false, useEventDrivenRules=false, useProcessSources=true}
+[INFO] [org.kie.kogito.quarkus.common.deployment.KogitoAssetsProcessor] Disabling Kogito Fault Tolerance because SmallRye Fault Tolerance extension is not available
+[INFO] Generator discovery performed, found [processes, messaging, usertasks]
+[INFO] Skipping generator 'messaging' because disabled
+[INFO] Skipping generator 'usertasks' because disabled
+[WARNING] [io.quarkus.deployment.steps.ReflectiveHierarchyStep] Unable to properly register the hierarchy of the following classes for reflection as they are not in the Jandex index:
+	- org.kie.kogito.serverless.workflow.models.JsonNodeModelOutput (source: SmallRyeOpenApiProcessor > null > org.kie.kogito.serverless.workflow.models.JsonNodeModelOutput)
+Consider adding them to the index either by creating a Jandex index for your dependency via the Maven plugin, an empty META-INF/beans.xml or quarkus.index-dependency properties.
+[INFO] [io.quarkus.deployment.QuarkusAugmentor] Quarkus augmentation completed in 5411ms
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (default) @ serverless-workflow-python-quarkus ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.kie.kogito.examples.PythonRestIT
+Executing "/home/jijo/.sdkman/candidates/java/17.0.17-tem/bin/java -Dquarkus.http.port=8081 -Dquarkus.http.ssl-port=8444 -Dtest.url=http://localhost:8081 -Dquarkus.log.file.path=/home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-python-quarkus/target/quarkus.log -Dquarkus.log.file.enabled=true -Dquarkus.log.category."io.quarkus".level=INFO -Dquarkus.profile=prod -jar /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-python-quarkus/target/quarkus-app/quarkus-run.jar"
+__  ____  __  _____   ___  __ ____  ______ 
+ --/ __ \/ / / / _ | / _ \/ //_/ / / / __/ 
+ -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \   
+--\___\_\____/_/ |_/_/|_/_/|_|\____/___/   
+2026-01-22 21:11:16.393|INFO||org.kie.kogito.addon.quarkus.messaging.common.QuarkusKogitoExtensionInitializer|Registered Kogito CloudEvent extension
+2026-01-22 21:11:16.546|INFO||io.quarkus|serverless-workflow-python-quarkus 1.0-SNAPSHOT on JVM (powered by Quarkus 3.27.2) started in 2.533s. Listening on: http://0.0.0.0:8081
+2026-01-22 21:11:16.547|INFO||io.quarkus|Profile prod activated. 
+2026-01-22 21:11:16.548|INFO||io.quarkus|Installed features: [cache, cdi, jackson-jq, kie-addon-messaging-extension, kie-addon-source-files-extension, kogito-serverless-workflow, messaging, narayana-jta, oidc-client, openapi-generator, qute, reactive-routes, resteasy, resteasy-client, resteasy-client-jackson, resteasy-client-oidc-filter, resteasy-jackson, security, security-properties-file, smallrye-context-propagation, smallrye-health, smallrye-openapi, smallrye-reactive-messaging-http, sonataflow-addons-quarkus-python, vertx]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.58 s -- in org.kie.kogito.examples.PythonRestIT
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (default) @ serverless-workflow-python-quarkus ---
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ serverless-workflow-python-quarkus ---
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-python-quarkus/pom.xml to /home/jijo/.m2/repository/org/kie/kogito/examples/serverless-workflow-python-quarkus/1.0-SNAPSHOT/serverless-workflow-python-quarkus-1.0-SNAPSHOT.pom
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-python-quarkus/target/serverless-workflow-python-quarkus.jar to /home/jijo/.m2/repository/org/kie/kogito/examples/serverless-workflow-python-quarkus/1.0-SNAPSHOT/serverless-workflow-python-quarkus-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --------< org.kie.kogito.examples:serverless-workflow-examples >--------
+[INFO] Building Kogito Example :: Serverless Workflow 999-SNAPSHOT        [2/4]
+[INFO]   from /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ serverless-workflow-examples ---
+[INFO] 
+[INFO] --- directory:1.0:highest-basedir (directories) @ serverless-workflow-examples ---
+[INFO] Highest basedir set to: /home/jijo/apache_src/kogito-examples
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ serverless-workflow-examples ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-maven-version) @ serverless-workflow-examples ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-java-version) @ serverless-workflow-examples ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- checkstyle:3.3.0:check (default) @ serverless-workflow-examples ---
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.13.0:format (default) @ serverless-workflow-examples ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 0
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (default) @ serverless-workflow-examples ---
+[INFO] Processed 0 files in 00:00.002 (Already Sorted: 0, Needed Sorting: 0)
+[INFO] 
+[INFO] --- remote-resources:3.2.0:process (process-resource-bundles) @ serverless-workflow-examples ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.5
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- jar:3.2.0:test-jar (test-jar) @ serverless-workflow-examples ---
+[INFO] Skipping packaging of the test-jar
+[INFO] 
+[INFO] --- source:3.2.1:jar-no-fork (attach-sources) @ serverless-workflow-examples ---
+[INFO] 
+[INFO] --- source:3.2.1:test-jar-no-fork (attach-test-sources) @ serverless-workflow-examples ---
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (integration-test) @ serverless-workflow-examples ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (default) @ serverless-workflow-examples ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (integration-test) @ serverless-workflow-examples ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (default) @ serverless-workflow-examples ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ serverless-workflow-examples ---
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/pom.xml to /home/jijo/.m2/repository/org/kie/kogito/examples/serverless-workflow-examples/999-SNAPSHOT/serverless-workflow-examples-999-SNAPSHOT.pom
+[INFO] 
+[INFO] -------------< org.kie.kogito.examples:sonataflow-fluent >--------------
+[INFO] Building Kogito Example :: SonataFlow :: Java Embedded examples 999-SNAPSHOT [3/4]
+[INFO]   from /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/sonataflow-fluent/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ sonataflow-fluent ---
+[INFO] 
+[INFO] --- directory:1.0:highest-basedir (directories) @ sonataflow-fluent ---
+[INFO] Highest basedir set to: /home/jijo/apache_src/kogito-examples
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ sonataflow-fluent ---
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-maven-version) @ sonataflow-fluent ---
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-java-version) @ sonataflow-fluent ---
+[INFO] 
+[INFO] --- checkstyle:3.3.0:check (default) @ sonataflow-fluent ---
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- formatter:2.13.0:format (default) @ sonataflow-fluent ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 6
+[INFO] Successfully formatted:          0 file(s)
+[INFO] Fail to format:                  0 file(s)
+[INFO] Skipped:                         6 file(s)
+[INFO] Read only skipped:               0 file(s)
+[INFO] Approximate time taken:          0s
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (default) @ sonataflow-fluent ---
+[INFO] Processed 6 files in 00:00.242 (Already Sorted: 6, Needed Sorting: 0)
+[INFO] 
+[INFO] --- remote-resources:3.2.0:process (process-resource-bundles) @ sonataflow-fluent ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.5
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:2.5:resources (default-resources) @ sonataflow-fluent ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ sonataflow-fluent ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 5 source files with javac [debug deprecation release 17] to target/classes
+[INFO] 
+[INFO] --- resources:2.5:testResources (default-testResources) @ sonataflow-fluent ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/sonataflow-fluent/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ sonataflow-fluent ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug deprecation release 17] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.3.1:test (default-test) @ sonataflow-fluent ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.kie.kogito.serverless.workflow.examples.WorkflowFluentExamplesTest
+[main] INFO org.kie.kogito.codegen.api.utils.AddonsConfigDiscovery - Performed addonsConfig discovery, found: AddonsConfig{usePersistence=false, useTracing=false, useMonitoring=false, usePrometheusMonitoring=false, useCloudEvents=false, useExplainability=false, useProcessSVG=false, useEventDrivenDecisions=false, useEventDrivenRules=false, useProcessSources=false}
+[main] INFO org.kie.kogito.expr.jq.JqExpressionHandler - Using default scope
+[main] INFO org.kie.kogito.codegen.api.utils.AddonsConfigDiscovery - Performed addonsConfig discovery, found: AddonsConfig{usePersistence=false, useTracing=false, useMonitoring=false, usePrometheusMonitoring=false, useCloudEvents=false, useExplainability=false, useProcessSVG=false, useEventDrivenDecisions=false, useEventDrivenRules=false, useProcessSources=false}
+[main] WARN org.kie.kogito.serverless.workflow.io.CachedContentLoader - URI schema/expression.json was retrieved using a fallback mechanism CLASSPATH rather than original FILE
+[main] WARN org.kie.kogito.serverless.workflow.io.CachedContentLoader - URI schema/result.json was retrieved using a fallback mechanism CLASSPATH rather than original FILE
+[main] WARN com.networknt.schema.JsonMetaSchema - Unknown keyword $defs - you should define your own Meta Schema. If the keyword is irrelevant for validation, just use a NonValidationKeyword
+[main] INFO org.kie.kogito.serverless.workflow.actions.SysoutAction - 5
+[main] INFO org.kie.kogito.codegen.api.utils.AddonsConfigDiscovery - Performed addonsConfig discovery, found: AddonsConfig{usePersistence=false, useTracing=false, useMonitoring=false, usePrometheusMonitoring=false, useCloudEvents=false, useExplainability=false, useProcessSVG=false, useEventDrivenDecisions=false, useEventDrivenRules=false, useProcessSources=false}
+[main] INFO org.kie.kogito.codegen.api.utils.AddonsConfigDiscovery - Performed addonsConfig discovery, found: AddonsConfig{usePersistence=false, useTracing=false, useMonitoring=false, usePrometheusMonitoring=false, useCloudEvents=false, useExplainability=false, useProcessSVG=false, useEventDrivenDecisions=false, useEventDrivenRules=false, useProcessSources=false}
+[main] INFO org.kie.kogito.codegen.api.utils.AddonsConfigDiscovery - Performed addonsConfig discovery, found: AddonsConfig{usePersistence=false, useTracing=false, useMonitoring=false, usePrometheusMonitoring=false, useCloudEvents=false, useExplainability=false, useProcessSVG=false, useEventDrivenDecisions=false, useEventDrivenRules=false, useProcessSources=false}
+[main] INFO org.kie.kogito.codegen.api.utils.AddonsConfigDiscovery - Performed addonsConfig discovery, found: AddonsConfig{usePersistence=false, useTracing=false, useMonitoring=false, usePrometheusMonitoring=false, useCloudEvents=false, useExplainability=false, useProcessSVG=false, useEventDrivenDecisions=false, useEventDrivenRules=false, useProcessSources=false}
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.614 s -- in org.kie.kogito.serverless.workflow.examples.WorkflowFluentExamplesTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ sonataflow-fluent ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/sonataflow-fluent/target/sonataflow-fluent-999-SNAPSHOT.jar
+[INFO] 
+[INFO] --- jar:3.2.0:test-jar (test-jar) @ sonataflow-fluent ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/sonataflow-fluent/target/sonataflow-fluent-999-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- source:3.2.1:jar-no-fork (attach-sources) @ sonataflow-fluent ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/sonataflow-fluent/target/sonataflow-fluent-999-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- source:3.2.1:test-jar-no-fork (attach-test-sources) @ sonataflow-fluent ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/sonataflow-fluent/target/sonataflow-fluent-999-SNAPSHOT-test-sources.jar
+[INFO] 
+[INFO] --- resources:2.5:copy-resources (add-it-resources) @ sonataflow-fluent ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (integration-test) @ sonataflow-fluent ---
+[INFO] 
+[INFO] --- failsafe:3.3.1:integration-test (default) @ sonataflow-fluent ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (integration-test) @ sonataflow-fluent ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (default) @ sonataflow-fluent ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ sonataflow-fluent ---
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/sonataflow-fluent/pom.xml to /home/jijo/.m2/repository/org/kie/kogito/examples/sonataflow-fluent/999-SNAPSHOT/sonataflow-fluent-999-SNAPSHOT.pom
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/sonataflow-fluent/target/sonataflow-fluent-999-SNAPSHOT.jar to /home/jijo/.m2/repository/org/kie/kogito/examples/sonataflow-fluent/999-SNAPSHOT/sonataflow-fluent-999-SNAPSHOT.jar
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/sonataflow-fluent/target/sonataflow-fluent-999-SNAPSHOT-tests.jar to /home/jijo/.m2/repository/org/kie/kogito/examples/sonataflow-fluent/999-SNAPSHOT/sonataflow-fluent-999-SNAPSHOT-tests.jar
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/sonataflow-fluent/target/sonataflow-fluent-999-SNAPSHOT-sources.jar to /home/jijo/.m2/repository/org/kie/kogito/examples/sonataflow-fluent/999-SNAPSHOT/sonataflow-fluent-999-SNAPSHOT-sources.jar
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/sonataflow-fluent/target/sonataflow-fluent-999-SNAPSHOT-test-sources.jar to /home/jijo/.m2/repository/org/kie/kogito/examples/sonataflow-fluent/999-SNAPSHOT/sonataflow-fluent-999-SNAPSHOT-test-sources.jar
+[INFO] 
+[INFO] ----< org.kie.kogito.examples:serverless-workflow-fault-tolerance >-----
+[INFO] Building Kogito Example :: Serverless Workflow Fault Tolerance :: Quarkus 1.0.0-SNAPSHOT [4/4]
+[INFO]   from /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-fault-tolerance/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ serverless-workflow-fault-tolerance ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ serverless-workflow-fault-tolerance ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- quarkus:3.27.2:generate-code (default) @ serverless-workflow-fault-tolerance ---
+Downloading from apache.snapshots: https://repository.apache.org/snapshots/org/kie/kogito/examples/serverless-workflow-fault-tolerance/1.0.0-SNAPSHOT/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/io/quarkus/platform/quarkus-bom-quarkus-platform-properties/3.27.2/quarkus-bom-quarkus-platform-properties-3.27.2.properties
+Progress (1): 923 B                   Downloaded from central: https://repo.maven.apache.org/maven2/io/quarkus/platform/quarkus-bom-quarkus-platform-properties/3.27.2/quarkus-bom-quarkus-platform-properties-3.27.2.properties (923 B at 4.8 kB/s)
+[INFO] Generating with dryRun=false
+[WARNING] OpenAPI 3.1 support is still in beta. To report an issue related to 3.1 spec, please kindly open an issue in the Github repo: https://github.com/openAPITools/openapi-generator.
+[INFO] No .openapi-generator-ignore file found.
+[INFO] OpenAPI Generator: quarkus (client)
+[INFO] Generator 'quarkus' is considered stable.
+[INFO] Environment variable JAVA_POST_PROCESS_FILE not defined so the Java code may not be properly formatted. To define it, try 'export JAVA_POST_PROCESS_FILE="/usr/local/bin/clang-format -i"' (Linux/Mac)
+[INFO] NOTE: To enable file post-processing, 'enablePostProcessFile' must be set to `true` (--enable-post-process-file for CLI).
+[INFO] Processing operation adminOperation
+[INFO] Processing operation circuitBreakerEcho
+[WARNING] OpenAPI 3.1 support is still in beta. To report an issue related to 3.1 spec, please kindly open an issue in the Github repo: https://github.com/openAPITools/openapi-generator.
+[INFO] 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[INFO] 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[INFO] writing file /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-fault-tolerance/target/generated-sources/open-api-stream/org/kie/kogito/openapi/externalservice/model/AdminRequest.java
+[INFO] Skipped /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-fault-tolerance/target/generated-sources/open-api-stream/docs/AdminRequest.md (Skipped by modelDocs options supplied by user.)
+[INFO] writing file /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-fault-tolerance/target/generated-sources/open-api-stream/org/kie/kogito/openapi/externalservice/model/EchoResponse.java
+[INFO] Skipped /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-fault-tolerance/target/generated-sources/open-api-stream/docs/EchoResponse.md (Skipped by modelDocs options supplied by user.)
+[INFO] 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[INFO] writing file /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-fault-tolerance/target/generated-sources/open-api-stream/org/kie/kogito/openapi/externalservice/api/ExternalServiceResourceApi.java
+[INFO] Skipped /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-fault-tolerance/target/generated-sources/open-api-stream/org/kie/kogito/openapi/externalservice/api/ExternalServiceResourceApiTest.java (Skipped by apiTests options supplied by user.)
+[INFO] Skipped /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-fault-tolerance/target/generated-sources/open-api-stream/docs/ExternalServiceResourceApi.md (Skipped by apiDocs options supplied by user.)
+[INFO] Skipping generation of Webhooks.
+[INFO] 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[INFO] writing file /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-fault-tolerance/target/generated-sources/open-api-stream/.openapi-generator-ignore
+[INFO] writing file /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-fault-tolerance/target/generated-sources/open-api-stream/.openapi-generator/VERSION
+[INFO] writing file /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-fault-tolerance/target/generated-sources/open-api-stream/.openapi-generator/FILES
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ serverless-workflow-fault-tolerance ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 6 source files with javac [debug parameters release 17] to target/classes
+[INFO] 
+[INFO] --- quarkus:3.27.2:generate-code-tests (default) @ serverless-workflow-fault-tolerance ---
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ serverless-workflow-fault-tolerance ---
+[INFO] skip non existing resourceDirectory /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-fault-tolerance/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ serverless-workflow-fault-tolerance ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.5.2:test (default-test) @ serverless-workflow-fault-tolerance ---
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ serverless-workflow-fault-tolerance ---
+[INFO] Building jar: /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-fault-tolerance/target/serverless-workflow-fault-tolerance-1.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- quarkus:3.27.2:build (default) @ serverless-workflow-fault-tolerance ---
+[WARNING] [io.quarkus.config] Unrecognized configuration key "kogito.faultToleranceEnabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.console.json" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "kogito.devservices.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.file.json.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.deployment.index] Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq/1.0.0-preview.20240207/jackson-jq-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+[WARNING] [io.quarkus.deployment.index] Reindexing /home/jijo/.m2/repository/net/thisptr/jackson-jq-extra/1.0.0-preview.20240207/jackson-jq-extra-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+[INFO] Performed addonsConfig discovery, found: AddonsConfig{usePersistence=false, useTracing=false, useMonitoring=false, usePrometheusMonitoring=false, useCloudEvents=true, useExplainability=false, useProcessSVG=false, useEventDrivenDecisions=false, useEventDrivenRules=false, useProcessSources=false}
+[INFO] Generator discovery performed, found [processes, messaging, usertasks]
+[INFO] Skipping generator 'messaging' because disabled
+[INFO] Skipping generator 'usertasks' because disabled
+[WARNING] [io.quarkus.deployment.steps.ReflectiveHierarchyStep] Unable to properly register the hierarchy of the following classes for reflection as they are not in the Jandex index:
+	- org.kie.kogito.serverless.workflow.models.JsonNodeModelOutput (source: SmallRyeOpenApiProcessor > null > org.kie.kogito.serverless.workflow.models.JsonNodeModelOutput)
+Consider adding them to the index either by creating a Jandex index for your dependency via the Maven plugin, an empty META-INF/beans.xml or quarkus.index-dependency properties.
+[INFO] [io.quarkus.deployment.QuarkusAugmentor] Quarkus augmentation completed in 3501ms
+[INFO] 
+[INFO] --- failsafe:3.5.2:integration-test (default) @ serverless-workflow-fault-tolerance ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- quarkus:3.27.2:native-image-agent (default) @ serverless-workflow-fault-tolerance ---
+[INFO] Missing native-image-agent-base-config directory with native image agent configuration to transform
+[INFO] 
+[INFO] --- failsafe:3.5.2:verify (default) @ serverless-workflow-fault-tolerance ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ serverless-workflow-fault-tolerance ---
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-fault-tolerance/pom.xml to /home/jijo/.m2/repository/org/kie/kogito/examples/serverless-workflow-fault-tolerance/1.0.0-SNAPSHOT/serverless-workflow-fault-tolerance-1.0.0-SNAPSHOT.pom
+[INFO] Installing /home/jijo/apache_src/kogito-examples/serverless-workflow-examples/serverless-workflow-fault-tolerance/target/serverless-workflow-fault-tolerance-1.0.0-SNAPSHOT.jar to /home/jijo/.m2/repository/org/kie/kogito/examples/serverless-workflow-fault-tolerance/1.0.0-SNAPSHOT/serverless-workflow-fault-tolerance-1.0.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Kogito Example :: Serverless Workflow Python :: Quarkus 1.0-SNAPSHOT SUCCESS [ 45.117 s]
+[INFO] Kogito Example :: Serverless Workflow 999-SNAPSHOT . SUCCESS [  0.897 s]
+[INFO] Kogito Example :: SonataFlow :: Java Embedded examples 999-SNAPSHOT SUCCESS [  5.454 s]
+[INFO] Kogito Example :: Serverless Workflow Fault Tolerance :: Quarkus 1.0.0-SNAPSHOT SUCCESS [  9.294 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:04 min
+[INFO] Finished at: 2026-01-22T21:11:34-08:00
+[INFO] ------------------------------------------------------------------------

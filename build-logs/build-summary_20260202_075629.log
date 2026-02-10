@@ -1,0 +1,82 @@
+========================================
+Apache KIE Chained Build
+Started at: Mon Feb  2 07:56:29 AM PST 2026
+Base directory: /home/jijo/apache_src
+Logs directory: /home/jijo/apache_src/build-logs
+========================================
+
+========================================
+Building: incubator-kie-drools
+Started at: Mon Feb  2 07:56:29 AM PST 2026
+========================================
+========================================
+Finished: incubator-kie-drools
+Exit code: 0
+Ended at: Mon Feb  2 08:03:58 AM PST 2026
+Log file: /home/jijo/apache_src/build-logs/incubator-kie-drools_20260202_075629.log
+========================================
+
+✅ SUCCESS: Build completed for incubator-kie-drools
+
+========================================
+Building: optaplanner
+Started at: Mon Feb  2 08:03:58 AM PST 2026
+========================================
+========================================
+Finished: optaplanner
+Exit code: 0
+Ended at: Mon Feb  2 08:05:33 AM PST 2026
+Log file: /home/jijo/apache_src/build-logs/optaplanner_20260202_075629.log
+========================================
+
+✅ SUCCESS: Build completed for optaplanner
+
+========================================
+Building: kogito-runtimes
+Started at: Mon Feb  2 08:05:33 AM PST 2026
+========================================
+========================================
+Finished: kogito-runtimes
+Exit code: 0
+Ended at: Mon Feb  2 08:16:28 AM PST 2026
+Log file: /home/jijo/apache_src/build-logs/kogito-runtimes_20260202_075629.log
+========================================
+
+✅ SUCCESS: Build completed for kogito-runtimes
+
+========================================
+Building: incubator-kie-kogito-apps
+Started at: Mon Feb  2 08:16:28 AM PST 2026
+========================================
+========================================
+Finished: incubator-kie-kogito-apps
+Exit code: 0
+Ended at: Mon Feb  2 08:23:51 AM PST 2026
+Log file: /home/jijo/apache_src/build-logs/incubator-kie-kogito-apps_20260202_075629.log
+========================================
+
+✅ SUCCESS: Build completed for incubator-kie-kogito-apps
+
+========================================
+Building: kogito-examples
+Started at: Mon Feb  2 08:23:51 AM PST 2026
+========================================
+========================================
+Finished: kogito-examples
+Exit code: 0
+Ended at: Mon Feb  2 08:32:40 AM PST 2026
+Log file: /home/jijo/apache_src/build-logs/kogito-examples_20260202_075629.log
+========================================
+
+✅ SUCCESS: Build completed for kogito-examples
+
+
+========================================
+BUILD SUMMARY
+========================================
+Completed at: Mon Feb  2 08:32:40 AM PST 2026
+Total builds: 5
+Successful: 5
+Failed: 0
+
+🎉 All builds completed successfully!
