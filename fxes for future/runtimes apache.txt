@@ -1,0 +1,832 @@
+Issue iidentified in the examples
+
+Executing "/home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow/target/conversion-workflow-runner -Dquarkus.http.port=8081 -Dquarkus.http.ssl-port=8444 -Dtest.url=http://localhost:8081 -Dquarkus.log.file.path=/home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow/target/quarkus.log -Dquarkus.log.file.enabled=true -Dquarkus.log.category."io.quarkus".level=INFO -Dquarkus.profile=prod"
+__  ____  __  _____   ___  __ ____  ______ 
+ --/ __ \/ / / / _ | / _ \/ //_/ / / / __/ 
+ -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \   
+--\___\_\____/_/ |_/_/|_/_/|_|\____/___/   
+2026-02-12 03:14:07.102|INFO||org.kie.kogito.serverless.workflow.config.ServerlessWorkflowWorkItemHandlerConfig|Registering OpenAPI work item handler named: multiplication_doOperation
+2026-02-12 03:14:07.102|INFO||org.kie.kogito.serverless.workflow.config.ServerlessWorkflowWorkItemHandlerConfig|Registering OpenAPI work item handler named: subtraction_doOperation
+2026-02-12 03:14:07.103|INFO||org.kie.kogito.addon.quarkus.messaging.common.QuarkusKogitoExtensionInitializer|Registered Kogito CloudEvent extension
+2026-02-12 03:14:07.104|INFO||io.quarkus|conversion-workflow 1.0-SNAPSHOT native (powered by Quarkus 3.27.2) started in 0.022s. Listening on: http://0.0.0.0:8081
+2026-02-12 03:14:07.104|INFO||io.quarkus|Profile prod activated. 
+2026-02-12 03:14:07.104|INFO||io.quarkus|Installed features: [cache, cdi, jackson-jq, kie-addon-messaging-extension, kie-addon-source-files-extension, kogito-serverless-workflow, messaging, narayana-jta, oidc-client, openapi-generator, qute, reactive-routes, resteasy, resteasy-client, resteasy-client-jackson, resteasy-client-oidc-filter, resteasy-jackson, security, security-properties-file, smallrye-context-propagation, smallrye-health, smallrye-openapi, smallrye-reactive-messaging-http, swagger-ui, vertx]
+2026-02-12 03:14:08.160|INFO|a7cb8312-e760-406c-a80c-07db53dbac6b|org.kie.kogito.process.workitems.impl.DefaultKogitoWorkItemHandler|error workItem WorkItem cb162948-47c1-43ce-a340-20bfd9bd73e5 [name=multiplication_doOperation, state=1, processInstanceId=a7cb8312-e760-406c-a80c-07db53dbac6b, parameters{Parameter={"fahrenheit":"100","subtractValue":32,"multiplyValue":0.5556,"difference":68.0}, rightElement=0.5556, leftElement=68.0}] handled by multiplication_doOperation transition DefaultWorkItemTransitionImpl [id=activate, data={}, policies=[], termination=null] : jakarta.ws.rs.ProcessingException: RESTEASY003145: Unable to find a MessageBodyReader of content-type text/plain and type class java.lang.Float
+	at org.jboss.resteasy.core.interception.jaxrs.ClientReaderInterceptorContext.throwReaderNotFound(ClientReaderInterceptorContext.java:46)
+	at org.jboss.resteasy.core.interception.jaxrs.AbstractReaderInterceptorContext.getReader(AbstractReaderInterceptorContext.java:129)
+	at org.jboss.resteasy.core.interception.jaxrs.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:76)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientResponse.readFrom(ClientResponse.java:192)
+	at org.jboss.resteasy.specimpl.BuiltResponse.readEntity(BuiltResponse.java:75)
+	at org.jboss.resteasy.specimpl.AbstractBuiltResponse.readEntity(AbstractBuiltResponse.java:227)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.extractResult(ClientInvocation.java:164)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.extractors.BodyEntityExtractor.extractEntity(BodyEntityExtractor.java:59)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invokeSync(ClientInvoker.java:136)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invoke(ClientInvoker.java:103)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientProxy.invoke(ClientProxy.java:102)
+	at jdk.proxy4/jdk.proxy4.$Proxy51.doOperation(Unknown Source)
+	at java.base@21.0.5/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.quarkus.restclient.runtime.QuarkusProxyInvocationHandler.invoke(QuarkusProxyInvocationHandler.java:173)
+	at jdk.proxy4/jdk.proxy4.$Proxy52.doOperation(Unknown Source)
+	at org.kie.kogito.app.Multiplication_doOperation.internalExecute(Multiplication_doOperation.java:9)
+	at org.kie.kogito.app.Multiplication_doOperation.internalExecute(Multiplication_doOperation.java:5)
+	at org.kie.kogito.serverless.workflow.openapi.OpenApiWorkItemHandler.internalExecute(OpenApiWorkItemHandler.java:83)
+	at org.kie.kogito.serverless.workflow.WorkflowWorkItemHandler.activateWorkItemHandler(WorkflowWorkItemHandler.java:45)
+	at org.kie.kogito.process.workitems.impl.DefaultWorkItemLifeCyclePhase.execute(DefaultWorkItemLifeCyclePhase.java:65)
+	at org.kie.kogito.process.workitems.impl.DefaultWorkItemLifeCycle.transitionTo(DefaultWorkItemLifeCycle.java:56)
+	at org.kie.kogito.process.workitems.impl.DefaultKogitoWorkItemHandler.transitionToPhase(DefaultKogitoWorkItemHandler.java:104)
+	at org.kie.kogito.app.Multiplication_doOperation_ClientProxy.transitionToPhase(Unknown Source)
+	at org.jbpm.process.instance.LightWorkItemManager.transitionWorkItem(LightWorkItemManager.java:202)
+	at org.jbpm.process.instance.LightWorkItemManager.internalExecuteWorkItem(LightWorkItemManager.java:95)
+	at org.jbpm.workflow.instance.node.WorkItemNodeInstance.lambda$internalTrigger$0(WorkItemNodeInstance.java:162)
+	at org.jbpm.workflow.instance.node.WorkItemNodeInstance.processWorkItemHandler(WorkItemNodeInstance.java:171)
+	at org.jbpm.workflow.instance.node.WorkItemNodeInstance.internalTrigger(WorkItemNodeInstance.java:161)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$trigger$0(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.trigger(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$triggerNodeInstance$1(NodeInstanceImpl.java:486)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerNodeInstance(NodeInstanceImpl.java:486)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerNodeInstance(NodeInstanceImpl.java:470)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerCompleted(NodeInstanceImpl.java:440)
+	at org.jbpm.workflow.instance.node.ActionNodeInstance.triggerCompleted(ActionNodeInstance.java:75)
+	at org.jbpm.workflow.instance.node.ActionNodeInstance.internalTrigger(ActionNodeInstance.java:71)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$trigger$0(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.trigger(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$triggerNodeInstance$1(NodeInstanceImpl.java:486)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerNodeInstance(NodeInstanceImpl.java:486)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerNodeInstance(NodeInstanceImpl.java:470)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerCompleted(NodeInstanceImpl.java:440)
+	at org.jbpm.workflow.instance.impl.ExtendedNodeInstanceImpl.triggerCompleted(ExtendedNodeInstanceImpl.java:54)
+	at org.jbpm.workflow.instance.node.StateBasedNodeInstance.triggerCompleted(StateBasedNodeInstance.java:366)
+	at org.jbpm.workflow.instance.node.StateBasedNodeInstance.triggerCompleted(StateBasedNodeInstance.java:326)
+	at org.jbpm.workflow.instance.node.WorkItemNodeInstance.triggerCompleted(WorkItemNodeInstance.java:278)
+	at org.jbpm.workflow.instance.node.WorkItemNodeInstance.workItemCompleted(WorkItemNodeInstance.java:365)
+	at org.jbpm.workflow.instance.node.WorkItemNodeInstance.signalEvent(WorkItemNodeInstance.java:331)
+	at org.jbpm.workflow.instance.impl.WorkflowProcessInstanceImpl.signalEvent(WorkflowProcessInstanceImpl.java:715)
+	at org.jbpm.process.instance.LightWorkItemManager.transitionWorkItem(LightWorkItemManager.java:214)
+	at org.jbpm.process.instance.LightWorkItemManager.internalExecuteWorkItem(LightWorkItemManager.java:95)
+	at org.jbpm.workflow.instance.node.WorkItemNodeInstance.lambda$internalTrigger$0(WorkItemNodeInstance.java:162)
+	at org.jbpm.workflow.instance.node.WorkItemNodeInstance.processWorkItemHandler(WorkItemNodeInstance.java:171)
+	at org.jbpm.workflow.instance.node.WorkItemNodeInstance.internalTrigger(WorkItemNodeInstance.java:161)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$trigger$0(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.trigger(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$triggerNodeInstance$1(NodeInstanceImpl.java:486)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerNodeInstance(NodeInstanceImpl.java:486)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerNodeInstance(NodeInstanceImpl.java:470)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerCompleted(NodeInstanceImpl.java:440)
+	at org.jbpm.workflow.instance.node.StartNodeInstance.triggerCompleted(StartNodeInstance.java:76)
+	at org.jbpm.workflow.instance.node.StartNodeInstance.internalTrigger(StartNodeInstance.java:55)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$trigger$0(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.trigger(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.node.CompositeNodeInstance.internalTrigger(CompositeNodeInstance.java:124)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$trigger$0(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.trigger(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$triggerNodeInstance$1(NodeInstanceImpl.java:486)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerNodeInstance(NodeInstanceImpl.java:486)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerNodeInstance(NodeInstanceImpl.java:470)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerCompleted(NodeInstanceImpl.java:440)
+	at org.jbpm.workflow.instance.node.ActionNodeInstance.triggerCompleted(ActionNodeInstance.java:75)
+	at org.jbpm.workflow.instance.node.ActionNodeInstance.internalTrigger(ActionNodeInstance.java:71)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$trigger$0(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.trigger(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$triggerNodeInstance$1(NodeInstanceImpl.java:486)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerNodeInstance(NodeInstanceImpl.java:486)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerNodeInstance(NodeInstanceImpl.java:470)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerCompleted(NodeInstanceImpl.java:440)
+	at org.jbpm.workflow.instance.node.StartNodeInstance.triggerCompleted(StartNodeInstance.java:76)
+	at org.jbpm.workflow.instance.node.StartNodeInstance.internalTrigger(StartNodeInstance.java:55)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$trigger$0(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.trigger(NodeInstanceImpl.java:250)
+	at org.jbpm.ruleflow.instance.RuleFlowProcessInstance.internalStart(RuleFlowProcessInstance.java:39)
+	at org.jbpm.process.instance.impl.ProcessInstanceImpl.start(ProcessInstanceImpl.java:285)
+	at org.jbpm.workflow.instance.impl.WorkflowProcessInstanceImpl.start(WorkflowProcessInstanceImpl.java:553)
+	at org.jbpm.process.instance.KogitoProcessRuntimeImpl.startProcessInstance(KogitoProcessRuntimeImpl.java:167)
+	at org.jbpm.process.instance.KogitoProcessRuntimeImpl.startProcessInstance(KogitoProcessRuntimeImpl.java:76)
+	at org.kie.kogito.process.impl.AbstractProcessInstance.lambda$start$3(AbstractProcessInstance.java:359)
+	at org.kie.kogito.process.impl.AbstractProcessInstance.lambda$executeInWorkflowProcessInstance$24(AbstractProcessInstance.java:622)
+	at org.kie.kogito.process.impl.lock.ContextAwareProcessInstanceLockStrategy.lambda$executeOperation$0(ContextAwareProcessInstanceLockStrategy.java:63)
+	at org.kie.kogito.process.impl.lock.ProcessInstanceAtomicLockStrategy.executeOperation(ProcessInstanceAtomicLockStrategy.java:98)
+	at org.kie.kogito.process.impl.lock.ContextAwareProcessInstanceLockStrategy.executeOperation(ContextAwareProcessInstanceLockStrategy.java:60)
+	at org.kie.kogito.process.impl.AbstractProcessInstance.executeInWorkflowProcessInstance(AbstractProcessInstance.java:615)
+	at org.kie.kogito.process.impl.AbstractProcessInstance.executeInWorkflowProcessInstanceWrite(AbstractProcessInstance.java:588)
+	at org.kie.kogito.process.impl.AbstractProcessInstance.start(AbstractProcessInstance.java:345)
+	at org.kie.kogito.process.impl.ProcessServiceImpl.lambda$createProcessInstance$1(ProcessServiceImpl.java:91)
+	at org.kie.kogito.services.uow.UnitOfWorkExecutor.executeInUnitOfWork(UnitOfWorkExecutor.java:40)
+	at org.kie.kogito.process.impl.ProcessServiceImpl.createProcessInstance(ProcessServiceImpl.java:86)
+	at org.kie.kogito.serverless.Fahrenheit_to_celsiusResource.createResource_fahrenheit_to_celsius(Fahrenheit_to_celsiusResource.java:83)
+	at org.kie.kogito.serverless.Fahrenheit_to_celsiusResource_ClientProxy.createResource_fahrenheit_to_celsius(Unknown Source)
+	at java.base@21.0.5/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:154)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:118)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:560)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:452)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:413)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:321)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:415)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:378)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:356)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:70)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:429)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invokePropagateNotFound$6(SynchronousDispatcher.java:275)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:154)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:321)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:157)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invokePropagateNotFound(SynchronousDispatcher.java:260)
+	at io.quarkus.resteasy.runtime.standalone.RequestDispatcher.service(RequestDispatcher.java:86)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.dispatch(VertxRequestHandler.java:151)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler$1.run(VertxRequestHandler.java:97)
+	at io.quarkus.vertx.core.runtime.VertxCoreRecorder$15.runWith(VertxCoreRecorder.java:645)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:11)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:11)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base@21.0.5/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.5/java.lang.Thread.run(Thread.java:1583)
+	at org.graalvm.nativeimage.builder/com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:896)
+	at org.graalvm.nativeimage.builder/com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:872)
+
+2026-02-12 03:14:08.161|ERROR|a7cb8312-e760-406c-a80c-07db53dbac6b|org.jbpm.workflow.instance.impl.NodeInstanceImpl|Error executing node instance '6ace8b89-e00a-4f04-91aa-5979e1898343' (node 'multiplication' id: '10') in process instance 'a7cb8312-e760-406c-a80c-07db53dbac6b' (process: 'fahrenheit_to_celsius') in a non transactional environment  
+2026-02-12 03:14:08.161|ERROR|a7cb8312-e760-406c-a80c-07db53dbac6b|org.jbpm.workflow.instance.impl.WorkflowProcessInstanceImpl|Unexpected error while executing node multiplication in process instance a7cb8312-e760-406c-a80c-07db53dbac6b: org.jbpm.workflow.instance.WorkflowRuntimeException: [fahrenheit_to_celsius:a7cb8312-e760-406c-a80c-07db53dbac6b - multiplication:[uuid=10]] -- RESTEASY003145: Unable to find a MessageBodyReader of content-type text/plain and type class java.lang.Float
+	at org.jbpm.workflow.instance.node.WorkItemNodeInstance.getExceptionScopeInstance(WorkItemNodeInstance.java:198)
+	at org.jbpm.workflow.instance.node.WorkItemNodeInstance.handleException(WorkItemNodeInstance.java:192)
+	at org.jbpm.workflow.instance.node.WorkItemNodeInstance.processWorkItemHandler(WorkItemNodeInstance.java:183)
+	at org.jbpm.workflow.instance.node.WorkItemNodeInstance.internalTrigger(WorkItemNodeInstance.java:161)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$trigger$0(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.trigger(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$triggerNodeInstance$1(NodeInstanceImpl.java:486)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerNodeInstance(NodeInstanceImpl.java:486)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerNodeInstance(NodeInstanceImpl.java:470)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerCompleted(NodeInstanceImpl.java:440)
+	at org.jbpm.workflow.instance.node.ActionNodeInstance.triggerCompleted(ActionNodeInstance.java:75)
+	at org.jbpm.workflow.instance.node.ActionNodeInstance.internalTrigger(ActionNodeInstance.java:71)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$trigger$0(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.trigger(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$triggerNodeInstance$1(NodeInstanceImpl.java:486)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerNodeInstance(NodeInstanceImpl.java:486)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerNodeInstance(NodeInstanceImpl.java:470)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerCompleted(NodeInstanceImpl.java:440)
+	at org.jbpm.workflow.instance.impl.ExtendedNodeInstanceImpl.triggerCompleted(ExtendedNodeInstanceImpl.java:54)
+	at org.jbpm.workflow.instance.node.StateBasedNodeInstance.triggerCompleted(StateBasedNodeInstance.java:366)
+	at org.jbpm.workflow.instance.node.StateBasedNodeInstance.triggerCompleted(StateBasedNodeInstance.java:326)
+	at org.jbpm.workflow.instance.node.WorkItemNodeInstance.triggerCompleted(WorkItemNodeInstance.java:278)
+	at org.jbpm.workflow.instance.node.WorkItemNodeInstance.workItemCompleted(WorkItemNodeInstance.java:365)
+	at org.jbpm.workflow.instance.node.WorkItemNodeInstance.signalEvent(WorkItemNodeInstance.java:331)
+	at org.jbpm.workflow.instance.impl.WorkflowProcessInstanceImpl.signalEvent(WorkflowProcessInstanceImpl.java:715)
+	at org.jbpm.process.instance.LightWorkItemManager.transitionWorkItem(LightWorkItemManager.java:214)
+	at org.jbpm.process.instance.LightWorkItemManager.internalExecuteWorkItem(LightWorkItemManager.java:95)
+	at org.jbpm.workflow.instance.node.WorkItemNodeInstance.lambda$internalTrigger$0(WorkItemNodeInstance.java:162)
+	at org.jbpm.workflow.instance.node.WorkItemNodeInstance.processWorkItemHandler(WorkItemNodeInstance.java:171)
+	at org.jbpm.workflow.instance.node.WorkItemNodeInstance.internalTrigger(WorkItemNodeInstance.java:161)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$trigger$0(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.trigger(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$triggerNodeInstance$1(NodeInstanceImpl.java:486)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerNodeInstance(NodeInstanceImpl.java:486)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerNodeInstance(NodeInstanceImpl.java:470)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerCompleted(NodeInstanceImpl.java:440)
+	at org.jbpm.workflow.instance.node.StartNodeInstance.triggerCompleted(StartNodeInstance.java:76)
+	at org.jbpm.workflow.instance.node.StartNodeInstance.internalTrigger(StartNodeInstance.java:55)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$trigger$0(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.trigger(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.node.CompositeNodeInstance.internalTrigger(CompositeNodeInstance.java:124)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$trigger$0(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.trigger(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$triggerNodeInstance$1(NodeInstanceImpl.java:486)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerNodeInstance(NodeInstanceImpl.java:486)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerNodeInstance(NodeInstanceImpl.java:470)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerCompleted(NodeInstanceImpl.java:440)
+	at org.jbpm.workflow.instance.node.ActionNodeInstance.triggerCompleted(ActionNodeInstance.java:75)
+	at org.jbpm.workflow.instance.node.ActionNodeInstance.internalTrigger(ActionNodeInstance.java:71)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$trigger$0(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.trigger(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$triggerNodeInstance$1(NodeInstanceImpl.java:486)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerNodeInstance(NodeInstanceImpl.java:486)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerNodeInstance(NodeInstanceImpl.java:470)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.triggerCompleted(NodeInstanceImpl.java:440)
+	at org.jbpm.workflow.instance.node.StartNodeInstance.triggerCompleted(StartNodeInstance.java:76)
+	at org.jbpm.workflow.instance.node.StartNodeInstance.internalTrigger(StartNodeInstance.java:55)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.lambda$trigger$0(NodeInstanceImpl.java:250)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.captureExecutionException(NodeInstanceImpl.java:260)
+	at org.jbpm.workflow.instance.impl.NodeInstanceImpl.trigger(NodeInstanceImpl.java:250)
+	at org.jbpm.ruleflow.instance.RuleFlowProcessInstance.internalStart(RuleFlowProcessInstance.java:39)
+	at org.jbpm.process.instance.impl.ProcessInstanceImpl.start(ProcessInstanceImpl.java:285)
+	at org.jbpm.workflow.instance.impl.WorkflowProcessInstanceImpl.start(WorkflowProcessInstanceImpl.java:553)
+	at org.jbpm.process.instance.KogitoProcessRuntimeImpl.startProcessInstance(KogitoProcessRuntimeImpl.java:167)
+	at org.jbpm.process.instance.KogitoProcessRuntimeImpl.startProcessInstance(KogitoProcessRuntimeImpl.java:76)
+	at org.kie.kogito.process.impl.AbstractProcessInstance.lambda$start$3(AbstractProcessInstance.java:359)
+	at org.kie.kogito.process.impl.AbstractProcessInstance.lambda$executeInWorkflowProcessInstance$24(AbstractProcessInstance.java:622)
+	at org.kie.kogito.process.impl.lock.ContextAwareProcessInstanceLockStrategy.lambda$executeOperation$0(ContextAwareProcessInstanceLockStrategy.java:63)
+	at org.kie.kogito.process.impl.lock.ProcessInstanceAtomicLockStrategy.executeOperation(ProcessInstanceAtomicLockStrategy.java:98)
+	at org.kie.kogito.process.impl.lock.ContextAwareProcessInstanceLockStrategy.executeOperation(ContextAwareProcessInstanceLockStrategy.java:60)
+	at org.kie.kogito.process.impl.AbstractProcessInstance.executeInWorkflowProcessInstance(AbstractProcessInstance.java:615)
+	at org.kie.kogito.process.impl.AbstractProcessInstance.executeInWorkflowProcessInstanceWrite(AbstractProcessInstance.java:588)
+	at org.kie.kogito.process.impl.AbstractProcessInstance.start(AbstractProcessInstance.java:345)
+	at org.kie.kogito.process.impl.ProcessServiceImpl.lambda$createProcessInstance$1(ProcessServiceImpl.java:91)
+	at org.kie.kogito.services.uow.UnitOfWorkExecutor.executeInUnitOfWork(UnitOfWorkExecutor.java:40)
+	at org.kie.kogito.process.impl.ProcessServiceImpl.createProcessInstance(ProcessServiceImpl.java:86)
+	at org.kie.kogito.serverless.Fahrenheit_to_celsiusResource.createResource_fahrenheit_to_celsius(Fahrenheit_to_celsiusResource.java:83)
+	at org.kie.kogito.serverless.Fahrenheit_to_celsiusResource_ClientProxy.createResource_fahrenheit_to_celsius(Unknown Source)
+	at java.base@21.0.5/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:154)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:118)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:560)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:452)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:413)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:321)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:415)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:378)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:356)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:70)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:429)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invokePropagateNotFound$6(SynchronousDispatcher.java:275)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:154)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:321)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:157)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invokePropagateNotFound(SynchronousDispatcher.java:260)
+	at io.quarkus.resteasy.runtime.standalone.RequestDispatcher.service(RequestDispatcher.java:86)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.dispatch(VertxRequestHandler.java:151)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler$1.run(VertxRequestHandler.java:97)
+	at io.quarkus.vertx.core.runtime.VertxCoreRecorder$15.runWith(VertxCoreRecorder.java:645)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2651)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2630)
+	at org.jboss.threads.EnhancedQueueExecutor.runThreadBody(EnhancedQueueExecutor.java:1622)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1589)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:11)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:11)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base@21.0.5/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.5/java.lang.Thread.run(Thread.java:1583)
+	at org.graalvm.nativeimage.builder/com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:896)
+	at org.graalvm.nativeimage.builder/com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:872)
+Caused by: jakarta.ws.rs.ProcessingException: RESTEASY003145: Unable to find a MessageBodyReader of content-type text/plain and type class java.lang.Float
+	at org.jboss.resteasy.core.interception.jaxrs.ClientReaderInterceptorContext.throwReaderNotFound(ClientReaderInterceptorContext.java:46)
+	at org.jboss.resteasy.core.interception.jaxrs.AbstractReaderInterceptorContext.getReader(AbstractReaderInterceptorContext.java:129)
+	at org.jboss.resteasy.core.interception.jaxrs.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:76)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientResponse.readFrom(ClientResponse.java:192)
+	at org.jboss.resteasy.specimpl.BuiltResponse.readEntity(BuiltResponse.java:75)
+	at org.jboss.resteasy.specimpl.AbstractBuiltResponse.readEntity(AbstractBuiltResponse.java:227)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.extractResult(ClientInvocation.java:164)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.extractors.BodyEntityExtractor.extractEntity(BodyEntityExtractor.java:59)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invokeSync(ClientInvoker.java:136)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invoke(ClientInvoker.java:103)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientProxy.invoke(ClientProxy.java:102)
+	at jdk.proxy4/jdk.proxy4.$Proxy51.doOperation(Unknown Source)
+	at java.base@21.0.5/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.quarkus.restclient.runtime.QuarkusProxyInvocationHandler.invoke(QuarkusProxyInvocationHandler.java:173)
+	at jdk.proxy4/jdk.proxy4.$Proxy52.doOperation(Unknown Source)
+	at org.kie.kogito.app.Multiplication_doOperation.internalExecute(Multiplication_doOperation.java:9)
+	at org.kie.kogito.app.Multiplication_doOperation.internalExecute(Multiplication_doOperation.java:5)
+	at org.kie.kogito.serverless.workflow.openapi.OpenApiWorkItemHandler.internalExecute(OpenApiWorkItemHandler.java:83)
+	at org.kie.kogito.serverless.workflow.WorkflowWorkItemHandler.activateWorkItemHandler(WorkflowWorkItemHandler.java:45)
+	at org.kie.kogito.process.workitems.impl.DefaultWorkItemLifeCyclePhase.execute(DefaultWorkItemLifeCyclePhase.java:65)
+	at org.kie.kogito.process.workitems.impl.DefaultWorkItemLifeCycle.transitionTo(DefaultWorkItemLifeCycle.java:56)
+	at org.kie.kogito.process.workitems.impl.DefaultKogitoWorkItemHandler.transitionToPhase(DefaultKogitoWorkItemHandler.java:104)
+	at org.kie.kogito.app.Multiplication_doOperation_ClientProxy.transitionToPhase(Unknown Source)
+	at org.jbpm.process.instance.LightWorkItemManager.transitionWorkItem(LightWorkItemManager.java:202)
+	at org.jbpm.process.instance.LightWorkItemManager.internalExecuteWorkItem(LightWorkItemManager.java:95)
+	at org.jbpm.workflow.instance.node.WorkItemNodeInstance.lambda$internalTrigger$0(WorkItemNodeInstance.java:162)
+	at org.jbpm.workflow.instance.node.WorkItemNodeInstance.processWorkItemHandler(WorkItemNodeInstance.java:171)
+	... 118 more
+
+Request method:	POST
+Request URI:	http://localhost:8081/fahrenheit_to_celsius
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "fahrenheit": "100"
+}
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: application/json
+content-length: 222
+
+{
+    "message": "jakarta.ws.rs.ProcessingException - RESTEASY003145: Unable to find a MessageBodyReader of content-type text/plain and type class java.lang.Float",
+    "failedNodeId": "10",
+    "id": "a7cb8312-e760-406c-a80c-07db53dbac6b"
+}
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.345 s <<< FAILURE! -- in org.kie.kogito.serverless.ConversationFlowIT
+[ERROR] org.kie.kogito.serverless.ConversationFlowIT.sanityVerification -- Time elapsed: 0.773 s <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <500>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at org.kie.kogito.serverless.ConversationFlowIT.sanityVerification(ConversationFlowIT.java:50)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+2026-02-12 03:14:08,235 INFO  [org.ecl.jet.ser.Server] (main) Stopped Server@526c7ebd{STOPPING}[11.0.24,sto=1000]
+2026-02-12 03:14:08,235 INFO  [org.ecl.jet.ser.Server] (main) Shutdown Server@526c7ebd{STOPPING}[11.0.24,sto=1000]
+2026-02-12 03:14:08,239 INFO  [org.ecl.jet.ser.AbstractConnector] (main) Stopped NetworkTrafficServerConnector@2c80202a{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8181}
+2026-02-12 03:14:08,240 INFO  [org.ecl.jet.ser.han.ContextHandler] (main) Stopped o.e.j.s.ServletContextHandler@2fd7f8ee{/,null,STOPPED}
+2026-02-12 03:14:08,240 INFO  [org.ecl.jet.ser.han.ContextHandler] (main) Stopped o.e.j.s.ServletContextHandler@3c94ae2{/__admin,null,STOPPED}
+2026-02-12 03:14:08,241 INFO  [org.ecl.jet.ser.Server] (main) Stopped Server@219a76b1{STOPPING}[11.0.24,sto=1000]
+2026-02-12 03:14:08,242 INFO  [org.ecl.jet.ser.Server] (main) Shutdown Server@219a76b1{STOPPING}[11.0.24,sto=1000]
+2026-02-12 03:14:08,243 INFO  [org.ecl.jet.ser.AbstractConnector] (main) Stopped NetworkTrafficServerConnector@842f6b3{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8282}
+2026-02-12 03:14:08,243 INFO  [org.ecl.jet.ser.han.ContextHandler] (main) Stopped o.e.j.s.ServletContextHandler@17adc80d{/,null,STOPPED}
+2026-02-12 03:14:08,243 INFO  [org.ecl.jet.ser.han.ContextHandler] (main) Stopped o.e.j.s.ServletContextHandler@37bc7604{/__admin,null,STOPPED}
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   ConversationFlowIT.sanityVerification:50 1 expectation failed.
+Expected status code <201> but was <500>.
+
+[INFO] 
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- failsafe:3.3.1:verify (default) @ conversion-workflow ---
+[INFO] 
+[INFO] ----------< org.kie.kogito.examples:conversion-workflow-full >----------
+[INFO] Building Kogito Example :: Serverless Workflow Temperature Conversion :: Conversion Full Service 1.0-SNAPSHOT [17/25]
+[INFO]   from /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ conversion-workflow-full ---
+[INFO] Deleting /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ conversion-workflow-full ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 4 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- quarkus:3.27.2:generate-code (default) @ conversion-workflow-full ---
+[INFO] Generating with dryRun=false
+[INFO] No .openapi-generator-ignore file found.
+[INFO] OpenAPI Generator: quarkus (client)
+[INFO] Generator 'quarkus' is considered stable.
+[INFO] Environment variable JAVA_POST_PROCESS_FILE not defined so the Java code may not be properly formatted. To define it, try 'export JAVA_POST_PROCESS_FILE="/usr/local/bin/clang-format -i"' (Linux/Mac)
+[INFO] NOTE: To enable file post-processing, 'enablePostProcessFile' must be set to `true` (--enable-post-process-file for CLI).
+[INFO] Inline schema created as doOperation_200_response. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings doOperation_200_response=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings doOperation_200_response=NewModel,ModelA=NewModelA in CLI).
+[INFO] Processing operation doOperation
+[INFO] 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[INFO] 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[INFO] writing file /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/generated-sources/open-api-stream/org/openapi/quarkus/multiplication_spec_yaml/model/DoOperation200Response.java
+[INFO] Skipped /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/generated-sources/open-api-stream/docs/DoOperation200Response.md (Skipped by modelDocs options supplied by user.)
+[INFO] writing file /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/generated-sources/open-api-stream/org/openapi/quarkus/multiplication_spec_yaml/model/MultiplicationOperation.java
+[INFO] Skipped /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/generated-sources/open-api-stream/docs/MultiplicationOperation.md (Skipped by modelDocs options supplied by user.)
+[INFO] 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[INFO] writing file /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/generated-sources/open-api-stream/org/openapi/quarkus/multiplication_spec_yaml/api/DefaultApi.java
+[INFO] Skipped /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/generated-sources/open-api-stream/org/openapi/quarkus/multiplication_spec_yaml/api/DefaultApiTest.java (Skipped by apiTests options supplied by user.)
+[INFO] Skipped /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/generated-sources/open-api-stream/docs/DefaultApi.md (Skipped by apiDocs options supplied by user.)
+[INFO] Skipping generation of Webhooks.
+[INFO] 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[INFO] writing file /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/generated-sources/open-api-stream/.openapi-generator-ignore
+[INFO] writing file /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/generated-sources/open-api-stream/.openapi-generator/VERSION
+[INFO] writing file /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/generated-sources/open-api-stream/.openapi-generator/FILES
+[INFO] Generating with dryRun=false
+[INFO] OpenAPI Generator: quarkus (client)
+[INFO] Generator 'quarkus' is considered stable.
+[INFO] Environment variable JAVA_POST_PROCESS_FILE not defined so the Java code may not be properly formatted. To define it, try 'export JAVA_POST_PROCESS_FILE="/usr/local/bin/clang-format -i"' (Linux/Mac)
+[INFO] NOTE: To enable file post-processing, 'enablePostProcessFile' must be set to `true` (--enable-post-process-file for CLI).
+[INFO] Inline schema created as doOperation_200_response. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings doOperation_200_response=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings doOperation_200_response=NewModel,ModelA=NewModelA in CLI).
+[INFO] Processing operation doOperation
+[INFO] 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[INFO] 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[INFO] writing file /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/generated-sources/open-api-stream/org/openapi/quarkus/subtraction_spec_yaml/model/DoOperation200Response.java
+[INFO] Skipped /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/generated-sources/open-api-stream/docs/DoOperation200Response.md (Skipped by modelDocs options supplied by user.)
+[INFO] writing file /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/generated-sources/open-api-stream/org/openapi/quarkus/subtraction_spec_yaml/model/SubtractionOperation.java
+[INFO] Skipped /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/generated-sources/open-api-stream/docs/SubtractionOperation.md (Skipped by modelDocs options supplied by user.)
+[INFO] 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[INFO] writing file /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/generated-sources/open-api-stream/org/openapi/quarkus/subtraction_spec_yaml/api/DefaultApi.java
+[INFO] Skipped /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/generated-sources/open-api-stream/org/openapi/quarkus/subtraction_spec_yaml/api/DefaultApiTest.java (Skipped by apiTests options supplied by user.)
+[INFO] Skipped /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/generated-sources/open-api-stream/docs/DefaultApi.md (Skipped by apiDocs options supplied by user.)
+[INFO] Skipping generation of Webhooks.
+[INFO] 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[INFO] Skipped /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/generated-sources/open-api-stream/.openapi-generator-ignore (Skipped by supportingFiles options supplied by user.)
+[INFO] writing file /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/generated-sources/open-api-stream/.openapi-generator/VERSION
+[INFO] writing file /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/generated-sources/open-api-stream/.openapi-generator/FILES
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ conversion-workflow-full ---
+[INFO] Recompiling the module because of changed source code.
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 6 source files with javac [debug release 17] to target/classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] 
+[INFO] --- quarkus:3.27.2:generate-code-tests (default) @ conversion-workflow-full ---
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ conversion-workflow-full ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ conversion-workflow-full ---
+[INFO] Recompiling the module because of changed dependency.
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 2 source files with javac [debug release 17] to target/test-classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ conversion-workflow-full ---
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ conversion-workflow-full ---
+[INFO] Building jar: /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/conversion-workflow-full.jar
+[INFO] 
+[INFO] --- quarkus:3.27.2:build (default) @ conversion-workflow-full ---
+[WARNING] [io.quarkus.config] Unrecognized configuration key "kogito.faultToleranceEnabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.console.json" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.config] Unrecognized configuration key "quarkus.log.file.json.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+[WARNING] [io.quarkus.deployment.index] Reindexing /home/jijo/coding/ibm/apachekie/M2_REPO/net/thisptr/jackson-jq/1.0.0-preview.20240207/jackson-jq-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+[WARNING] [io.quarkus.deployment.index] Reindexing /home/jijo/coding/ibm/apachekie/M2_REPO/net/thisptr/jackson-jq-extra/1.0.0-preview.20240207/jackson-jq-extra-1.0.0-preview.20240207.jar, at least Jandex 3.0 must be used to index an application dependency (index version is 10)
+[INFO] Performed addonsConfig discovery, found: AddonsConfig{usePersistence=false, useTracing=false, useMonitoring=false, usePrometheusMonitoring=false, useCloudEvents=true, useExplainability=false, useProcessSVG=false, useEventDrivenDecisions=false, useEventDrivenRules=false, useProcessSources=true}
+[INFO] [org.kie.kogito.quarkus.common.deployment.KogitoAssetsProcessor] Disabling Kogito Fault Tolerance because SmallRye Fault Tolerance extension is not available
+[INFO] Generator discovery performed, found [processes, messaging, usertasks]
+[INFO] Skipping generator 'messaging' because disabled
+[INFO] Skipping generator 'usertasks' because disabled
+[WARNING] [io.quarkus.deployment.steps.ReflectiveHierarchyStep] Unable to properly register the hierarchy of the following classes for reflection as they are not in the Jandex index:
+	- org.kie.kogito.serverless.workflow.models.JsonNodeModelOutput (source: SmallRyeOpenApiProcessor > null > org.kie.kogito.serverless.workflow.models.JsonNodeModelOutput)
+Consider adding them to the index either by creating a Jandex index for your dependency via the Maven plugin, an empty META-INF/beans.xml or quarkus.index-dependency properties.
+[INFO] [io.quarkus.deployment.pkg.steps.JarResultBuildStep] Building native image source jar: /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/conversion-workflow-full-native-image-source-jar/conversion-workflow-full-runner.jar
+[INFO] [io.quarkus.deployment.pkg.steps.NativeImageBuildStep] Building native image from /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/conversion-workflow-full-native-image-source-jar/conversion-workflow-full-runner.jar
+[INFO] [io.quarkus.deployment.pkg.steps.NativeImageBuildStep] Running Quarkus native-image plugin on GRAALVM 23.1 JDK 21.0.5+9-LTS-jvmci-23.1-b48
+[INFO] [io.quarkus.deployment.pkg.steps.NativeImageBuildRunner] /home/jijo/.sdkman/candidates/java/21.0.5-graal/bin/native-image -J-DCoordinatorEnvironmentBean.transactionStatusManagerEnable=false -J-Dsun.nio.ch.maxUpdateArraySize=100 -J-Djava.util.logging.manager=org.jboss.logmanager.LogManager -J-Duser.language=en -J-Duser.country=US -J-Dlogging.initial-configurator.min-level=500 -J-Dio.netty.leakDetection.level=DISABLED -J-Dio.netty.allocator.maxOrder=3 -J-Dvertx.logger-delegate-factory-class-name=io.quarkus.vertx.core.runtime.VertxLogDelegateFactory -J-Dvertx.disableDnsResolver=true -H:+UnlockExperimentalVMOptions -H:IncludeLocales=en-US -H:-UnlockExperimentalVMOptions -J-Dfile.encoding=UTF-8 --features=io.quarkus.runner.Feature,io.quarkus.runtime.graal.DisableLoggingFeature,io.quarkus.caffeine.runtime.graal.CacheConstructorsFeature -J--add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED -J--add-exports=java.security.jgss/sun.security.jgss=ALL-UNNAMED -J--add-opens=java.base/java.text=ALL-UNNAMED -J--add-opens=java.base/java.io=ALL-UNNAMED -J--add-opens=java.base/java.lang.invoke=ALL-UNNAMED -J--add-opens=java.base/java.util=ALL-UNNAMED -H:+UnlockExperimentalVMOptions -H:BuildOutputJSONFile=conversion-workflow-full-runner-build-output-stats.json -H:-UnlockExperimentalVMOptions -H:+UnlockExperimentalVMOptions -H:+GenerateBuildArtifactsFile -H:-UnlockExperimentalVMOptions --strict-image-heap --install-exit-handlers -H:+UnlockExperimentalVMOptions -H:+AllowFoldMethods -H:-UnlockExperimentalVMOptions -J-Djava.awt.headless=true --no-fallback --link-at-build-time -H:+UnlockExperimentalVMOptions -H:+ReportExceptionStackTraces -H:-UnlockExperimentalVMOptions -J-Xmx8g -H:-AddAllCharsets --enable-url-protocols=http,https -H:NativeLinkerOption=-no-pie --enable-monitoring=heapdump -H:+UnlockExperimentalVMOptions -H:+UseServiceLoaderFeature -H:-UnlockExperimentalVMOptions -J--add-exports=org.graalvm.nativeimage/org.graalvm.nativeimage.impl=ALL-UNNAMED --exclude-config io\.netty\.netty-codec /META-INF/native-image/io\.netty/netty-codec/generated/handlers/reflect-config\.json --exclude-config io\.netty\.netty-handler /META-INF/native-image/io\.netty/netty-handler/generated/handlers/reflect-config\.json conversion-workflow-full-runner -jar conversion-workflow-full-runner.jar
+========================================================================================================================
+GraalVM Native Image: Generating 'conversion-workflow-full-runner' (executable)...
+========================================================================================================================
+For detailed information and explanations on the build output, visit:
+https://github.com/oracle/graal/blob/master/docs/reference-manual/native-image/BuildOutput.md
+------------------------------------------------------------------------------------------------------------------------
+[1/8] Initializing...                                                                                    (7.2s @ 0.44GB)
+ Java version: 21.0.5+9-LTS, vendor version: Oracle GraalVM 21.0.5+9.1
+ Graal compiler: optimization level: 2, target machine: x86-64-v3, PGO: ML-inferred
+ C compiler: gcc (linux, x86_64, 13.3.0)
+ Garbage collector: Serial GC (max heap size: 80% of RAM)
+ 6 user-specific feature(s):
+ - com.oracle.svm.thirdparty.gson.GsonFeature
+ - io.quarkus.caffeine.runtime.graal.CacheConstructorsFeature
+ - io.quarkus.runner.Feature: Auto-generated class by Quarkus from the existing extensions
+ - io.quarkus.runtime.graal.DisableLoggingFeature: Adapts logging during the analysis phase
+ - org.eclipse.angus.activation.nativeimage.AngusActivationFeature
+ - org.eclipse.angus.mail.nativeimage.AngusMailFeature
+------------------------------------------------------------------------------------------------------------------------
+ 5 experimental option(s) unlocked:
+ - '-H:+AllowFoldMethods' (origin(s): command line)
+ - '-H:BuildOutputJSONFile' (origin(s): command line)
+ - '-H:+UseServiceLoaderFeature' (origin(s): command line)
+ - '-H:+GenerateBuildArtifactsFile' (origin(s): command line)
+ - '-H:AddOpens' (alternative API option(s): --add-opens java.base/java.lang=ALL-UNNAMED; origin(s): command line)
+------------------------------------------------------------------------------------------------------------------------
+Build resources:
+ - 7.11GB of memory (30.5% of 23.32GB system memory, set via '-Xmx8g')
+ - 12 thread(s) (100.0% of 12 available processor(s), determined at start)
+03:14:44,420 INFO  [org.kie.kog.exp.jq.JqExpressionHandler] Using default scope
+[2/8] Performing analysis...  [******]                                                                  (71.9s @ 2.44GB)
+   29,686 reachable types   (91.0% of   32,639 total)
+   46,035 reachable fields  (63.6% of   72,354 total)
+  168,089 reachable methods (64.2% of  261,635 total)
+    9,142 types, 1,480 fields, and 15,737 methods registered for reflection
+       62 types,    66 fields, and    55 methods registered for JNI access
+        4 native libraries: dl, pthread, rt, z
+[3/8] Building universe...                                                                              (11.3s @ 3.59GB)
+[4/8] Parsing methods...      [*****]                                                                   (25.5s @ 3.21GB)
+[5/8] Inlining methods...     [****]                                                                     (3.1s @ 3.10GB)
+[6/8] Compiling methods...    [************]                                                           (145.3s @ 4.05GB)
+[7/8] Laying out methods...   [****]                                                                    (13.6s @ 3.96GB)
+[8/8] Creating image...       [****]                                                                    (12.5s @ 4.02GB)
+  85.11MB (55.69%) for code area:   101,623 compilation units
+  66.98MB (43.83%) for image heap:  728,633 objects and 375 resources
+ 749.90kB ( 0.48%) for other data
+ 152.82MB in total
+------------------------------------------------------------------------------------------------------------------------
+Top 10 origins of code area:                                Top 10 object types in image heap:
+  16.12MB java.base                                           24.96MB byte[] for code metadata
+   9.66MB org.eclipse.jdt.ecj-3.44.0.jar                       9.81MB byte[] for java.lang.String
+   7.04MB jdk.compiler                                         6.00MB java.lang.Class
+   6.82MB svm.jar (Native Image)                               5.73MB byte[] for embedded resources
+   4.13MB java.xml                                             4.98MB java.lang.String
+   2.70MB conversion-workflow-full-runner.jar                  2.38MB byte[] for reflection metadata
+   2.60MB c.f.jackson.core.jackson-databind-2.19.2.jar         1.43MB byte[] for general heap data
+   2.53MB modified-io.vertx.vertx-core-4.5.23.jar              1.36MB com.oracle.svm.core.hub.DynamicHubCompanion
+   2.51MB com.github.javaparser.javaparser-core-3.27.0.jar   850.41kB c.o.svm.core.hub.DynamicHub$ReflectionMetadata
+   2.25MB o.k.k.p.jar                                        743.88kB java.util.HashMap$Node
+  28.04MB for 252 more packages                                8.78MB for 7219 more object types
+                              Use '-H:+BuildReport' to create a report with more details.
+------------------------------------------------------------------------------------------------------------------------
+Security report:
+ - Binary includes Java deserialization.
+ - Use '--enable-sbom' to embed a Software Bill of Materials (SBOM) in the binary.
+------------------------------------------------------------------------------------------------------------------------
+Recommendations:
+ G1GC: Use the G1 GC ('--gc=G1') for improved latency and throughput.
+ PGO:  Use Profile-Guided Optimizations ('--pgo') for improved throughput.
+ HEAP: Set max heap for improved and more predictable memory usage.
+ CPU:  Enable more CPU features with '-march=native' for improved performance.
+ QBM:  Use the quick build mode ('-Ob') to speed up builds during development.
+------------------------------------------------------------------------------------------------------------------------
+                       29.1s (10.0% of total time) in 224 GCs | Peak RSS: 7.28GB | CPU load: 9.95
+------------------------------------------------------------------------------------------------------------------------
+Produced artifacts:
+ /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/conversion-workflow-full-native-image-source-jar/build-artifacts.json (build_info)
+ /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/conversion-workflow-full-native-image-source-jar/conversion-workflow-full-runner (executable)
+ /home/jijo/coding/ibm/apachekie/5examples/serverless-workflow-examples/serverless-workflow-temperature-conversion/conversion-workflow-full/target/conversion-workflow-full-native-image-source-jar/conversion-workflow-full-runner-build-output-stats.json (build_info)
+========================================================================================================================
+Finished generating 'conversion-workflow-full-runner' in 4m 51s.
+
+
+
+****************************************************************************************
+
+This confirms the pattern. The conversion-workflow is the only variant that uses text/plain in its multiplication spec. The other three variants (conversion-workflow-full, conversion-workflow-function, conversion-workflow-spec) all use application/json with a wrapper object {product: float}.
+
+Now the question is whether we should:
+
+Change the conversion-workflow spec to use application/json (like the others), OR
+Fix the underlying native image issue
+Let me check if the actual multiplication service really returns text/plain (which it does), and whether this is an intentional test of text/plain handling.
+
+Read fahrenheit-to-celsius.sw.json
+Here's my complete analysis and proposed fix:
+
+Root Cause Summary
+The conversion-workflow module's multiplication OpenAPI spec (multiplication.yaml:44-47) declares:
+
+
+content:
+  text/plain:
+    schema:
+      type: number
+      format: float
+This causes the OpenAPI code generator to produce a REST client interface that expects to deserialize a text/plain response body into java.lang.Float. In native image mode, RESTEasy doesn't have a MessageBodyReader registered for text/plain -> Float, so it fails with RESTEASY003145.
+
+All three other variants (conversion-workflow-full, conversion-workflow-function, conversion-workflow-spec) already use application/json with a proper wrapper object — and they work fine.
+
+The Fix
+The simplest and most consistent fix is to align conversion-workflow's multiplication spec with the pattern used by the other variants — change the response content type from text/plain (raw float) to application/json (wrapped in an object). This also requires updating the mock service and the test assertion.
+
+The changes needed are:
+
+multiplication.yaml — change response from text/plain: float to application/json: {product: float}
+OperationsMockService.java — change the multiplication mock to return JSON with {product: 37.808}
+ConversationFlowIT.java — the test should still work since the workflow's actionDataFilter maps {product: .}, which would now receive the JSON object directly
+fahrenheit-to-celsius.sw.json — update the actionDataFilter since the response is now an object with a product field instead of a raw value
+Let me apply these changes.
+
+***************************************************************************
+
+
+------
+
+It was likely never tested in native mode after the text/plain change
+The key evidence:
+
+Commit 0495d809 (Aug 2024) deliberately changed the multiplication spec from application/json to text/plain with Quarkus 3.8.4. The commit message says "This illustrate the usage of functions that returns not json objects".
+
+The test class ConversationFlowIT uses @QuarkusIntegrationTest, which runs in both JVM and native mode — but native mode only activates when built with -Dnative. In JVM mode, reflection works unrestricted, so Float.valueOf(String) is always accessible and the test passes fine.
+
+There's no evidence native tests were run for this specific example after that change. The subsequent commits are just Quarkus version bumps (3.8.6 → 3.15 → 3.20 → 3.27).
+
+So this is a pre-existing bug, not an upgrade regression
+The DefaultTextPlain.isReadable(Float.class) calls TypeConverter.isConvertable(Float.class), which tries Float.class.getDeclaredMethod("valueOf", String.class) via reflection. In any GraalVM native image without explicit reflection registration for Float, this would fail — regardless of Quarkus version. The issue was introduced in Aug 2024 but was masked because native mode was never exercised for this test.
+
+That said, there's a secondary factor: Quarkus has been progressively tightening which built-in providers get included in native images to reduce binary size. It's possible that in older Quarkus versions, some broader reflection registration incidentally covered Float, but this would have been an accidental side-effect rather than deliberate support.
+
+Bottom line: The fix in ServerlessWorkflowAssetsProcessor.java is the right approach — it explicitly registers primitive wrapper types for reflection so that text/plain responses can be properly deserialized in native mode, regardless of Quarkus version.
+
+
+*************************
+
+Fix in runtimes
+
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+package org.kie.kogito.quarkus.serverless.workflow.deployment;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.ServiceLoader;
+import java.util.ServiceLoader.Provider;
+
+import org.drools.codegen.common.GeneratedFile;
+import org.eclipse.microprofile.openapi.models.media.Schema;
+import org.jboss.jandex.DotName;
+import org.jboss.jandex.IndexView;
+import org.kie.kogito.codegen.api.context.KogitoBuildContext;
+import org.kie.kogito.codegen.process.ProcessContainerGenerator;
+import org.kie.kogito.codegen.process.ProcessGenerator;
+import org.kie.kogito.event.process.NodeDefinition;
+import org.kie.kogito.event.process.ProcessDefinitionDataEvent;
+import org.kie.kogito.event.process.ProcessDefinitionEventBody;
+import org.kie.kogito.event.process.ProcessInstanceDataEvent;
+import org.kie.kogito.event.process.ProcessInstanceErrorEventBody;
+import org.kie.kogito.event.process.ProcessInstanceNodeEventBody;
+import org.kie.kogito.event.process.ProcessInstanceStateDataEvent;
+import org.kie.kogito.event.process.ProcessInstanceStateEventBody;
+import org.kie.kogito.event.process.ProcessInstanceVariableDataEvent;
+import org.kie.kogito.event.process.ProcessInstanceVariableEventBody;
+import org.kie.kogito.process.expr.ExpressionHandler;
+import org.kie.kogito.quarkus.common.deployment.KogitoAddonsPreGeneratedSourcesBuildItem;
+import org.kie.kogito.quarkus.common.deployment.KogitoBuildContextBuildItem;
+import org.kie.kogito.quarkus.common.deployment.LiveReloadExecutionBuildItem;
+import org.kie.kogito.quarkus.extensions.spi.deployment.KogitoProcessContainerGeneratorBuildItem;
+import org.kie.kogito.quarkus.serverless.workflow.WorkflowHandlerGeneratedFile;
+import org.kie.kogito.quarkus.serverless.workflow.WorkflowHandlerGenerator;
+import org.kie.kogito.quarkus.workflow.deployment.WorkflowProcessor;
+import org.kie.kogito.serverless.workflow.operationid.WorkflowOperationIdFactory;
+import org.kie.kogito.serverless.workflow.parser.FunctionNamespace;
+import org.kie.kogito.serverless.workflow.parser.FunctionTypeHandler;
+import org.kie.kogito.serverless.workflow.parser.schema.OpenApiModelSchemaGenerator;
+import org.kie.kogito.serverless.workflow.parser.schema.ServerlessWorkflowOASFilter;
+import org.kie.kogito.serverless.workflow.rpc.FileDescriptorHolder;
+
+import io.quarkus.deployment.annotations.BuildProducer;
+import io.quarkus.deployment.annotations.BuildStep;
+import io.quarkus.deployment.builditem.CombinedIndexBuildItem;
+import io.quarkus.deployment.builditem.FeatureBuildItem;
+import io.quarkus.deployment.builditem.IndexDependencyBuildItem;
+import io.quarkus.deployment.builditem.nativeimage.NativeImageResourceBuildItem;
+import io.quarkus.deployment.builditem.nativeimage.ReflectiveClassBuildItem;
+import io.quarkus.deployment.builditem.nativeimage.ServiceProviderBuildItem;
+import io.quarkus.deployment.pkg.steps.NativeOrNativeSourcesBuild;
+import io.quarkus.smallrye.openapi.deployment.spi.AddToOpenAPIDefinitionBuildItem;
+
+/**
+ * Main class of the Kogito Serverless Workflow extension
+ */
+public class ServerlessWorkflowAssetsProcessor extends WorkflowProcessor {
+
+    // Injecting Instance<WorkflowOpenApiHandlerGenerator> does not work here
+
+    private static Collection<WorkflowHandlerGenerator> generators =
+            ServiceLoader.load(WorkflowHandlerGenerator.class).stream().map(Provider::get).toList();
+
+    @BuildStep
+    @Override
+    public FeatureBuildItem featureBuildItem() {
+        return new FeatureBuildItem("kogito-serverless-workflow");
+    }
+
+    @BuildStep(onlyIf = NativeOrNativeSourcesBuild.class)
+    NativeImageResourceBuildItem addExpressionHandlers(BuildProducer<ServiceProviderBuildItem> serviceProvider) {
+        serviceProvider.produce(ServiceProviderBuildItem.allProvidersFromClassPath(ExpressionHandler.class.getCanonicalName()));
+        serviceProvider.produce(ServiceProviderBuildItem.allProvidersFromClassPath(FunctionNamespace.class.getCanonicalName()));
+        serviceProvider.produce(ServiceProviderBuildItem.allProvidersFromClassPath(FunctionTypeHandler.class.getCanonicalName()));
+        serviceProvider.produce(ServiceProviderBuildItem.allProvidersFromClassPath(WorkflowOperationIdFactory.class.getCanonicalName()));
+        return new NativeImageResourceBuildItem(FileDescriptorHolder.DESCRIPTOR_PATH);
+    }
+
+    @BuildStep
+    void addWorkItemHandlers(KogitoBuildContextBuildItem contextBI, LiveReloadExecutionBuildItem liveReloadExecutionBuildItem, BuildProducer<KogitoAddonsPreGeneratedSourcesBuildItem> sources) {
+        KogitoBuildContext context = contextBI.getKogitoBuildContext();
+        IndexView index = liveReloadExecutionBuildItem.getIndexView();
+        Collection<GeneratedFile> generatedFiles = new ArrayList<>();
+        for (WorkflowHandlerGenerator generator : generators) {
+            for (WorkflowHandlerGeneratedFile generated : generator.generateHandlerClasses(context, index)) {
+                generatedFiles.add(generated);
+                context.addGeneratedHandler(generated.getWorkItemHandlerName());
+            }
+        }
+        sources.produce(new KogitoAddonsPreGeneratedSourcesBuildItem(generatedFiles));
+    }
+
+    @BuildStep
+    void addOpenAPIModelSchema(List<KogitoProcessContainerGeneratorBuildItem> processBuildItem, BuildProducer<AddToOpenAPIDefinitionBuildItem> openAPIProducer) {
+        Map<String, Schema> schemasInfo = new HashMap<>();
+        Map<String, Schema> defsSchemas = new HashMap<>();
+        processBuildItem.stream().flatMap(it -> it.getProcessContainerGenerators().stream())
+                .map(ProcessContainerGenerator::getProcesses).flatMap(Collection::stream).map(ProcessGenerator::getProcess)
+                .forEach(process -> OpenApiModelSchemaGenerator.addOpenAPIModelSchema(process, schemasInfo, defsSchemas));
+        if (!schemasInfo.isEmpty()) {
+            openAPIProducer.produce(new AddToOpenAPIDefinitionBuildItem(new ServerlessWorkflowOASFilter(schemasInfo, defsSchemas)));
+        }
+    }
+
+    @BuildStep
+    public ReflectiveClassBuildItem eventsApiReflection() {
+        return new ReflectiveClassBuildItem(true, true,
+                ProcessInstanceNodeEventBody.class.getName(),
+                ProcessInstanceDataEvent.class.getName(),
+                ProcessInstanceErrorEventBody.class.getName(),
+                ProcessInstanceStateDataEvent.class.getName(),
+                ProcessInstanceStateEventBody.class.getName(),
+                ProcessInstanceVariableDataEvent.class.getName(),
+                ProcessInstanceVariableEventBody.class.getName(),
+                ProcessDefinitionDataEvent.class.getName(),
+                ProcessDefinitionEventBody.class.getName(),
+                NodeDefinition.class.getName());
+    }
+
+    @BuildStep
+    IndexDependencyBuildItem addJsonSchemaValidatorToIndex() {
+        return new IndexDependencyBuildItem("com.networknt", "json-schema-validator");
+    }
+
+    @BuildStep(onlyIf = NativeOrNativeSourcesBuild.class)
+    public void registerJsonValidatorSubclassesForReflection(CombinedIndexBuildItem combinedIndexBuildItem, BuildProducer<ReflectiveClassBuildItem> reflectiveClass) {
+        combinedIndexBuildItem.getComputingIndex().getAllKnownImplementors(DotName.createSimple("com.networknt.schema.JsonValidator"))
+                .forEach(c -> reflectiveClass.produce(new ReflectiveClassBuildItem(true, true, c.name().toString())));
+    }
+
+    /** NEWLY IDENTIFIED FIX
+     * Register primitive wrapper types for reflection in native builds.
+     * This is needed so that RESTEasy's DefaultTextPlain provider can use
+     * TypeConverter to deserialize text/plain responses into primitive wrapper
+     * types (e.g. Float, Double) via their valueOf(String) methods.
+     */
+    @BuildStep(onlyIf = NativeOrNativeSourcesBuild.class)
+    public ReflectiveClassBuildItem registerPrimitiveWrapperTypesForReflection() {
+        return new ReflectiveClassBuildItem(true, false,
+                java.lang.Float.class.getName(),
+                java.lang.Double.class.getName(),
+                java.lang.Integer.class.getName(),
+                java.lang.Long.class.getName(),
+                java.lang.Short.class.getName(),
+                java.lang.Byte.class.getName(),
+                java.lang.Boolean.class.getName());
+    }
+
+    // FIX ENDS 
+}
+
+
+This was to fix the 
